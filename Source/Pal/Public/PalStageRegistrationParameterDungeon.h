@@ -8,5 +8,6 @@ class UPalStageRegistrationParameterDungeon : public UPalStageRegistrationParame
     GENERATED_BODY()
 public:
     UPalStageRegistrationParameterDungeon();
+
 };
 

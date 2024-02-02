@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalFunnelSkillModule.generated.h"
 
 class APalCharacter;
@@ -16,6 +16,7 @@ protected:
     
 public:
     UPalFunnelSkillModule();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     bool ShouldSetSkillAction() const;
     

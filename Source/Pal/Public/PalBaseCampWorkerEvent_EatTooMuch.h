@@ -16,5 +16,6 @@ protected:
     
 public:
     UPalBaseCampWorkerEvent_EatTooMuch();
+
 };
 

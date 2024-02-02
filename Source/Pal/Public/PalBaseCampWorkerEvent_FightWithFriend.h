@@ -8,5 +8,6 @@ class UPalBaseCampWorkerEvent_FightWithFriend : public UPalBaseCampWorkerEventBa
     GENERATED_BODY()
 public:
     UPalBaseCampWorkerEvent_FightWithFriend();
+
 };
 

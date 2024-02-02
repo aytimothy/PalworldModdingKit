@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalFacialEyeType.h"
 #include "EPalFacialMouthType.h"
 #include "PalMorphSetting.h"
@@ -42,6 +42,7 @@ private:
     
 public:
     UPalFacial_MainModule();
+
     UFUNCTION(BlueprintCallable)
     void Setup_FacialModule(USkeletalMeshComponent* SkeletalMeshComponent);
     

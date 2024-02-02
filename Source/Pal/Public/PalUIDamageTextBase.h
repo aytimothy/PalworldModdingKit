@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Styling/SlateColor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
 #include "EPalDamageTextSeq.h"
 #include "PalUserWidget.h"
 #include "PalUIDamageTextBase.generated.h"
@@ -32,6 +32,7 @@ private:
     
 public:
     UPalUIDamageTextBase();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void UpdatePosition(const FVector& targetWorldLocation);
     

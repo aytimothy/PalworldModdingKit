@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalIncidentTalkType.h"
 #include "EPalInteractiveObjectIndicatorType.h"
 #include "PalInteractiveObjectIndicatorInterface.h"
@@ -37,7 +37,8 @@ private:
     UPalNPCInteractConditionFunctions* ConditionFunctions;
     
 public:
-    UPalNPCInteractionComponent();
+    UPalNPCInteractionComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void OnTriggerInteract(AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
     
@@ -53,7 +54,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void BeginPlay();
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

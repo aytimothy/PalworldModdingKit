@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "FloatCounter.h"
 #include "PalStaticItemIdAndNum.h"
 #include "PalWorkAssign.h"
@@ -28,5 +28,6 @@ private:
     
 public:
     UPalWorkAssign_MonsterFarm();
+
 };
 

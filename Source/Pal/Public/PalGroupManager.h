@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalGroupType.h"
 #include "EPalOrganizationType.h"
 #include "PalGameWorldDataSaveInterface.h"
@@ -34,6 +34,7 @@ protected:
     
 public:
     UPalGroupManager();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetGuildName(const FGuid& GroupID, FString& OutGuildName) const;
     
@@ -61,7 +62,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalGroupBase* Debug_GetFirstGroupByType(const EPalGroupType Type) const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

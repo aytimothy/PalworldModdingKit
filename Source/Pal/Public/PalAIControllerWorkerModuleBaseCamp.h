@@ -8,5 +8,6 @@ class UPalAIControllerWorkerModuleBaseCamp : public UPalAIControllerWorkerModule
     GENERATED_BODY()
 public:
     UPalAIControllerWorkerModuleBaseCamp();
+
 };
 

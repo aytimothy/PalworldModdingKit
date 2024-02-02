@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalContainerOperationRestrictType.h"
 #include "EPalItemTypeA.h"
 #include "EPalItemTypeB.h"
@@ -28,6 +28,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float CorruptionMultiplier;
     
-    UPalMapObjectItemChestParameterComponent();
+    UPalMapObjectItemChestParameterComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

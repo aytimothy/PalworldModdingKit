@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalMapObjectItemCollectableType.h"
 #include "PalItemId.h"
 #include "PalMapObjectItemCollectableInterface.h"
@@ -28,8 +28,9 @@ protected:
     
 public:
     UPalMapObjectDropItemModel();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateItemContainerContentInServer(UPalItemContainer* Container);
@@ -47,7 +48,7 @@ protected:
     UFUNCTION(BlueprintCallable)
     void OnEnableTriggerInteract(TScriptInterface<IPalInteractiveObjectComponentInterface> Component);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 public:
     UFUNCTION(BlueprintCallable)

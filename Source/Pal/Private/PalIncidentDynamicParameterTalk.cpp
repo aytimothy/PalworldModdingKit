@@ -6,3 +6,4 @@ UPalIncidentDynamicParameterTalk::UPalIncidentDynamicParameterTalk() {
     this->IsRequestSucceed = false;
 }
 
+

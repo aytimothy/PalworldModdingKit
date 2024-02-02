@@ -7,3 +7,4 @@ UPalTalkWidgetParameter::UPalTalkWidgetParameter() {
     this->IsCancel = false;
 }
 
+

@@ -4,3 +4,4 @@ UPalBaseCampTaskChecker::UPalBaseCampTaskChecker() {
     this->taskDataTable = NULL;
 }
 
+

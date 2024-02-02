@@ -8,5 +8,6 @@ class PAL_API UPalShopProduct_LostPal : public UPalShopProduct_PalSaveParameter 
     GENERATED_BODY()
 public:
     UPalShopProduct_LostPal();
+
 };
 

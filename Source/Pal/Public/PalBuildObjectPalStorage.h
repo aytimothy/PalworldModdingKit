@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ComponentReference -FallbackName=ComponentReference
 #include "PalBuildObject.h"
 #include "PalInstanceID.h"
 #include "PalBuildObjectPalStorage.generated.h"
@@ -61,7 +61,8 @@ protected:
     int32 ChestSlotNum;
     
 public:
-    APalBuildObjectPalStorage();
+    APalBuildObjectPalStorage(const FObjectInitializer& ObjectInitializer);
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void PlaySpawnCharacterFX(APalCharacter* TargetActor) const;

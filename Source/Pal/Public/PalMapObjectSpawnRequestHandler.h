@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalMapObjectModelInitializeExtraParameters.h"
 #include "PalMapObjectSpawnRequestHandler.generated.h"
 
@@ -12,5 +12,6 @@ public:
     FPalMapObjectModelInitializeExtraParameters ExtraParameters;
     
     UPalMapObjectSpawnRequestHandler();
+
 };
 

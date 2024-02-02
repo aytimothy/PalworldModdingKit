@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionResponse -FallbackName=ECollisionResponse
 #include "PalAnimNotifyDynamicParameterBase.h"
 #include "PalAnimNotifyDynamicParameterAvoidTime.generated.h"
 
@@ -14,5 +14,6 @@ public:
     TMap<UPrimitiveComponent*, TEnumAsByte<ECollisionResponse>> AttackResponseMap;
     
     UPalAnimNotifyDynamicParameterAvoidTime();
+
 };
 

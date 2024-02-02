@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalDungeonDataLayerAssetSet.h"
 #include "PalDungeonInfoParameter.h"
 #include "PalDungeonMarkerPointData.h"
@@ -41,13 +41,14 @@ protected:
     
 public:
     UPalDungeonWorldSubsystem();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetDungeonInfo(const FPalStageInstanceId& StageInstanceId, FPalDungeonInfoParameter& OutInfo) const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FGuid Debug_GetDungeonInstanceIdByIndex(const int32 Index) const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

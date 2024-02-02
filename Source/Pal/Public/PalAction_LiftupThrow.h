@@ -16,6 +16,7 @@ protected:
     
 public:
     UPalAction_LiftupThrow();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void PlayWeaponChangeAnime();

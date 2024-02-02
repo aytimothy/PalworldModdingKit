@@ -8,5 +8,6 @@ class UPalAIActionBaseCampDefenseWait : public UPalAIActionBaseCampDefenseBase {
     GENERATED_BODY()
 public:
     UPalAIActionBaseCampDefenseWait();
+
 };
 

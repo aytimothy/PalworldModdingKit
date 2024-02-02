@@ -8,6 +8,7 @@ class UPalAIActionBaseCampDefenseGunner : public UPalAIActionBaseCampDefenseBase
     GENERATED_BODY()
 public:
     UPalAIActionBaseCampDefenseGunner();
+
 private:
     UFUNCTION(BlueprintCallable)
     void StopTrigger();

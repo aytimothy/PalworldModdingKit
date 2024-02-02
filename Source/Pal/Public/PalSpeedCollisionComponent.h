@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/HitResult.h"
-#include "Components/SphereComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
 #include "PalInstanceID.h"
 #include "PalSpeedCollisionComponent.generated.h"
 
@@ -22,7 +22,8 @@ private:
     TArray<FPalInstanceID> HitPalList;
     
 public:
-    UPalSpeedCollisionComponent();
+    UPalSpeedCollisionComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnAllActionEnd(const UPalActionComponent* ActionComponent);

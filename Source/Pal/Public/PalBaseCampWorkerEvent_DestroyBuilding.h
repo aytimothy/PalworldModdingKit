@@ -8,5 +8,6 @@ class UPalBaseCampWorkerEvent_DestroyBuilding : public UPalBaseCampWorkerEventBa
     GENERATED_BODY()
 public:
     UPalBaseCampWorkerEvent_DestroyBuilding();
+
 };
 

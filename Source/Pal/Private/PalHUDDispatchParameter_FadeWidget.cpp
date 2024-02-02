@@ -6,3 +6,4 @@ UPalHUDDispatchParameter_FadeWidget::UPalHUDDispatchParameter_FadeWidget() {
     this->FadeOutTime = 1.00f;
 }
 
+

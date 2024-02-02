@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalLogType.h"
 #include "PalBaseCampWorkerEventMasterData.h"
 #include "PalDataTableRowName_BaseCampWorkerEventData.h"
@@ -28,6 +28,7 @@ protected:
     
 public:
     UPalBaseCampWorkerEventBase();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool IsTriggerEventBySanity(const float SanityValue) const;
     

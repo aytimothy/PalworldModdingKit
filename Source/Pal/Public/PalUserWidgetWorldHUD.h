@@ -8,6 +8,7 @@ class UPalUserWidgetWorldHUD : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUserWidgetWorldHUD();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void RemoveSelf();

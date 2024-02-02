@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalFlyHeightType.h"
 #include "PalFlyMeshHeightCtrlComponent.generated.h"
 
@@ -32,9 +32,10 @@ private:
     USkeletalMeshComponent* SK;
     
 public:
-    UPalFlyMeshHeightCtrlComponent();
+    UPalFlyMeshHeightCtrlComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void ToLand(float Duration);
     

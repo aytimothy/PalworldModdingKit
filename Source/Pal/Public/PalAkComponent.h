@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AkComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
 #include "PalAkComponent.generated.h"
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
@@ -12,6 +12,7 @@ private:
     bool PersistAcrossLevelTransition;
     
 public:
-    UPalAkComponent();
+    UPalAkComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

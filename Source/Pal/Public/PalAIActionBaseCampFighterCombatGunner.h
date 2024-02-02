@@ -14,10 +14,11 @@ protected:
     float FaceAngleRange;
     
 private:
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPalMapObjectDefenseBulletLauncherModel> WeakDefenseModel;
     
 public:
     UPalAIActionBaseCampFighterCombatGunner();
+
 };
 

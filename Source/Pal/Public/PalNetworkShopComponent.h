@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalShopBuyResultType.h"
 #include "PalCharacterSlotId.h"
 #include "PalCharacterStoredParameterId.h"
@@ -16,7 +16,8 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPalNetworkShopComponent : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalNetworkShopComponent();
+    UPalNetworkShopComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void SetupShopDataForActor_ToServer(AActor* VenderActor);
     

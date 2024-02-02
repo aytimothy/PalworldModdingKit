@@ -17,5 +17,6 @@ public:
     APalBuildObject* BuildObject;
     
     UPalBuildProgressWorldHUDParameter();
+
 };
 

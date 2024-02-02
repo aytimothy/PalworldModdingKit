@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Net/Serialization/FastArraySerializer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=NetCore -ObjectName=FastArraySerializer -FallbackName=FastArraySerializer
 #include "PalPlayerRecordDataRepInfo_BoolVal.h"
 #include "PalPlayerRecordDataRepInfoArray_BoolVal.generated.h"
 

@@ -29,6 +29,7 @@ public:
     bool IsEnableShortcutConfirmInput;
     
     UPalDialogParameterBase();
+
     UFUNCTION(BlueprintCallable)
     void InvokeCallback(const bool bResult);
     

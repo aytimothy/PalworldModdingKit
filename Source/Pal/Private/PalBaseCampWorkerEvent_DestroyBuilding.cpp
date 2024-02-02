@@ -3,3 +3,4 @@
 UPalBaseCampWorkerEvent_DestroyBuilding::UPalBaseCampWorkerEvent_DestroyBuilding() {
 }
 
+

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalAIActionCompositeWorkerModuleBase.h"
 #include "PalAIActionCompositeWorkerModuleBaseCamp.generated.h"
 
@@ -11,6 +11,7 @@ class UPalAIActionCompositeWorkerModuleBaseCamp : public UPalAIActionCompositeWo
     GENERATED_BODY()
 public:
     UPalAIActionCompositeWorkerModuleBaseCamp();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FGuid GetBaseCampIdBelongTo() const;
     

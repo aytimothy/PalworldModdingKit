@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EObjectTypeQuery -FallbackName=EObjectTypeQuery
 #include "EPalActionType.h"
 #include "EPalWorkType.h"
 #include "PalGameWorldDataSaveInterface.h"
@@ -62,6 +62,7 @@ private:
     
 public:
     UPalWorkProgressManager();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalWorkBase* GetWorkByAssignId(const FPalWorkAssignHandleId& WorkAssignId) const;
     
@@ -71,7 +72,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalWorkBase* GetWork(const FGuid& WorkId) const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

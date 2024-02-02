@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalNPCSpawnerBase.h"
 #include "PalRandomIncidentSpawnMonsterData.h"
 #include "PalRandomIncidentSpawnNPCData.h"
@@ -28,7 +28,8 @@ private:
     TMap<int32, FGuid> GroupMap;
     
 public:
-    APalRandomIncidentNPCSpawner();
+    APalRandomIncidentNPCSpawner(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SpawnNPC(const FName& RowName, const FPalRandomIncidentSpawnNPCData& SpawnData, int32 SpawnPointIndex, int32 SpawnPointCount);
     

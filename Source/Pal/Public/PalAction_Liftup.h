@@ -18,6 +18,7 @@ protected:
     
 public:
     UPalAction_Liftup();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void StartRagdollForTargetCharacter();

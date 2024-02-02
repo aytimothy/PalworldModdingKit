@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "UDLSSMode.h"
-#include "SceneUtils.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=DLSSBlueprint -ObjectName=UDLSSMode -FallbackName=UDLSSMode
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAntiAliasingMethod -FallbackName=EAntiAliasingMethod
 #include "EPalOptionGraphicsLevel.h"
 #include "PalOptionAudioSettings.h"
 #include "PalGameLocalSettings.generated.h"
@@ -39,6 +39,7 @@ public:
     int32 GraphicsCommonQuality;
     
     UPalGameLocalSettings();
+
     UFUNCTION(BlueprintCallable)
     bool RequireBenchMarkScalaBility();
     

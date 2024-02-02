@@ -10,6 +10,7 @@ class PAL_API UPalAICombatModule_Invader : public UPalAICombatModule {
     GENERATED_BODY()
 public:
     UPalAICombatModule_Invader();
+
     UFUNCTION(BlueprintCallable)
     void OnBattleFinish_forDelegate(AActor* Actor);
     

@@ -4,3 +4,4 @@ UPalHUDDispatchParameter_CharacterRankUp::UPalHUDDispatchParameter_CharacterRank
     this->ConcreteModel = NULL;
 }
 
+

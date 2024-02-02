@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_CreateSystemForDedicatedServer : public UPalGam
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_CreateSystemForDedicatedServer();
+
 };
 

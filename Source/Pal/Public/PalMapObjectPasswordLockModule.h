@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalMapObjectPasswordLockState.h"
 #include "PalMapObjectConcreteModelModuleBase.h"
 #include "PalMapObjectPasswordLockPlayerInfo.h"
@@ -39,8 +39,9 @@ private:
     
 public:
     UPalMapObjectPasswordLockModule();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestUpdateUnlock_ServerInternal(const int32 RequestPlayerId);

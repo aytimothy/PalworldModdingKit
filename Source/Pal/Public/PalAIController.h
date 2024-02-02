@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIController.h"
-#include "Navigation/PathFollowingComponent.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIController -FallbackName=AIController
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EPathFollowingRequestResult -FallbackName=EPathFollowingRequestResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "EPalCharacterImportanceType.h"
 #include "PalDeadInfo.h"
 #include "PalPathFollowingBlockDetectionParams.h"
@@ -92,8 +92,12 @@ private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FTimerHandle SelfDeleteTimerHandle;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool bShouldCheckStuckByTick;
+    
 public:
-    APalAIController();
+    APalAIController(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void WaitForSeconds(float Time);
     

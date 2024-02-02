@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotifyState.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyState -FallbackName=AnimNotifyState
 #include "EPalFacialEyeType.h"
 #include "PalAnimNotifyState_FacialEye.generated.h"
 
@@ -15,5 +15,6 @@ public:
     bool AutoDefaultWhenEnd;
     
     UPalAnimNotifyState_FacialEye();
+
 };
 

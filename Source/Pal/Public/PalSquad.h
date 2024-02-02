@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDeadInfo.h"
 #include "PalInstanceID.h"
 #include "PalSquad.generated.h"
@@ -37,6 +37,7 @@ private:
     
 public:
     UPalSquad();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RemoveWhenDestoryActor(AActor* DestoryActor);

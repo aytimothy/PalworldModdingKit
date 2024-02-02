@@ -8,5 +8,6 @@ class UPalAIActionWorkerWaitForWorkable : public UPalAIActionWorkerChildBase {
     GENERATED_BODY()
 public:
     UPalAIActionWorkerWaitForWorkable();
+
 };
 

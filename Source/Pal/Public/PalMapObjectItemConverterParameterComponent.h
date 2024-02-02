@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalItemTypeA.h"
 #include "EPalItemTypeB.h"
 #include "PalMapObjectItemConverterParameterComponent.generated.h"
@@ -24,6 +24,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float WorkSpeedAdditionalRate;
     
-    UPalMapObjectItemConverterParameterComponent();
+    UPalMapObjectItemConverterParameterComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

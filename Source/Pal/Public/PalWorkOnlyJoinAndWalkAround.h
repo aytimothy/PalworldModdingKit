@@ -8,5 +8,6 @@ class PAL_API UPalWorkOnlyJoinAndWalkAround : public UPalWorkBase {
     GENERATED_BODY()
 public:
     UPalWorkOnlyJoinAndWalkAround();
+
 };
 

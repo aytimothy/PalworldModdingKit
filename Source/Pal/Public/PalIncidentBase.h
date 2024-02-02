@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalIncidentState.h"
 #include "PalIncidentExecutionSettings.h"
 #include "PalIncidentIdParameter.h"
@@ -47,6 +47,7 @@ private:
     
 public:
     UPalIncidentBase();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void Tick(float DeltaTime);
     

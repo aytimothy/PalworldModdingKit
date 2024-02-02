@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalUniqueSkillModule.generated.h"
 
 class AActor;
@@ -19,6 +19,7 @@ protected:
     
 public:
     UPalUniqueSkillModule();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void TickModule(float DeltaTime);
     

@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Navigation/PathFollowingComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=PathFollowingComponent -FallbackName=PathFollowingComponent
 #include "PalFollowingComponent.generated.h"
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class PAL_API UPalFollowingComponent : public UPathFollowingComponent {
     GENERATED_BODY()
 public:
-    UPalFollowingComponent();
+    UPalFollowingComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalNPCTalkUIType.h"
 #include "PalEnemyCampStatus.h"
 #include "PalGameWorldDataSaveInterface.h"
@@ -61,6 +61,7 @@ protected:
     
 public:
     UPalNPCManager();
+
 private:
     UFUNCTION(BlueprintCallable)
     void SpawNPCCallback(FPalInstanceID ID);
@@ -114,7 +115,7 @@ private:
     UFUNCTION(BlueprintCallable)
     void AllResetBossRespawnFlag();
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

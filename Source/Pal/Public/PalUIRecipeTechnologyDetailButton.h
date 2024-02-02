@@ -8,5 +8,6 @@ class PAL_API UPalUIRecipeTechnologyDetailButton : public UPalUITechnologyDetail
     GENERATED_BODY()
 public:
     UPalUIRecipeTechnologyDetailButton();
+
 };
 

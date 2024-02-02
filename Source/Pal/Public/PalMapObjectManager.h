@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EObjectTypeQuery -FallbackName=EObjectTypeQuery
 #include "BuildingSurfaceMaterialSet.h"
 #include "EPalMapObjectChangeMeshFXType.h"
 #include "EPalMapObjectDestroyFXType.h"
@@ -39,15 +39,14 @@ class UPalMapObjectModelInitializeExtraParameterSpawnedBy;
 class UPalMapObjectSpawnRequestHandler;
 class UPalMapObjectWorldDisposer;
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FMapObjectModelWithVectorDelegate, UPalMapObjectModel*, MapObjectModel, const FVector&, Vector);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FMapObjectModelSpawnedByDelegate, UPalMapObjectModel*, MapObjectModel, UPalMapObjectModelInitializeExtraParameterSpawnedBy*, SpawnedBy);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMapObjectModelInterfaceDelegate, TScriptInterface<IPalMapObjectModelInterface>, MapObjectModel);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMapObjectModelDynamicDelegate, UPalMapObjectModel*, MapObjectModel);
-
 UCLASS(Blueprintable, Config=Game)
 class UPalMapObjectManager : public UPalWorldSubsystem, public IPalGameWorldDataSaveInterface {
     GENERATED_BODY()
 public:
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FMapObjectModelWithVectorDelegate, UPalMapObjectModel*, MapObjectModel, const FVector&, Vector);
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FMapObjectModelSpawnedByDelegate, UPalMapObjectModel*, MapObjectModel, UPalMapObjectModelInitializeExtraParameterSpawnedBy*, SpawnedBy);
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMapObjectModelInterfaceDelegate, TScriptInterface<IPalMapObjectModelInterface>, MapObjectModel);
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMapObjectModelDynamicDelegate, UPalMapObjectModel*, MapObjectModel);
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMapObjectModelWithVectorDelegate OnCreateMapObjectModelInServerDelegate;
@@ -254,6 +253,7 @@ public:
     TArray<TWeakObjectPtr<UObject>> PointLightComponents;
     
     UPalMapObjectManager();
+
     UFUNCTION(BlueprintCallable)
     void UpdateSkeletalMeshComponentForLOD(int32 InExecuteCount);
     
@@ -290,7 +290,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalMapObjectConcreteModelBase* FindConcreteModel(const FGuid& InstanceId) const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

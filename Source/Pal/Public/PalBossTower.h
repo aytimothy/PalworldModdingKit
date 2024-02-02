@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=DateTime -FallbackName=DateTime
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "EPalBossBattleState.h"
 #include "EPalBossType.h"
 #include "PalInteractiveObjectIndicatorInterface.h"
@@ -49,9 +49,10 @@ private:
     FTimerHandle TimerHandle;
     
 public:
-    APalBossTower();
+    APalBossTower(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     bool WriteBossDefeatRecord_ServerInternal(APalPlayerCharacter* TargetPlayer);
     
@@ -119,7 +120,7 @@ protected:
     UFUNCTION(BlueprintCallable)
     void AddInDoorPlayer(APalPlayerCharacter* Player);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

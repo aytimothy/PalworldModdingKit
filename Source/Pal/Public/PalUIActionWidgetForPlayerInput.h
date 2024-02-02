@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Styling/SlateBrush.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateBrush -FallbackName=SlateBrush
 #include "PalUserWidget.h"
 #include "PalUIActionWidgetForPlayerInput.generated.h"
 
@@ -23,6 +23,7 @@ protected:
     
 public:
     UPalUIActionWidgetForPlayerInput();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void UpdateImage(FSlateBrush newBrush);
     

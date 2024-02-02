@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LevelInstance/LevelInstanceActor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=LevelInstance -FallbackName=LevelInstance
 #include "PalLevelInstance.generated.h"
 
 UCLASS(Blueprintable)
 class PAL_API APalLevelInstance : public ALevelInstance {
     GENERATED_BODY()
 public:
-    APalLevelInstance();
+    APalLevelInstance(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalMapObjectModelConnectInfo.h"
 #include "PalMapObjectModelConnectorBase.generated.h"
 
@@ -18,7 +18,8 @@ private:
     
 public:
     UPalMapObjectModelConnectorBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 };
 

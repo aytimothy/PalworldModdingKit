@@ -8,5 +8,6 @@ class PAL_API UPalUIMapObjectHPWorldHUD : public UPalUserWidgetWorldHUD {
     GENERATED_BODY()
 public:
     UPalUIMapObjectHPWorldHUD();
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/SphereComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
 #include "PalLimitVolumeInterface.h"
 #include "PalLimitVolumeSphereComponent.generated.h"
 
@@ -13,8 +13,9 @@ private:
     int32 LimitFlags;
     
 public:
-    UPalLimitVolumeSphereComponent();
-    
+    UPalLimitVolumeSphereComponent(const FObjectInitializer& ObjectInitializer);
+
+
     // Fix for true pure virtual functions not being implemented
 };
 

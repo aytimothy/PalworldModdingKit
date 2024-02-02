@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "PalHUDDispatchParameterBase.h"
 #include "PalWidgetTimerGaugeParameter.generated.h"
 
@@ -21,5 +21,6 @@ public:
     bool IsHide;
     
     UPalWidgetTimerGaugeParameter();
+
 };
 

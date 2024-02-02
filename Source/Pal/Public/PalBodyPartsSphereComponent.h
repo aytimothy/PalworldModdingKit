@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/SphereComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
 #include "EPalBodyPartsType.h"
 #include "PalBodyPartsSphereComponent.generated.h"
 
@@ -19,9 +19,10 @@ private:
     FName BroadcastCollisionProfileName;
     
 public:
-    UPalBodyPartsSphereComponent();
+    UPalBodyPartsSphereComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnRep_BroadcastCollisionProfileName();

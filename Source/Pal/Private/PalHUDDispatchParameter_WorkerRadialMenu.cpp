@@ -5,3 +5,4 @@ UPalHUDDispatchParameter_WorkerRadialMenu::UPalHUDDispatchParameter_WorkerRadial
     this->ResultType = EPalWorkerRadialMenuResult::Cancel;
 }
 
+

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=GameModeBase -FallbackName=GameModeBase
 #include "EPalGameModeType.h"
 #include "PalGameModeBase.generated.h"
 
@@ -13,6 +13,7 @@ protected:
     EPalGameModeType GameModeType;
     
 public:
-    APalGameModeBase();
+    APalGameModeBase(const FObjectInitializer& ObjectInitializer);
+
 };
 

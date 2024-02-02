@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalAIActionCompositeBase.generated.h"
 
 class AController;
@@ -24,6 +24,7 @@ protected:
     
 public:
     UPalAIActionCompositeBase();
+
     UFUNCTION(BlueprintCallable)
     void SetChildActionComposite(UPalAIActionCompositeBase* Composite);
     

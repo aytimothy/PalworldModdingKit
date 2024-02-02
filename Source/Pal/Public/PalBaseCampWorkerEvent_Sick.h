@@ -8,5 +8,6 @@ class PAL_API UPalBaseCampWorkerEvent_Sick : public UPalBaseCampWorkerEventBase 
     GENERATED_BODY()
 public:
     UPalBaseCampWorkerEvent_Sick();
+
 };
 

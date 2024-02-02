@@ -25,6 +25,7 @@ protected:
     
 public:
     UPalLogWidgetBase();
+
     UFUNCTION(BlueprintCallable)
     void StartDisplayLog(float inDestroyTime);
     

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "FlagContainer.h"
 #include "PalBackWeaponBase.generated.h"
 
@@ -19,6 +19,7 @@ private:
     FFlagContainer HiddenBackWeapon;
     
 public:
-    APalBackWeaponBase();
+    APalBackWeaponBase(const FObjectInitializer& ObjectInitializer);
+
 };
 

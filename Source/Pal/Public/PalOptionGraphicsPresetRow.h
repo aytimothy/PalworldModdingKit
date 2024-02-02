@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SceneUtils.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAntiAliasingMethod -FallbackName=EAntiAliasingMethod
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TableRowBase -FallbackName=TableRowBase
 #include "EPalOptionGraphicsLevel.h"
 #include "PalOptionGraphicsPresetRow.generated.h"
 

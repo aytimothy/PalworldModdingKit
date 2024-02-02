@@ -13,5 +13,6 @@ public:
     UPalIndividualCharacterHandle* IndividualHandle;
     
     UPalHUDDispatchParameter_MonsterDetail();
+
 };
 

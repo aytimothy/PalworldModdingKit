@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectModelConnectorAttachToWall : public UPalMapObjectMode
     GENERATED_BODY()
 public:
     UPalMapObjectModelConnectorAttachToWall();
+
 };
 

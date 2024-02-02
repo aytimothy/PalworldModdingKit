@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalOrganizationType.h"
 #include "PalDamageResult.h"
 #include "PalDeadInfo.h"
@@ -20,8 +20,9 @@ protected:
     
 public:
     UPalGroupOrganization();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnDead(FPalDeadInfo DeadInfo);

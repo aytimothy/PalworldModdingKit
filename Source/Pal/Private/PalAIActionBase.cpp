@@ -1,6 +1,12 @@
 #include "PalAIActionBase.h"
 #include "Templates/SubclassOf.h"
 
+UPalAIActionBase::UPalAIActionBase() {
+    this->bIsAutoStopBehaviorTree = true;
+    this->AiActionCategory = EPalAIActionCategory::Undefined;
+    this->DefaultPriority = EAIRequestPriority::SoftScript;
+}
+
 void UPalAIActionBase::SetWalkSpeed_ForAIAction(EPalMovementSpeedType MoveSpeedType) {
 }
 
@@ -25,7 +31,7 @@ FString UPalAIActionBase::GetSimpleName() const {
     return TEXT("");
 }
 
-EAIRequestPriority::Type UPalAIActionBase::GetRequestPriority_Implementation() const {
+TEnumAsByte<EAIRequestPriority::Type> UPalAIActionBase::GetRequestPriority_Implementation() const {
     return EAIRequestPriority::SoftScript;
 }
 
@@ -62,9 +68,4 @@ UPawnAction* UPalAIActionBase::CreateActionInstanceFixName(UObject* WorldContext
 }
 
 
-UPalAIActionBase::UPalAIActionBase() {
-    this->bIsAutoStopBehaviorTree = true;
-    this->AiActionCategory = EPalAIActionCategory::Undefined;
-    this->DefaultPriority = EAIRequestPriority::SoftScript;
-}
 

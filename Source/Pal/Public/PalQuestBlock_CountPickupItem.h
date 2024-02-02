@@ -21,6 +21,7 @@ protected:
     
 public:
     UPalQuestBlock_CountPickupItem();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnPickupItem(TArray<FPalItemAndNum>& ItemInfos);

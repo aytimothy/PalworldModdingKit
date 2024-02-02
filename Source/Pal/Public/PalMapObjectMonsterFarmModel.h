@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectMonsterFarmModel : public UPalMapObjectConcreteModelB
     GENERATED_BODY()
 public:
     UPalMapObjectMonsterFarmModel();
+
 };
 

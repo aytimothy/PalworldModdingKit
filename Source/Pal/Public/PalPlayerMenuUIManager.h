@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalContainerId.h"
 #include "PalItemSlotId.h"
 #include "PalPlayerMenuUIManager.generated.h"
@@ -15,6 +15,7 @@ public:
     UPalPlayerMenuUI* PlayerMenuUI;
     
     UPalPlayerMenuUIManager();
+
     UFUNCTION(BlueprintCallable)
     void ToggleInventoryWindow();
     

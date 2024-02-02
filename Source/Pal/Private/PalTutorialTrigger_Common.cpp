@@ -4,3 +4,4 @@ UPalTutorialTrigger_Common::UPalTutorialTrigger_Common() {
     this->TriggerType = EPalTutorialTriggerConditionType::None;
 }
 
+

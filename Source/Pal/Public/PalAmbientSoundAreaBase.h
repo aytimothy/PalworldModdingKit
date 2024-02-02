@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalAmbientSoundAreaData.h"
 #include "PalAmbientSoundAreaBase.generated.h"
 
@@ -27,7 +27,8 @@ private:
     bool bIsOverlappedLocalPlayer;
     
 public:
-    APalAmbientSoundAreaBase();
+    APalAmbientSoundAreaBase(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnEndOverlap(UPrimitiveComponent* OverlappedComponent, APalPlayerCharacter* PlayerCharacter);

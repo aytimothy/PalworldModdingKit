@@ -8,6 +8,7 @@ class UPalMasterDataTableAccess_PlayerStatusRankData : public UPalMasterDataTabl
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_PlayerStatusRankData();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetMaxRank();
     

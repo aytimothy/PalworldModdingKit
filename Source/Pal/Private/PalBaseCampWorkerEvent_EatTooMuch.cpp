@@ -5,3 +5,4 @@ UPalBaseCampWorkerEvent_EatTooMuch::UPalBaseCampWorkerEvent_EatTooMuch() {
     this->EatMaxNum = 10;
 }
 
+

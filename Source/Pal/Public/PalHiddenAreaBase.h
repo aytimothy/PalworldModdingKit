@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalHiddenAreaBase.generated.h"
 
 class UPalProceduralFoliageComponent;
@@ -12,6 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPalProceduralFoliageComponent* ProceduralComponent;
     
-    APalHiddenAreaBase();
+    APalHiddenAreaBase(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AITypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Interface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EAIRequestPriority -FallbackName=EAIRequestPriority
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Interface -FallbackName=Interface
 #include "EPalMapBaseCampWorkerOrderType.h"
 #include "PalAIActionBaseCampSleepActivelyParameter.h"
 #include "PalMonsterControllerBaseCampHungryParameter.h"
@@ -69,7 +69,7 @@ public:
     void InterruptRecoverHungryAction(const FPalMonsterControllerBaseCampHungryParameter Parameter);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void InterruptPlayWorkerEventAction(UPalAIActionBase* action, const EAIRequestPriority::Type Priority);
+    void InterruptPlayWorkerEventAction(UPalAIActionBase* action, const TEnumAsByte<EAIRequestPriority::Type> Priority);
     
 };
 

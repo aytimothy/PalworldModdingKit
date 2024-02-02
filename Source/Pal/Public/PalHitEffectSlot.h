@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDamageInfo.h"
 #include "PalHitEffectSlot.generated.h"
 
@@ -9,6 +9,7 @@ class UPalHitEffectSlot : public UObject {
     GENERATED_BODY()
 public:
     UPalHitEffectSlot();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void PlayHitEffect(const FPalDamageInfo& Info);
     

@@ -8,5 +8,6 @@ class PAL_API UPalPlayerInventory : public UPalItemInventoryBase {
     GENERATED_BODY()
 public:
     UPalPlayerInventory();
+
 };
 

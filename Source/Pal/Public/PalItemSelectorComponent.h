@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalPlayerInventoryType.h"
 #include "PalPlayerInventorySelectData.h"
 #include "PalItemSelectorComponent.generated.h"
@@ -22,7 +22,8 @@ protected:
     TMap<EPalPlayerInventoryType, FPalPlayerInventorySelectData> itemSelectDataMap;
     
 public:
-    UPalItemSelectorComponent();
+    UPalItemSelectorComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SelectPrevItem(EPalPlayerInventoryType targetInventory);
     

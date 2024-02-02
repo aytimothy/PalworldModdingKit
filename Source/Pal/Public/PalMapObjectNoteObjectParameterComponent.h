@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalDataTableRowName_NoteData.h"
 #include "PalMapObjectNoteObjectParameterComponent.generated.h"
 
@@ -11,6 +11,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPalDataTableRowName_NoteData NoteRowName;
     
-    UPalMapObjectNoteObjectParameterComponent();
+    UPalMapObjectNoteObjectParameterComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

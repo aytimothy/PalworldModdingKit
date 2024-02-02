@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Camera/CameraShakeBase.h"
-#include "LegacyCameraShake.h"
-#include "LegacyCameraShake.h"
-#include "LegacyCameraShake.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraShakeBase -FallbackName=CameraShakeBase
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayCameras -ObjectName=FOscillator -FallbackName=FOscillator
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayCameras -ObjectName=ROscillator -FallbackName=ROscillator
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayCameras -ObjectName=VOscillator -FallbackName=VOscillator
 #include "PalCameraShakeBase.generated.h"
 
 class UCurveFloat;
@@ -37,5 +37,6 @@ public:
     float OscillatorTimeRemaining;
     
     UPalCameraShakeBase();
+
 };
 

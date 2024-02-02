@@ -16,5 +16,6 @@ public:
     FPalUIServerDisplayData TargetServerDisplayInfo;
     
     UPalHUDDispatchParame_JoinGameInputCode();
+
 };
 

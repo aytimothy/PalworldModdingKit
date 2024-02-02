@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Subsystems/WorldSubsystem.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=WorldSubsystem -FallbackName=WorldSubsystem
 #include "Templates/SubclassOf.h"
 #include "PalWorldSubsystem.generated.h"
 
@@ -15,5 +15,6 @@ public:
     TArray<TSubclassOf<UWorldSubsystem>> PrerequisiteWorldSubsystemList;
     
     UPalWorldSubsystem();
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalNPCInteractionDataTableRow.h"
 #include "PalNPCInteractionDataTableUtility.generated.h"
 
@@ -9,6 +9,7 @@ class UPalNPCInteractionDataTableUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalNPCInteractionDataTableUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetJSONStringByInteractionDataTable(FString& OutString, const TMap<FName, FPalNPCInteractionDataTableRow>& DataRows);
     

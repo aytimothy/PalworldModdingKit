@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DataAsset.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "PalNoteDataAsset.generated.h"
 
 class UPalNoteData;
@@ -13,6 +13,7 @@ public:
     TMap<FName, UPalNoteData*> NoteDataMap;
     
     UPalNoteDataAsset();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalNoteData* Find(const FName ID) const;
     

@@ -12,5 +12,6 @@ public:
     TArray<EPalMapObjectItemContainerSlotAttribute> AllSlotAttribute;
     
     UPalMapObjectModelInitializeExtraParameterItemContainerAttribute();
+
 };
 

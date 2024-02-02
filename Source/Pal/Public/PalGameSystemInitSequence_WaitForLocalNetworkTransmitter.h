@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_WaitForLocalNetworkTransmitter : public UPalGam
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_WaitForLocalNetworkTransmitter();
+
 };
 

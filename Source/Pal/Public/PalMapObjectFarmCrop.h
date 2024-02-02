@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalFarmCropGrowupProcessSet.h"
 #include "PalMapObjectFarmCrop.generated.h"
 
@@ -13,6 +13,7 @@ protected:
     TArray<FPalFarmCropGrowupProcessSet> GrowupProcessSets;
     
 public:
-    APalMapObjectFarmCrop();
+    APalMapObjectFarmCrop(const FObjectInitializer& ObjectInitializer);
+
 };
 

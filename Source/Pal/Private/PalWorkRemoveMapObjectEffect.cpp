@@ -4,3 +4,4 @@ UPalWorkRemoveMapObjectEffect::UPalWorkRemoveMapObjectEffect() {
     this->TargetEffectType = EPalStatusID::None;
 }
 
+

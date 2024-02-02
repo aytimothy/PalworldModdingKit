@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalMapObjectConcreteModelModuleType.h"
 #include "EPalMapObjectOperationResult.h"
 #include "PalCellCoord.h"
@@ -29,7 +29,8 @@ private:
     TMap<FGuid, UPalMapObjectSpawnRequestHandler*> SpawnRequestHandlerMap;
     
 public:
-    UPalNetworkMapObjectComponent();
+    UPalNetworkMapObjectComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestSpawnMapObject_ToServer(const FGuid& RequestID, const FName MapObjectId, const FVector& Location, const FQuat& Rotation, const TArray<FPalNetArchive>& ExtraParameterArchives);

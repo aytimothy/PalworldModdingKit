@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalBiomeType.h"
 #include "PalBiomeAreaTriggerBase.generated.h"
 
@@ -11,7 +11,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EPalBiomeType BindBiomeType;
     
-    APalBiomeAreaTriggerBase();
+    APalBiomeAreaTriggerBase(const FObjectInitializer& ObjectInitializer);
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnOverlap(AActor* OtherActor, EPalBiomeType BiomeType);

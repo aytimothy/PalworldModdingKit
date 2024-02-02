@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReplicationGraph.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=ReplicationGraph -ObjectName=ReplicationGraphNode -FallbackName=ReplicationGraphNode
 #include "PalReplicationGraphNode_PlayerStateFrequencyLimiter.generated.h"
 
 UCLASS(Blueprintable, NonTransient)
@@ -8,5 +8,6 @@ class UPalReplicationGraphNode_PlayerStateFrequencyLimiter : public UReplication
     GENERATED_BODY()
 public:
     UPalReplicationGraphNode_PlayerStateFrequencyLimiter();
+
 };
 

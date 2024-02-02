@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "PalInstanceID.h"
 #include "PalMapObjectConcreteModelBase.h"
 #include "Templates/SubclassOf.h"
@@ -33,8 +33,9 @@ private:
     
 public:
     UPalMapObjectDisplayCharacterModel();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void TryMoveToDisplayCage(UPalIndividualCharacterSlot* fromSlot);
     

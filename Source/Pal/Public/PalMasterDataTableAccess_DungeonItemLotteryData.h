@@ -8,5 +8,6 @@ class UPalMasterDataTableAccess_DungeonItemLotteryData : public UPalMasterDataTa
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_DungeonItemLotteryData();
+
 };
 

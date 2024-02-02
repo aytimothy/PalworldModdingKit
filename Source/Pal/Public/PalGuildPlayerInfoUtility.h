@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalGuildPlayerInfo.h"
 #include "PalGuildPlayerInfoUtility.generated.h"
 
@@ -9,6 +9,7 @@ class UPalGuildPlayerInfoUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalGuildPlayerInfoUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool IsValid(const FPalGuildPlayerInfo& PlayerInfo);
     

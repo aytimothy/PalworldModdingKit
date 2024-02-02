@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EMovementMode -FallbackName=EMovementMode
 #include "EPalCharacterMovementCustomMode.h"
 #include "EPalPlayerEquipItemSlotType.h"
 #include "PalDataTableRowName_SoundID.h"
@@ -48,9 +48,10 @@ private:
     bool bIsGliding;
     
 public:
-    UPalGliderComponent();
+    UPalGliderComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalIndividualCharacterHandle* TryGetGliderIndividualHandleFromOtomoHolder() const;
     

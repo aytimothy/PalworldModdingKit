@@ -25,6 +25,7 @@ protected:
     
 public:
     UPalIncidentList();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnIncidentProgressed(UPalIncidentBase* PrevIncident, UPalIncidentBase* NextIncident, int32 ProcessCount);
     

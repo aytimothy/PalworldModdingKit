@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalBiomeDetectComponent.generated.h"
 
 class AActor;
@@ -15,7 +15,8 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnChangedBiomeDelegate OnChangedBiome;
     
-    UPalBiomeDetectComponent();
+    UPalBiomeDetectComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void ChangeBiome(APalBiomeAreaTriggerBase* BiomeTriggerActor);
     

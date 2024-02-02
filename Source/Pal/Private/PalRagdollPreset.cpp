@@ -5,3 +5,4 @@ UPalRagdollPreset::UPalRagdollPreset() {
     this->AngularDamping = 0.10f;
 }
 
+

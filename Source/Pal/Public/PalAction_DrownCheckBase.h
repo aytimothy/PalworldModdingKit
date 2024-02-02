@@ -8,5 +8,6 @@ class UPalAction_DrownCheckBase : public UPalStatusBase {
     GENERATED_BODY()
 public:
     UPalAction_DrownCheckBase();
+
 };
 

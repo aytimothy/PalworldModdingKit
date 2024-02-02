@@ -5,3 +5,4 @@ UPalWaitInfoWorldHUDParameter::UPalWaitInfoWorldHUDParameter() {
     this->isWaiting = false;
 }
 
+

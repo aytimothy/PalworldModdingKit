@@ -8,5 +8,6 @@ class PAL_API UPalFadeWidgetBase : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalFadeWidgetBase();
+
 };
 

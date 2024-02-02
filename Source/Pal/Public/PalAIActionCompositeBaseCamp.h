@@ -15,6 +15,7 @@ protected:
     
 public:
     UPalAIActionCompositeBaseCamp();
+
     UFUNCTION(BlueprintCallable)
     void NotifyOrderCommand(const EPalMapBaseCampWorkerOrderType OrderType);
     

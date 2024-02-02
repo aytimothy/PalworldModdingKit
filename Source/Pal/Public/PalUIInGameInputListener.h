@@ -8,6 +8,7 @@ class UPalUIInGameInputListener : public UPalUserWidgetStackableUI {
     GENERATED_BODY()
 public:
     UPalUIInGameInputListener();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OpenBuildRadialMenuWithSelectedIndex(const int32 SelectedIndex);
     

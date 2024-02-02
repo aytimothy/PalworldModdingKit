@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalEventNotifyBase.h"
 #include "PalEventNotifyCharacterInvasionDelegateDelegate.h"
 #include "PalEventNotify_Area.generated.h"
@@ -21,6 +21,7 @@ public:
     FPalEventNotifyCharacterInvasionDelegate OnNotifyEventEndInvasionInServer;
     
     UPalEventNotify_Area();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnRegiterdArea_ServerInternal(APalTriggerAreaBase* TriggerBase);

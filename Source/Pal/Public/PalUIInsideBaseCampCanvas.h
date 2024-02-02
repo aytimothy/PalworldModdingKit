@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalBaseCampTaskCheckedData.h"
 #include "PalBaseCampTaskDataSet.h"
 #include "PalDataTableRowName_ItemData.h"
@@ -49,6 +49,7 @@ protected:
     
 public:
     UPalUIInsideBaseCampCanvas();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void UnregisterTaskProgressEvent(const UPalBaseCampModel* Model);

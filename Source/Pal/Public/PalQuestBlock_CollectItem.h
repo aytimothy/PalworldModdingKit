@@ -8,5 +8,6 @@ class PAL_API UPalQuestBlock_CollectItem : public UPalQuestBlock {
     GENERATED_BODY()
 public:
     UPalQuestBlock_CollectItem();
+
 };
 

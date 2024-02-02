@@ -13,5 +13,6 @@ public:
     UPalMapObjectEnergyModule* EnergyModule;
     
     UPalHUDDispatchParameter_MapObjectEnergyModule();
+
 };
 

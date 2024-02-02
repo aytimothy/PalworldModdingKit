@@ -4,3 +4,4 @@ UPalMapObjectModelInitializeExtraParameterDropItem::UPalMapObjectModelInitialize
     this->bAutoPickup = true;
 }
 
+

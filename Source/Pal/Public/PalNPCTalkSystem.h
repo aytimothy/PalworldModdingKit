@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalNPCTalkCustomFunctionResult.h"
 #include "EPalNPCTalkProceedResult.h"
 #include "PalNPCTalkData.h"
@@ -49,6 +49,7 @@ private:
     
 public:
     UPalNPCTalkSystem();
+
     UFUNCTION(BlueprintCallable)
     void SetCustomFunctionResult_Implementation(EPalNPCTalkCustomFunctionResult Result);
     
@@ -70,7 +71,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void AddArgument_Implementation(const FString& Key, const FText& Text);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

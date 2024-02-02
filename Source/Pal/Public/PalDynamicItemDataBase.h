@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDynamicItemId.h"
 #include "PalDynamicItemDataBase.generated.h"
 
@@ -17,8 +17,9 @@ protected:
     
 public:
     UPalDynamicItemDataBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FName GetStaticId() const;
     

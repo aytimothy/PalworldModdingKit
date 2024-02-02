@@ -10,6 +10,7 @@ class UPalUIRecoverPalStatusIndicatorParameter : public UPalUIMapObjectStatusInd
     GENERATED_BODY()
 public:
     UPalUIRecoverPalStatusIndicatorParameter();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetConcreteModel(UPalMapObjectRecoverOtomoModel*& ConcreteModel) const;
     

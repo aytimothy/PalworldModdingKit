@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ProceduralFoliageComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Foliage -ObjectName=ProceduralFoliageComponent -FallbackName=ProceduralFoliageComponent
 #include "PalProceduralFoliageComponent.generated.h"
 
 class UShapeComponent;
@@ -14,6 +14,7 @@ private:
     UShapeComponent* SpawningShape;
     
 public:
-    UPalProceduralFoliageComponent();
+    UPalProceduralFoliageComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

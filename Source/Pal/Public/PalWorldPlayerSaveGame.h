@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/SaveGame.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=DateTime -FallbackName=DateTime
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SaveGame -FallbackName=SaveGame
 #include "PalWorldPlayerSaveData.h"
 #include "PalWorldPlayerSaveGame.generated.h"
 
@@ -19,5 +19,6 @@ public:
     FPalWorldPlayerSaveData SaveData;
     
     UPalWorldPlayerSaveGame();
+
 };
 

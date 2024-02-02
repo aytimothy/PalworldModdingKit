@@ -17,5 +17,6 @@ public:
     EPalWorkerRadialMenuResult ResultType;
     
     UPalHUDDispatchParameter_WorkerRadialMenu();
+
 };
 

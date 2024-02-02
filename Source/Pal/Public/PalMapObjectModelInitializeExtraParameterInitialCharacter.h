@@ -12,5 +12,6 @@ public:
     FPalIndividualCharacterSaveParameter CharacterSaveParameter;
     
     UPalMapObjectModelInitializeExtraParameterInitialCharacter();
+
 };
 

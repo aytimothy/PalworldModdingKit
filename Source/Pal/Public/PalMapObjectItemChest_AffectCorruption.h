@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectItemChest_AffectCorruption : public UPalMapObjectItem
     GENERATED_BODY()
 public:
     UPalMapObjectItemChest_AffectCorruption();
+
 };
 

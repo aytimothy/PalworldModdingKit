@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalCharacter.h"
 #include "PalDeadInfo.h"
 #include "PalInstanceID.h"
@@ -26,9 +26,10 @@ private:
     FPalInstanceID OwnerCharacterId;
     
 public:
-    APalFunnelCharacter();
+    APalFunnelCharacter(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void SetOwnerCharacterId(const FPalInstanceID NewOwnerCharacterId);
     

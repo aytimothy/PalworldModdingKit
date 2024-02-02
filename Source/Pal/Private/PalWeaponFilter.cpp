@@ -8,3 +8,4 @@ UPalWeaponFilter::UPalWeaponFilter() {
     this->Attacker = NULL;
 }
 
+

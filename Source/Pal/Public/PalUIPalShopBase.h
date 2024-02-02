@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalUserWidgetOverlayUI.h"
 #include "PalUIPalShopBase.generated.h"
 
@@ -13,6 +13,7 @@ class PAL_API UPalUIPalShopBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIPalShopBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void UpdateLocalLostPalProduct();

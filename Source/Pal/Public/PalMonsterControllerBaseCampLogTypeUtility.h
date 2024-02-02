@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalMonsterControllerBaseCampLogTypeUtility.generated.h"
 
 UCLASS(Blueprintable)
@@ -8,5 +8,6 @@ class UPalMonsterControllerBaseCampLogTypeUtility : public UBlueprintFunctionLib
     GENERATED_BODY()
 public:
     UPalMonsterControllerBaseCampLogTypeUtility();
+
 };
 

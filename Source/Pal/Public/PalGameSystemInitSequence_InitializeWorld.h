@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_InitializeWorld : public UPalGameSystemInitSequ
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_InitializeWorld();
+
 };
 

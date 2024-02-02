@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalBuildObjectMaterialArray.h"
 #include "PalBuildObjectVisualControlComponent.generated.h"
 
@@ -24,6 +24,7 @@ private:
     UNiagaraComponent* DamageNiagaraComp;
     
 public:
-    UPalBuildObjectVisualControlComponent();
+    UPalBuildObjectVisualControlComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

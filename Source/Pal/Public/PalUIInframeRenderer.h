@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "Templates/SubclassOf.h"
 #include "PalUIInframeRenderer.generated.h"
 
@@ -11,7 +11,8 @@ UCLASS(Blueprintable)
 class PAL_API APalUIInframeRenderer : public AActor {
     GENERATED_BODY()
 public:
-    APalUIInframeRenderer();
+    APalUIInframeRenderer(const FObjectInitializer& ObjectInitializer);
+
 protected:
     UFUNCTION(BlueprintCallable)
     UPalStaticCharacterParameterComponent* GetStaticParameteComponentFromActorClassr(const TSubclassOf<AActor>& TargetActorClass);

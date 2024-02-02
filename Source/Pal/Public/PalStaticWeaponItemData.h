@@ -22,6 +22,7 @@ protected:
     
 public:
     UPalStaticWeaponItemData();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetWeaponDefense() const;
     

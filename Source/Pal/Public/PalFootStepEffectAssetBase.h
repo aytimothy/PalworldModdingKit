@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "Chaos/ChaosEngineInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=PhysicsCore -ObjectName=EPhysicalSurface -FallbackName=EPhysicalSurface
 #include "EPalLandingType.h"
 #include "FootStepEffectInfo.h"
 #include "PalFootStepEffectAssetBase.generated.h"
@@ -18,6 +18,7 @@ protected:
     
 public:
     UPalFootStepEffectAssetBase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     TSoftObjectPtr<UNiagaraSystem> GetEffectObjectPtr(EPalLandingType LandingType, TEnumAsByte<EPhysicalSurface> PhysicalSurface) const;
     

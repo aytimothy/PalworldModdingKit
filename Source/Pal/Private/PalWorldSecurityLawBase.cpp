@@ -6,3 +6,4 @@ UPalWorldSecurityLawBase::UPalWorldSecurityLawBase() {
     this->bNotUseReleaseTimer = false;
 }
 
+

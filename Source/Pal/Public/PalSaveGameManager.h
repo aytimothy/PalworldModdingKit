@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "PalAsyncSaveProcessParallel.h"
 #include "PalWorldBaseInfoData.h"
 #include "PalSaveGameManager.generated.h"
@@ -94,6 +94,7 @@ private:
     
 public:
     UPalSaveGameManager();
+
     UFUNCTION(BlueprintCallable)
     void StartWorldDataAutoSave();
     

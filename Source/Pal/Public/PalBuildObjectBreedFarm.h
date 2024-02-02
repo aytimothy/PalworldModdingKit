@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ComponentReference -FallbackName=ComponentReference
 #include "PalBuildObject.h"
 #include "PalBuildObjectBreedFarm.generated.h"
 
@@ -16,6 +16,7 @@ protected:
     FComponentReference WalkAroundVolumeRef;
     
 public:
-    APalBuildObjectBreedFarm();
+    APalBuildObjectBreedFarm(const FObjectInitializer& ObjectInitializer);
+
 };
 

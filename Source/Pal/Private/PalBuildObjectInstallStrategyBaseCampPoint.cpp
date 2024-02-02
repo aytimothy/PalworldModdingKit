@@ -4,3 +4,4 @@ UPalBuildObjectInstallStrategyBaseCampPoint::UPalBuildObjectInstallStrategyBaseC
     this->TargetBuildObjectCache = NULL;
 }
 
+

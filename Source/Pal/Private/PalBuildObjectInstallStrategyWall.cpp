@@ -5,3 +5,4 @@ UPalBuildObjectInstallStrategyWall::UPalBuildObjectInstallStrategyWall() {
     this->HitBuildObjectCache = NULL;
 }
 
+

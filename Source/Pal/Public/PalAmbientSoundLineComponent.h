@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/BoxComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
 #include "PalAmbientSoundLineComponent.generated.h"
 
 class UAkAudioEvent;
@@ -25,6 +25,7 @@ private:
     UAkComponent* AkComponent;
     
 public:
-    UPalAmbientSoundLineComponent();
+    UPalAmbientSoundLineComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

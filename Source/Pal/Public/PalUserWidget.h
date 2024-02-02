@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineBaseTypes.h"
-#include "Components/SlateWrapperTypes.h"
-#include "Blueprint/UserWidget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EInputEvent -FallbackName=EInputEvent
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=OnInputAction__DelegateSignature -FallbackName=OnInputActionDelegate
 #include "PalActivatableWidget.h"
 #include "PalUIActionBindData.h"
 #include "Templates/SubclassOf.h"
@@ -30,6 +30,7 @@ protected:
     
 public:
     UPalUserWidget();
+
     UFUNCTION(BlueprintCallable)
     void VisibilityOverride(ESlateVisibility changedVisibility);
     

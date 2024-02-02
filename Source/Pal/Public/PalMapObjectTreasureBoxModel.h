@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalMapObjectTreasureGradeType.h"
 #include "PalItemAndNum.h"
 #include "PalMapObjectConcreteModelBase.h"
@@ -23,8 +23,9 @@ private:
     
 public:
     UPalMapObjectTreasureBoxModel();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestOpen_ServerInternal(const int32 RequestPlayerId);

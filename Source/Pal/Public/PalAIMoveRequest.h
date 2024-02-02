@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AITypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIMoveRequest -FallbackName=AIMoveRequest
 #include "PalAIMoveRequest.generated.h"
 
 USTRUCT(BlueprintType)

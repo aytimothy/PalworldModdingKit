@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalAIActionBaseCampSleepActivelyMode.h"
 #include "PalAIActionBaseCampBase.h"
 #include "PalAIActionBaseCampSleepActivelyParameter.h"
@@ -20,10 +20,11 @@ private:
     
 public:
     UPalAIActionBaseCampSleepActively();
+
     UFUNCTION(BlueprintCallable)
     void SetParameter(const FPalAIActionBaseCampSleepActivelyParameter& Parameter);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

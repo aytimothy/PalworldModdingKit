@@ -8,5 +8,6 @@ class UPalLocationPointCreateParameter_DungeonPortal : public UPalLocationPointS
     GENERATED_BODY()
 public:
     UPalLocationPointCreateParameter_DungeonPortal();
+
 };
 

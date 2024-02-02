@@ -15,6 +15,7 @@ public:
     FPalMapObjectDamageWithLastDelegate OnDamageInServerDelegate;
     
     UPalMapObjectStatusObserverModule();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnDamage_ServerInternal(UPalMapObjectModel* Model, const FPalDamageInfo& DamageInfo, const int32 LastHp);

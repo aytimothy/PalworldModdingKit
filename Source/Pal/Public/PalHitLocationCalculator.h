@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalHitLocationCalculator.generated.h"
 
 class UPrimitiveComponent;
@@ -11,6 +11,7 @@ class UPalHitLocationCalculator : public UObject {
     GENERATED_BODY()
 public:
     UPalHitLocationCalculator();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     FVector CalcLocation(UPrimitiveComponent* MyHitComponent, UPrimitiveComponent* OtherHitComponent);
     

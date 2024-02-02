@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalUserWidgetOverlayUI.h"
 #include "PalUIItemShopBase.generated.h"
 
@@ -12,6 +12,7 @@ class PAL_API UPalUIItemShopBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIItemShopBase();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TrySteal(const FGuid& buyProductID, const int32 stealNum);

@@ -8,5 +8,6 @@ class PAL_API UPalWorldSecurityLawTrigger : public UPalWorldSecurityLawBase {
     GENERATED_BODY()
 public:
     UPalWorldSecurityLawTrigger();
+
 };
 

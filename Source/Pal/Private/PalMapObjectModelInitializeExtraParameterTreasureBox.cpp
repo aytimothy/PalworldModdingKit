@@ -4,3 +4,4 @@ UPalMapObjectModelInitializeExtraParameterTreasureBox::UPalMapObjectModelInitial
     this->GradeType = EPalMapObjectTreasureGradeType::Grade1;
 }
 
+

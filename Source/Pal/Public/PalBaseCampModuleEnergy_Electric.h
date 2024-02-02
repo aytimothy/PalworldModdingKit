@@ -8,5 +8,6 @@ class UPalBaseCampModuleEnergy_Electric : public UPalBaseCampModuleEnergy_Functi
     GENERATED_BODY()
 public:
     UPalBaseCampModuleEnergy_Electric();
+
 };
 

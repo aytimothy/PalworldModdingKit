@@ -8,5 +8,6 @@ class PAL_API UPalBuildObjectInstallStrategyAttachToObjectBase : public UPalBuil
     GENERATED_BODY()
 public:
     UPalBuildObjectInstallStrategyAttachToObjectBase();
+
 };
 

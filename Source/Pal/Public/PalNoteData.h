@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalNoteData.generated.h"
 
 class UTexture2D;
@@ -16,5 +16,6 @@ public:
     TSoftObjectPtr<UTexture2D> Texture;
     
     UPalNoteData();
+
 };
 

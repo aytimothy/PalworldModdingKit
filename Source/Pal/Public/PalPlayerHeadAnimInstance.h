@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Animation/AnimInstance.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimInstance -FallbackName=AnimInstance
 #include "PalPlayerHeadAnimInstance.generated.h"
 
 class USkeletalMesh;
@@ -19,6 +19,7 @@ protected:
     
 public:
     UPalPlayerHeadAnimInstance();
+
     UFUNCTION(BlueprintCallable)
     void SetPlayerEyeLocation(USkeletalMesh* HeadMesh);
     

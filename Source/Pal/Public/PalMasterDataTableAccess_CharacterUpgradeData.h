@@ -8,6 +8,7 @@ class UPalMasterDataTableAccess_CharacterUpgradeData : public UPalMasterDataTabl
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_CharacterUpgradeData();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetMaxRank();
     

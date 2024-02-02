@@ -8,6 +8,7 @@ class UPalMapObjectTestGlobalContainerModel : public UPalMapObjectConcreteModelB
     GENERATED_BODY()
 public:
     UPalMapObjectTestGlobalContainerModel();
+
     UFUNCTION(BlueprintCallable, BlueprintPure=false)
     void WatchContainer() const;
     

@@ -1,5 +1,13 @@
 #include "PalBuilderComponent.h"
 
+UPalBuilderComponent::UPalBuilderComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->InstallDistanceNormalFromOwner = 100.00f;
+    this->InstallableRange = 1000.00f;
+    this->OwnerCamera = NULL;
+    this->InstallChecker = NULL;
+    this->DismantleChecker = NULL;
+}
+
 void UPalBuilderComponent::RequestBuild_ToServer_Implementation(const FName BuildObjectId, const FVector& Location, const FQuat& Rotation, const TArray<FPalNetArchive>& ExtraParameterArchives, FPalBuildRequestDebugParameter DebugParameter) {
 }
 
@@ -32,6 +40,9 @@ EPalMapObjectOperationResult UPalBuilderComponent::IsEnableBuild() const {
     return EPalMapObjectOperationResult::None;
 }
 
+void UPalBuilderComponent::GetSelectedBuildObjectId(FName& OutSelectedBuildObjectId) const {
+}
+
 APalBuildObject* UPalBuilderComponent::GetDismantleTargetObject() {
     return NULL;
 }
@@ -39,11 +50,4 @@ APalBuildObject* UPalBuilderComponent::GetDismantleTargetObject() {
 void UPalBuilderComponent::CollectItemInfoEnableToUseMaterial(TArray<FName> StaticItemIds, TArray<FPalStaticItemIdAndNum>& OutItemInfos) const {
 }
 
-UPalBuilderComponent::UPalBuilderComponent() {
-    this->InstallDistanceNormalFromOwner = 100.00f;
-    this->InstallableRange = 1000.00f;
-    this->OwnerCamera = NULL;
-    this->InstallChecker = NULL;
-    this->DismantleChecker = NULL;
-}
 

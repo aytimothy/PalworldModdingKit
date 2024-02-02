@@ -10,11 +10,12 @@ class PAL_API UPalAIActionBaseCampFighterChildBase : public UPalAIActionBaseCamp
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPalAIActionBaseCampFighter> WeakParentFighterActionCache;
     
 public:
     UPalAIActionBaseCampFighterChildBase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalAIActionBaseCampFighter* GetParentFighterAction();
     

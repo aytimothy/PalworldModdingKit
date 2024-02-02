@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalVisualEffectID.h"
 #include "PalVisualEffectDynamicParameter.h"
 #include "PalVisualEffectComponent.generated.h"
@@ -39,7 +39,8 @@ private:
     TArray<UPalVisualEffectBase*> TerminatingVisualEffects;
     
 public:
-    UPalVisualEffectComponent();
+    UPalVisualEffectComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     static void RemoveVisualEffectForActor_Local(AActor* Actor, EPalVisualEffectID VisualEffectID);
     

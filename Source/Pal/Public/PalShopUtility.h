@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalIndividualCharacterSaveParameter.h"
 #include "PalItemShopCreateDataRow.h"
 #include "PalItemSlotIdAndNum.h"
@@ -16,6 +16,7 @@ class PAL_API UPalShopUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalShopUtility();
+
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void LotteryItemShop(const UObject* WorldContextObject, const FName& ItemShopLotteryName, FName& OutShopName);
     

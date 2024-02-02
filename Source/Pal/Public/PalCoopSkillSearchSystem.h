@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalCoopSkillSearchEffectParameter.h"
 #include "Templates/SubclassOf.h"
 #include "PalCoopSkillSearchSystem.generated.h"
@@ -28,6 +28,7 @@ private:
     
 public:
     UPalCoopSkillSearchSystem();
+
     UFUNCTION(BlueprintCallable)
     void StartSearchEffect(const FPalCoopSkillSearchEffectParameter& EffectParam);
     

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalInteractiveObjectIndicatorType.h"
 #include "PalInteractiveObjectIndicatorInterface.h"
 #include "PalLevelObjectActor.h"
@@ -33,7 +33,8 @@ protected:
     bool bPickedInClient;
     
 public:
-    APalLevelObjectObtainable();
+    APalLevelObjectObtainable(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateFlagMapRecord(const FName Key, const bool bFlag);
@@ -48,7 +49,7 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     FVector GetObtainFXLocation() const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

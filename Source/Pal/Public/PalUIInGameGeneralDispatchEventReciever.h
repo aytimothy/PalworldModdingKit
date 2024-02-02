@@ -8,6 +8,7 @@ class UPalUIInGameGeneralDispatchEventReciever : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUIInGameGeneralDispatchEventReciever();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OpenDismantlingUIFromRadialMenu(const int32 LastSelectedIndex);
     

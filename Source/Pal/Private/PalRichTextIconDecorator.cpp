@@ -4,3 +4,4 @@ UPalRichTextIconDecorator::UPalRichTextIconDecorator() : URichTextBlockImageDeco
     this->ControlKeyIconData = NULL;
 }
 
+

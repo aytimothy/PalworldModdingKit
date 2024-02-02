@@ -5,3 +5,4 @@ UPalTutorialTrigger_Capture::UPalTutorialTrigger_Capture() {
     this->TriggerCount = 0;
 }
 
+

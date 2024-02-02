@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "PalAIActionBase.h"
 #include "PalAIActionBaseCampSpawningForWorker.generated.h"
 
@@ -14,6 +14,7 @@ public:
     FSimpleMulticastDelegate OnLandedWorldStaticDelegate;
     
     UPalAIActionBaseCampSpawningForWorker();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnLanded(const FHitResult& Hit);

@@ -4,3 +4,4 @@ UPalMapObjectModelEffectGrantParameterBase::UPalMapObjectModelEffectGrantParamet
     this->OwnerModel = NULL;
 }
 
+

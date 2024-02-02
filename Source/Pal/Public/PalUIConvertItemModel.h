@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalUIConvertItemRequestStartResponse.h"
 #include "PalUIConvertItemModel.generated.h"
 
@@ -15,11 +15,12 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UPalUIProductSettingModel* ProductSettingModel;
     
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPalMapObjectConvertItemModel> WeakConvertItemModel;
     
 public:
     UPalUIConvertItemModel();
+
     UFUNCTION(BlueprintCallable)
     void UpdateProductSetting_TransportToStorage(const bool bOn);
     

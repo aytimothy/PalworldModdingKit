@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "Templates/SubclassOf.h"
 #include "PalHitFilter.generated.h"
 
@@ -41,6 +41,7 @@ public:
     FOverlapEndDelegate OnOverlapEndDelegate;
     
     UPalHitFilter();
+
     UFUNCTION(BlueprintCallable)
     void UnbindPrimitiveComponent(UPrimitiveComponent* Component);
     

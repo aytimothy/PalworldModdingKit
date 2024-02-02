@@ -3,3 +3,4 @@
 UPalMapObjectCharacterStatusOperatorModel::UPalMapObjectCharacterStatusOperatorModel() {
 }
 
+

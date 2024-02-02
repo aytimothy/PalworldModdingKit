@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineBaseTypes.h"
-#include "Blueprint/UserWidget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EInputEvent -FallbackName=EInputEvent
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=OnInputAction__DelegateSignature -FallbackName=OnInputActionDelegate
 #include "PalUIActionBindData.h"
 #include "PalUserWidgetStackableUI.h"
 #include "PalUserWidgetOverlayUI.generated.h"
@@ -23,6 +23,7 @@ private:
     
 public:
     UPalUserWidgetOverlayUI();
+
     UFUNCTION(BlueprintCallable)
     void ResetCancelAction();
     

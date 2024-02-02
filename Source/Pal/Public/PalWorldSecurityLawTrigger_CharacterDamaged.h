@@ -11,6 +11,7 @@ class PAL_API UPalWorldSecurityLawTrigger_CharacterDamaged : public UPalWorldSec
     GENERATED_BODY()
 public:
     UPalWorldSecurityLawTrigger_CharacterDamaged();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnNotifiedEvent(const FPalDamageResult& DamageResult);

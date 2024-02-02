@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectModelEffectGrantParameter_Burn : public UPalMapObject
     GENERATED_BODY()
 public:
     UPalMapObjectModelEffectGrantParameter_Burn();
+
 };
 

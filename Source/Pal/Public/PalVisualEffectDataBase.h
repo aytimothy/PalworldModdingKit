@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalVisualEffectID.h"
 #include "Templates/SubclassOf.h"
 #include "PalVisualEffectDataBase.generated.h"
@@ -25,6 +25,7 @@ private:
     
 public:
     UPalVisualEffectDataBase();
+
     UFUNCTION(BlueprintCallable)
     FName GetMosaicKeyName();
     

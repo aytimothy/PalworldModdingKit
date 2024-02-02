@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "FixedPoint.h"
 #include "FixedPointMathLibrary.generated.h"
 
@@ -9,6 +9,7 @@ class UFixedPointMathLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UFixedPointMathLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FFixedPoint Subtract_FixedPointInteger(FFixedPoint A, int32 B);
     

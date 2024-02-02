@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_StartAutoSave_WorldAndLocal : public UPalGameSy
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_StartAutoSave_WorldAndLocal();
+
 };
 

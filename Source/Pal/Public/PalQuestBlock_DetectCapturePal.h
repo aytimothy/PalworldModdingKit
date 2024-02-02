@@ -21,6 +21,7 @@ protected:
     
 public:
     UPalQuestBlock_DetectCapturePal();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnCapturedPal(const FPalUIPalCaptureInfo& CaptureInfo);

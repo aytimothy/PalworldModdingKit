@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/GameStateComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=ModularGameplay -ObjectName=GameStateComponent -FallbackName=GameStateComponent
 #include "PalGameSystemInitSequenceSet.h"
 #include "PalGameSystemInitManagerComponent.generated.h"
 
@@ -18,7 +18,8 @@ private:
     int32 CurrentSequenceIndex;
     
 public:
-    UPalGameSystemInitManagerComponent();
+    UPalGameSystemInitManagerComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnChangeProcessState(UPalGameSystemInitProcessHandle* ChangedProcessHandle);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotifyState.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyState -FallbackName=AnimNotifyState
 #include "EPalShooterFlagContainerPriority.h"
 #include "PalAnimNotifyState_WeaponControl.generated.h"
 
@@ -27,5 +27,6 @@ public:
     EPalShooterFlagContainerPriority Priority;
     
     UPalAnimNotifyState_WeaponControl();
+
 };
 

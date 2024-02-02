@@ -13,5 +13,6 @@ public:
     APalMapObject* MapObject;
     
     UPalMapObjectHPWorldHUDParameter();
+
 };
 

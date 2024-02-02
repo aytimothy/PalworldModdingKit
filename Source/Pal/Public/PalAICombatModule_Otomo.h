@@ -8,5 +8,6 @@ class PAL_API UPalAICombatModule_Otomo : public UPalAICombatModule {
     GENERATED_BODY()
 public:
     UPalAICombatModule_Otomo();
+
 };
 

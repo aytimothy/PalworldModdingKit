@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "EPalTutorialTriggerType.h"
 #include "PalTutorialTriggerBase.generated.h"
 
@@ -19,6 +19,7 @@ public:
     FDataTableRowHandle TutorialMsgID;
     
     UPalTutorialTriggerBase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     EPalTutorialTriggerType GetType() const;
     

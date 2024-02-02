@@ -8,6 +8,7 @@ class PAL_API UPalUIInputGuard : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUIInputGuard();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnTriggerReleaseGuardInput();

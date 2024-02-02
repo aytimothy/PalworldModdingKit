@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "EPalFootType.h"
 #include "FootIKSetting.h"
 #include "PalFootIKComponent.generated.h"
@@ -30,7 +30,8 @@ protected:
     TMap<EPalFootType, FHitResult> FootGroundResult;
     
 public:
-    UPalFootIKComponent();
+    UPalFootIKComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetFootIKDisable(FName flagName, bool bIsDisable);
     

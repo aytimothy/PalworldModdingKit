@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalBotBuilderLocationBase.generated.h"
 
 UCLASS(Blueprintable)
@@ -15,6 +15,7 @@ private:
     bool bIsBuilded;
     
 public:
-    APalBotBuilderLocationBase();
+    APalBotBuilderLocationBase(const FObjectInitializer& ObjectInitializer);
+
 };
 

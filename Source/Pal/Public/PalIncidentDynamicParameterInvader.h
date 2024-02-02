@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalIncidentDynamicParameter.h"
 #include "PalIncidentDynamicParameterInvader.generated.h"
 
@@ -12,5 +12,6 @@ public:
     FGuid TargetBaseCampId;
     
     UPalIncidentDynamicParameterInvader();
+
 };
 

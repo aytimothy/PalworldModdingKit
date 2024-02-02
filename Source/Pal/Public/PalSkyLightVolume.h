@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalSkyLightVolume.generated.h"
 
 class USkyLightComponent;
@@ -22,9 +22,10 @@ private:
     bool bDisableEnabledFlag;
     
 public:
-    APalSkyLightVolume();
+    APalSkyLightVolume(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void OnRep_bEnabled();
     

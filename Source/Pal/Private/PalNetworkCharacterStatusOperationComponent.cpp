@@ -1,5 +1,8 @@
 #include "PalNetworkCharacterStatusOperationComponent.h"
 
+UPalNetworkCharacterStatusOperationComponent::UPalNetworkCharacterStatusOperationComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+}
+
 void UPalNetworkCharacterStatusOperationComponent::RequestReviveCharacterFromDying_ToServer_Implementation(APalCharacter* Character) {
 }
 
@@ -43,6 +46,4 @@ UPalNetworkCharacterStatusOperationComponent* UPalNetworkCharacterStatusOperatio
     return NULL;
 }
 
-UPalNetworkCharacterStatusOperationComponent::UPalNetworkCharacterStatusOperationComponent() {
-}
 

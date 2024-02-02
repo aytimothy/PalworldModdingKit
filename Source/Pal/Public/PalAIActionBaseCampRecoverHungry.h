@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalAIActionBaseCampBase.h"
 #include "PalAIActionWorkerInterruptInterface.h"
 #include "PalMonsterControllerBaseCampHungryParameter.h"
@@ -29,13 +29,14 @@ protected:
     
 public:
     UPalAIActionBaseCampRecoverHungry();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ChangeActionEat();
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ChangeActionApproach();
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

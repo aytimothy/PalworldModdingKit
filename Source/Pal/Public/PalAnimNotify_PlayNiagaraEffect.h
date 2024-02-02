@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AnimNotify_PlayNiagaraEffect.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=NiagaraAnimNotifies -ObjectName=AnimNotify_PlayNiagaraEffect -FallbackName=AnimNotify_PlayNiagaraEffect
 #include "PalAnimNotify_PlayNiagaraEffect.generated.h"
 
 UCLASS(Blueprintable, CollapseCategories)
@@ -13,5 +13,6 @@ protected:
     
 public:
     UPalAnimNotify_PlayNiagaraEffect();
+
 };
 

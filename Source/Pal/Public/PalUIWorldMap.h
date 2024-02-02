@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalWorldMapType.h"
 #include "PalUserWidgetOverlayUI.h"
 #include "PalUIWorldMap.generated.h"
@@ -10,6 +10,7 @@ class PAL_API UPalUIWorldMap : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIWorldMap();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void RegisterRespawnLocation(const FVector& RespawnLocation);

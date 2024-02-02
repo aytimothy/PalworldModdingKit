@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/GameInstance.h"
-#include "FindSessionsCallbackProxy.h"
-#include "JoinSessionResultType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=GameInstance -FallbackName=GameInstance
+//CROSS-MODULE INCLUDE V2: -ModuleName=OnlineSubsystemUtils -ObjectName=BlueprintSessionResult -FallbackName=BlueprintSessionResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=PocketpairUser -ObjectName=JoinSessionResultType -FallbackName=JoinSessionResultType
 #include "PalOptionWorldSettings.h"
 #include "PalPlayerDataCharacterMakeInfo.h"
 #include "Templates/SubclassOf.h"
@@ -53,7 +53,7 @@ class UPalWazaDatabase;
 class UPalWorkProgressManager;
 class UPalWorldSecuritySystem;
 
-UCLASS(Blueprintable, NonTransient)
+UCLASS(Blueprintable, NonTransient, Config=Engine)
 class PAL_API UPalGameInstance : public UGameInstance {
     GENERATED_BODY()
 public:
@@ -301,6 +301,7 @@ private:
     
 public:
     UPalGameInstance();
+
     UFUNCTION(BlueprintCallable)
     void ShowUIMultiplayRestriction(bool bOverrideChecking);
     

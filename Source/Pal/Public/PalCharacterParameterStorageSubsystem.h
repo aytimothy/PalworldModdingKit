@@ -6,10 +6,6 @@
 #include "PalWorldSubsystem.h"
 #include "PalCharacterParameterStorageSubsystem.generated.h"
 
-// todo: they probably have some parameters
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FStoredParameterDelegate);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FRemovedParameterDelegate);
-
 UCLASS(Blueprintable)
 class PAL_API UPalCharacterParameterStorageSubsystem : public UPalWorldSubsystem, public IPalGameWorldDataSaveInterface {
     GENERATED_BODY()
@@ -26,7 +22,8 @@ private:
     
 public:
     UPalCharacterParameterStorageSubsystem();
-    
+
+
     // Fix for true pure virtual functions not being implemented
 };
 

@@ -19,6 +19,7 @@ protected:
     
 public:
     UPalActionTransportItem();
+
     UFUNCTION(BlueprintCallable)
     static void WriteBlackboard(UPARAM(Ref) FPalNetArchive& BlackboardRef, const FName StaticItemId);
     

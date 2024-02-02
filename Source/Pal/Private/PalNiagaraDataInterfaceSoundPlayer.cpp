@@ -5,3 +5,4 @@ UPalNiagaraDataInterfaceSoundPlayer::UPalNiagaraDataInterfaceSoundPlayer() {
     this->FadeOutDuration = 0.10f;
 }
 
+

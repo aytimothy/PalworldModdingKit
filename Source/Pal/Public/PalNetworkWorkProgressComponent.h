@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalWorkRequestResult.h"
 #include "PalNetArchive.h"
 #include "PalNetworkWorkProgressComponent.generated.h"
@@ -10,7 +10,8 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPalNetworkWorkProgressComponent : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalNetworkWorkProgressComponent();
+    UPalNetworkWorkProgressComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestStartPlayerWork_ToServer(const FGuid& RequestID, const FGuid& WorkProgressId);

@@ -14,6 +14,7 @@ private:
     
 public:
     UPalCommonQuestRewardGiver();
+
     UFUNCTION(BlueprintCallable)
     void SetCommonRewardData(FPalCommonQuestRewardData InRewardList);
     

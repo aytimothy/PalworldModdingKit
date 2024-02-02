@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalStaticLogCollector.generated.h"
 
 class UPalLogManager;
@@ -20,6 +20,7 @@ private:
     
 public:
     UPalStaticLogCollector();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void RegisterLogCollectEvent_BP();
     

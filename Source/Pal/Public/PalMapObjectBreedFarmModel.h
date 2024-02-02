@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalItemOperationResult.h"
 #include "PalInstanceID.h"
 #include "PalItemSlotIdAndNum.h"
@@ -39,8 +39,9 @@ private:
     
 public:
     UPalMapObjectBreedFarmModel();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateAssignedCharacter(UPalWorkBase* Work);

@@ -15,5 +15,6 @@ private:
     
 public:
     UPalWorldObjectRecord_MapObjectSpawnerInStage();
+
 };
 

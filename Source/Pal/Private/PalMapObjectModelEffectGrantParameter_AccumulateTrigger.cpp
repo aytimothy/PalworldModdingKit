@@ -4,3 +4,4 @@ UPalMapObjectModelEffectGrantParameter_AccumulateTrigger::UPalMapObjectModelEffe
     this->Value = 0.00f;
 }
 
+

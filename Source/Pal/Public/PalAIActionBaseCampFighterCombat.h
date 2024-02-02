@@ -8,5 +8,6 @@ class PAL_API UPalAIActionBaseCampFighterCombat : public UPalAIActionCombatBase 
     GENERATED_BODY()
 public:
     UPalAIActionBaseCampFighterCombat();
+
 };
 

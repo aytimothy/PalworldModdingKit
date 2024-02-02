@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalFunnelCharacterManagementInfo.h"
 #include "PalInstanceID.h"
 #include "PalWorldSubsystem.h"
@@ -23,6 +23,7 @@ private:
     
 public:
     UPalFunnelCharacterManager();
+
 private:
     UFUNCTION(BlueprintCallable)
     void SpawnActorCallback(const FGuid& Guid, AActor* Actor);

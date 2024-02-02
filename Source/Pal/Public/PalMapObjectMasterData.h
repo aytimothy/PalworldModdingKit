@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TableRowBase -FallbackName=TableRowBase
 #include "EPalMapObjectMaterialSubType.h"
 #include "EPalMapObjectMaterialType.h"
 #include "PalMapObjectMasterData.generated.h"

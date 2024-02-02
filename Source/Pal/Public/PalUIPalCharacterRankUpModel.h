@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalUIPalCharacterRankUpRequestResult.h"
 #include "EPalUIPalCharacterRankUpSelectMode.h"
 #include "EPalUIPalCharacterRankUpSelectResourceType.h"
@@ -47,6 +47,7 @@ protected:
     
 public:
     UPalUIPalCharacterRankUpModel();
+
     UFUNCTION(BlueprintCallable)
     bool ToggleResourceCharacter(UPalIndividualCharacterHandle* Handle);
     

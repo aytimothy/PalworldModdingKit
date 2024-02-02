@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/BoxComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
 #include "PalHeatSourceInfo.h"
 #include "PalTemperatureComponent.generated.h"
 
@@ -21,7 +21,8 @@ private:
     FName SelfKeyName;
     
 public:
-    UPalTemperatureComponent();
+    UPalTemperatureComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void RemoveHeatSource(FName UniqueName);
     

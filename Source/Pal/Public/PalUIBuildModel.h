@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalBuildObjectTypeA.h"
 #include "PalBuildObjectDataSetTypeB.h"
 #include "PalUIBuildModel.generated.h"
@@ -15,6 +15,7 @@ protected:
     
 public:
     UPalUIBuildModel();
+
     UFUNCTION(BlueprintCallable, BlueprintPure=false)
     void StartDismantleMode(const int32 LastSelectedIndex, bool bFromRadialMenu) const;
     

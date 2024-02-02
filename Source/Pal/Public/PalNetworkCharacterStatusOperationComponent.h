@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalCharacterStatusOperationName.h"
 #include "EPalCharacterStatusOperationResult.h"
 #include "PalCharacterStatusOperationResultDelegateDelegate.h"
@@ -19,7 +19,8 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPalCharacterStatusOperationResultDelegate OnReceiveRequestResultDelegate;
     
-    UPalNetworkCharacterStatusOperationComponent();
+    UPalNetworkCharacterStatusOperationComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestReviveCharacterFromDying_ToServer(APalCharacter* Character);

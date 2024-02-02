@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalAIResponseType.h"
 #include "EPalBiologicalGradeComparedResult.h"
 #include "FlagContainer.h"
@@ -58,7 +58,8 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FReceiveSoundDelegate OnFReceiveSoundDelegate;
     
-    UPalAISensorComponent();
+    UPalAISensorComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SightCheckAllPlayer(TArray<APalCharacter*>& InSightPlayers, float RangeRate);
     

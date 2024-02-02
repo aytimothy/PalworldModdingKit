@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AITypes.h"
-#include "Actions/PawnActionsComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EAIRequestPriority -FallbackName=EAIRequestPriority
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=PawnActionsComponent -FallbackName=PawnActionsComponent
 #include "EPalAIActionCategory.h"
 #include "EPalMovementSpeedType.h"
 #include "PalAIActionDynamicParameter.h"
@@ -22,7 +22,8 @@ private:
     TArray<UPalAIActionCompositeBase*> ActionCompositeRoots;
     
 public:
-    UPalAIActionComponent();
+    UPalAIActionComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void TerminateCurrentActionByClass(TSubclassOf<UPalAIActionBase> actionClass);
     

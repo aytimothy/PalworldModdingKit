@@ -4,3 +4,4 @@ UPalStaticItemDataManager::UPalStaticItemDataManager() {
     this->StaticItemDataAsset = NULL;
 }
 
+

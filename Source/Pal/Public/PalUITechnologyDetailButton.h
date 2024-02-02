@@ -8,5 +8,6 @@ class PAL_API UPalUITechnologyDetailButton : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUITechnologyDetailButton();
+
 };
 

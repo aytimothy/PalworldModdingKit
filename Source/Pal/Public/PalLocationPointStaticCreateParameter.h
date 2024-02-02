@@ -8,5 +8,6 @@ class UPalLocationPointStaticCreateParameter : public UPalLocationCreateParamete
     GENERATED_BODY()
 public:
     UPalLocationPointStaticCreateParameter();
+
 };
 

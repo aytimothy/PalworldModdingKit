@@ -1,15 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDynamicItemDisposeWaitNotifyInfo.h"
 #include "PalDynamicItemId.h"
 #include "PalDynamicItemDataManager.generated.h"
 
 class UPalDynamicItemDataBase;
-
-// todo: probably has some parameters
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FCreateItemDelegate);
 
 UCLASS(Blueprintable)
 class UPalDynamicItemDataManager : public UObject {
@@ -34,5 +31,6 @@ private:
     
 public:
     UPalDynamicItemDataManager();
+
 };
 

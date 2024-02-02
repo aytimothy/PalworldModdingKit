@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotify -FallbackName=AnimNotify
 #include "PalAnimNotify_RequestRideShakeAnimation.generated.h"
 
 class APalCharacter;
@@ -20,7 +20,7 @@ public:
     bool bIsAdjustAnimationSpeed;
     
 private:
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<APalCharacter> cacheCharacter;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
@@ -28,6 +28,7 @@ private:
     
 public:
     UPalAnimNotify_RequestRideShakeAnimation();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnStartAim() const;

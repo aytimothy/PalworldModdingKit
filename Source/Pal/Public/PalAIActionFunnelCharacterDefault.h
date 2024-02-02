@@ -11,6 +11,7 @@ class UPalAIActionFunnelCharacterDefault : public UPalAIActionCompositeBase {
     GENERATED_BODY()
 public:
     UPalAIActionFunnelCharacterDefault();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     bool ShouldSetSkillAction() const;

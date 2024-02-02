@@ -8,5 +8,6 @@ class UPalUIItemPossessStatusIndicator : public UPalUserWidgetWorldHUD {
     GENERATED_BODY()
 public:
     UPalUIItemPossessStatusIndicator();
+
 };
 

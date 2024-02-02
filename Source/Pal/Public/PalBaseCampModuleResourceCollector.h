@@ -1,13 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalBaseCampFunctionModuleBase.h"
 #include "PalBaseCampModuleResourceCollectWorkInfo.h"
 #include "PalMapObjectDisposeOptions.h"
 #include "PalBaseCampModuleResourceCollector.generated.h"
 
-class IPalMapObjectModelInterface;
-class UPalMapObjectModelInterface;
 class UPalFoliageInstance;
 class UPalMapObjectModel;
 
@@ -21,12 +19,13 @@ private:
     
 public:
     UPalBaseCampModuleResourceCollector();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnRegisteredMapObjectModel(UPalMapObjectModel* Model);
     
     UFUNCTION(BlueprintCallable)
-    void OnRegisteredFoliageModel(TScriptInterface<IPalMapObjectModelInterface> Model);
+    void OnRegisteredFoliageModel_ServerInternal(UPalFoliageInstance* Instance);
     
     UFUNCTION(BlueprintCallable)
     void OnDestroyedMapObjectModel(UPalMapObjectModel* Model, const FPalMapObjectDisposeOptions& Options);

@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_InitializeWorldAfterAppliedSaveData : public UP
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_InitializeWorldAfterAppliedSaveData();
+
 };
 

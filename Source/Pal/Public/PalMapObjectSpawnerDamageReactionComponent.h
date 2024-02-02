@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalMapObjectSpawnerDamageReactionComponent.generated.h"
 
 class UPalHitEffectSlot;
@@ -18,6 +18,7 @@ private:
     UPalHitEffectSlot* EffectSlot;
     
 public:
-    UPalMapObjectSpawnerDamageReactionComponent();
+    UPalMapObjectSpawnerDamageReactionComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -48,6 +48,7 @@ private:
     
 public:
     UPalIncidentSystem();
+
     UFUNCTION(BlueprintCallable)
     UPalIncidentList* RequestIncidents(const TArray<FName>& Incidents, UObject* OccuredObject, UObject* OwnerObject, UPalIncidentDynamicParameter* Parameter);
     

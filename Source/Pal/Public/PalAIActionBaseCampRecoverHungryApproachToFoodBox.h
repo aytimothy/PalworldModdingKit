@@ -8,5 +8,6 @@ class PAL_API UPalAIActionBaseCampRecoverHungryApproachToFoodBox : public UPalAI
     GENERATED_BODY()
 public:
     UPalAIActionBaseCampRecoverHungryApproachToFoodBox();
+
 };
 

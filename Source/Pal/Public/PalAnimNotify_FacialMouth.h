@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotify -FallbackName=AnimNotify
 #include "EPalFacialMouthType.h"
 #include "PalAnimNotify_FacialMouth.generated.h"
 
@@ -12,5 +12,6 @@ public:
     EPalFacialMouthType MouthType;
     
     UPalAnimNotify_FacialMouth();
+
 };
 

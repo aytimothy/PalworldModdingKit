@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NiagaraDataInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Niagara -ObjectName=NiagaraDataInterface -FallbackName=NiagaraDataInterface
 #include "PalNiagaraDataInterfaceSoundPlayer.generated.h"
 
 class UAkAudioEvent;
@@ -16,5 +16,6 @@ public:
     float FadeOutDuration;
     
     UPalNiagaraDataInterfaceSoundPlayer();
+
 };
 

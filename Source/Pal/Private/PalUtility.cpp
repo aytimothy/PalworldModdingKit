@@ -1,6 +1,9 @@
 #include "PalUtility.h"
 #include "Templates/SubclassOf.h"
 
+UPalUtility::UPalUtility() {
+}
+
 void UPalUtility::UpdatePlayerCharacterParameter(const APalCharacter* Character) {
 }
 
@@ -862,6 +865,9 @@ UPalCheatManager* UPalUtility::GetPalCheatManager(const UObject* WorldContextObj
 void UPalUtility::GetPalCharacters(const UObject* WorldContextObject, TArray<APalCharacter*>& OutCharacters) {
 }
 
+void UPalUtility::GetOverrideLoginPlayerUId(const UObject* WorldContextObject, FGuid& PlayerUId) {
+}
+
 TArray<int32> UPalUtility::GetOverlapFoliageIndexByComponent(UPrimitiveComponent* AttackComponent, UPrimitiveComponent* FolageComponent) {
     return TArray<int32>();
 }
@@ -1425,6 +1431,9 @@ bool UPalUtility::ClipboardCopy(const FString& String) {
 void UPalUtility::ClearCharacterRagdoll(APalCharacter* Character) {
 }
 
+void UPalUtility::ChangeDefaultLandMovementModeForWalking(APalCharacter* Character) {
+}
+
 bool UPalUtility::CanUseTargetMedicine(const UObject* WorldContextObject, UPalIndividualCharacterParameter* IndividualParameter, const UPalStaticItemDataBase* Item) {
     return false;
 }
@@ -1503,6 +1512,4 @@ void UPalUtility::AddForceWithMassScale(APalCharacter* TargetCharacter, FVector 
 void UPalUtility::AddDownForceAllRigidBody(APalCharacter* TargetCharacter, float Rate) {
 }
 
-UPalUtility::UPalUtility() {
-}
 

@@ -21,6 +21,7 @@ protected:
     
 public:
     UPalQuestBlock_DetectCraft();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnCraftItem(TArray<FPalItemAndNum>& ItemInfos);

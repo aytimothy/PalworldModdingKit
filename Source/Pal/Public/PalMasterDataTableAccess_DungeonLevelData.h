@@ -8,5 +8,6 @@ class UPalMasterDataTableAccess_DungeonLevelData : public UPalMasterDataTableAcc
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_DungeonLevelData();
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalInstanceID.h"
 #include "PalUICharacterDisplayModel.generated.h"
 
@@ -25,6 +25,7 @@ protected:
     
 public:
     UPalUICharacterDisplayModel();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsSelectable(const int32 DisplayIndex);
     

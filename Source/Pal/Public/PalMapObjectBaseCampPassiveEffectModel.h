@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectBaseCampPassiveEffectModel : public UPalMapObjectConc
     GENERATED_BODY()
 public:
     UPalMapObjectBaseCampPassiveEffectModel();
+
 };
 

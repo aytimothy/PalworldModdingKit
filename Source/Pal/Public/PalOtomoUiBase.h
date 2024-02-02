@@ -12,6 +12,7 @@ class PAL_API UPalOtomoUiBase : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalOtomoUiBase();
+
 private:
     UFUNCTION(BlueprintCallable)
     EPalTribeID GetTribeIDFromClass(const TSubclassOf<AActor>& TargetActorClass);

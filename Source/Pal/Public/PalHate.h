@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "PalDamageResult.h"
 #include "PalDeadInfo.h"
 #include "PalInstanceID.h"
@@ -22,6 +22,7 @@ private:
     
 public:
     UPalHate();
+
 private:
     UFUNCTION(BlueprintCallable)
     void SelfDeathEvent(FPalDeadInfo DeadInfo);

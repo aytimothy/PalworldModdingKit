@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=DateTime -FallbackName=DateTime
 #include "PalUserWidgetWorldHUD.h"
 #include "PalBossEntryWaitInfoHUD.generated.h"
 
@@ -20,6 +20,7 @@ public:
     FDateTime TimeLimitDate;
     
     UPalBossEntryWaitInfoHUD();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void UpdateWaitInfo(bool bIsCountDown, FDateTime TimeLimit);

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalActionBase.h"
 #include "PalNetArchive.h"
 #include "PalStaticItemIdAndNum.h"
@@ -23,6 +23,7 @@ protected:
     
 public:
     UPalActionSpawnItem();
+
     UFUNCTION(BlueprintCallable)
     static void WriteBlackboard(UPARAM(Ref) FPalNetArchive& BlackboardRef, const FPalStaticItemIdAndNum& ItemInfo);
     

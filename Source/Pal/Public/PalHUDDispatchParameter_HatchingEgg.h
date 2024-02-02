@@ -13,5 +13,6 @@ public:
     UPalMapObjectHatchingEggModel* HatchingEggModel;
     
     UPalHUDDispatchParameter_HatchingEgg();
+
 };
 

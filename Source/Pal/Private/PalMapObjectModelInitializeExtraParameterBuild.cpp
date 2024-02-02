@@ -4,3 +4,4 @@ UPalMapObjectModelInitializeExtraParameterBuild::UPalMapObjectModelInitializeExt
     this->BuildWorkAmount = 0.00f;
 }
 
+

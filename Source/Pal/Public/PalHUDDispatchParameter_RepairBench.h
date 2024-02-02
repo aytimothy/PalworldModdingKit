@@ -13,5 +13,6 @@ public:
     UPalMapObjectRepairItemModel* Model;
     
     UPalHUDDispatchParameter_RepairBench();
+
 };
 

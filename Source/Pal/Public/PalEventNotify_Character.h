@@ -22,6 +22,7 @@ public:
     FPalEventNotifyCharacterDeadDelegate OnNotifyEventDeadInServer;
     
     UPalEventNotify_Character();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnCharacterSpawned_ServerInternal(UPalIndividualCharacterHandle* CharacterHandle);

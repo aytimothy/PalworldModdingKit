@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalWorkAssignableFixedType.h"
 #include "EPalWorkBehaviourType.h"
 #include "EPalWorkProgressState.h"
@@ -114,8 +114,9 @@ private:
     
 public:
     UPalWorkBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnRep_CurrentState();
@@ -157,7 +158,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     EPalWorkAssignableFixedType GetAssignableFixedType() const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalWazaID.h"
 #include "FixedPoint.h"
 #include "PalCoopSkillSearchEffectParameter.h"
@@ -141,7 +141,8 @@ private:
     TArray<float> ActiveSkill_MainValueByRank;
     
 public:
-    UPalPartnerSkillParameterComponent();
+    UPalPartnerSkillParameterComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void Stop();
     

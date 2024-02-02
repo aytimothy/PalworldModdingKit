@@ -4,3 +4,4 @@ UPalStaticItemDataTable::UPalStaticItemDataTable() {
     this->DataAsset = NULL;
 }
 
+

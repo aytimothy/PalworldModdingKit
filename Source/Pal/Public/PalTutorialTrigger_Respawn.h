@@ -12,5 +12,6 @@ public:
     TArray<EPalLocationType> LocationTypes;
     
     UPalTutorialTrigger_Respawn();
+
 };
 

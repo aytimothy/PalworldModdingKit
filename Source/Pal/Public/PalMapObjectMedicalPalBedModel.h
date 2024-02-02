@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalMapObjectConcreteModelBase.h"
 #include "PalMapObjectWorkerAvailableFacilityInterface.h"
 #include "PalMapObjectMedicalPalBedModel.generated.h"
@@ -39,6 +39,7 @@ protected:
     
 public:
     UPalMapObjectMedicalPalBedModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnInteractBegin(AActor* Other, TScriptInterface<IPalInteractiveObjectComponentInterface> Component);
@@ -53,7 +54,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void ClearSleepingCharacterHandle();
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

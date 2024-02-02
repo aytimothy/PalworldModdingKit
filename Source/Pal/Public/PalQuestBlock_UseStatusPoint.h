@@ -8,6 +8,7 @@ class PAL_API UPalQuestBlock_UseStatusPoint : public UPalQuestBlock {
     GENERATED_BODY()
 public:
     UPalQuestBlock_UseStatusPoint();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnUpdateStatusPoint();

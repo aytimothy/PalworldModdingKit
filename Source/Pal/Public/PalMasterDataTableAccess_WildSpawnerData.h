@@ -8,5 +8,6 @@ class UPalMasterDataTableAccess_WildSpawnerData : public UPalMasterDataTableAcce
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_WildSpawnerData();
+
 };
 

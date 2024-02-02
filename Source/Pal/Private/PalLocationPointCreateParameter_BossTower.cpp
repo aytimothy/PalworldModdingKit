@@ -3,3 +3,4 @@
 UPalLocationPointCreateParameter_BossTower::UPalLocationPointCreateParameter_BossTower() {
 }
 
+

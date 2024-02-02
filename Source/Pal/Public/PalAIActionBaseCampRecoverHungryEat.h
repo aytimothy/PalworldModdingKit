@@ -16,6 +16,7 @@ private:
     
 public:
     UPalAIActionBaseCampRecoverHungryEat();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnFinishEatingTime();

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalCharacterStatusOperationName.h"
 #include "PalCharacterStatusOperation.generated.h"
 
@@ -12,6 +12,7 @@ class PAL_API UPalCharacterStatusOperation : public UObject {
     GENERATED_BODY()
 public:
     UPalCharacterStatusOperation();
+
     UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContextObject"))
     static TMap<FName, int32> GetReturnItemsForResetCharacterStatusAll(const UObject* WorldContextObject, const UPalIndividualCharacterParameter* TargetIndividualParameter);
     

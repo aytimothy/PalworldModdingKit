@@ -18,6 +18,7 @@ protected:
     
 public:
     UPalUserWidgetStackableUI();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnPreClose();

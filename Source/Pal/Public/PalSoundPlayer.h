@@ -1,10 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AkGameplayStatics.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Chaos/ChaosEngineInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=EAkCallbackType -FallbackName=EAkCallbackType
+//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=OnAkPostEventCallback__DelegateSignature -FallbackName=OnAkPostEventCallbackDelegate
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=PhysicsCore -ObjectName=EPhysicalSurface -FallbackName=EPhysicalSurface
 #include "PalSoundOptions.h"
 #include "PalSoundPlayingParameter.h"
 #include "PalSoundPlayer.generated.h"
@@ -45,6 +46,7 @@ private:
     
 public:
     UPalSoundPlayer();
+
 private:
     UFUNCTION(BlueprintCallable)
     void UpdateOutputBusBolume();

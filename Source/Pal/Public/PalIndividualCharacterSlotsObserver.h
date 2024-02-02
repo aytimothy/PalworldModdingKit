@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalIndividualCharacterSlotsObserver.generated.h"
 
 class UPalIndividualCharacterContainer;
@@ -17,6 +17,7 @@ public:
     FUpdateContainerDelegate OnUpdateContainerDelegate;
     
     UPalIndividualCharacterSlotsObserver();
+
     UFUNCTION(BlueprintCallable)
     void OnUpdateSlot(UPalIndividualCharacterSlot* Slot, UPalIndividualCharacterHandle* LastHandle);
     

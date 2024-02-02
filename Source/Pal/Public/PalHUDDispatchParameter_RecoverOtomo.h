@@ -13,5 +13,6 @@ public:
     UPalMapObjectRecoverOtomoModel* RecoverOtomoModel;
     
     UPalHUDDispatchParameter_RecoverOtomo();
+
 };
 

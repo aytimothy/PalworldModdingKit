@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalCommonQuestRewardData.h"
 #include "PalQuestData.generated.h"
 
@@ -36,6 +36,7 @@ private:
     
 public:
     UPalQuestData();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void ProgressInternal();

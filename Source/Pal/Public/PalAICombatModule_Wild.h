@@ -10,6 +10,7 @@ class PAL_API UPalAICombatModule_Wild : public UPalAICombatModule {
     GENERATED_BODY()
 public:
     UPalAICombatModule_Wild();
+
     UFUNCTION(BlueprintCallable)
     void OnBattleFinish_forDelegate(AActor* Actor);
     

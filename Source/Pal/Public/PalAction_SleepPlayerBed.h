@@ -13,6 +13,7 @@ public:
     FOnGetupTriggerDelegate OnGetupTriggerDelegate;
     
     UPalAction_SleepPlayerBed();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnGetupPlayerBedFromModel();
     

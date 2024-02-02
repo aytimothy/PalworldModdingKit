@@ -1,6 +1,17 @@
 #include "PalLoadoutSelectorComponent.h"
 #include "Net/UnrealNetwork.h"
 
+UPalLoadoutSelectorComponent::UPalLoadoutSelectorComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->DummyBallWeaponClass = NULL;
+    this->primaryTargetInventoryType = EPalPlayerInventoryType::None;
+    this->currentItemSlotIndex = 0;
+    this->ThrowOtomoPalWeapon = NULL;
+    this->spawnedWeaponsArray.AddDefaulted(4);
+    this->DummyBall = NULL;
+    this->replicatedPrimaryTargetInventoryType = EPalPlayerInventoryType::None;
+    this->replicatedCurrentItemSlotIndex = 0;
+}
+
 void UPalLoadoutSelectorComponent::TryEquipNowSelectedWeapon_ToAll_Implementation() {
 }
 
@@ -46,6 +57,10 @@ void UPalLoadoutSelectorComponent::OnEquipItem(EPalPlayerInventoryType inventory
 
 EPalPlayerInventoryType UPalLoadoutSelectorComponent::GetPrimaryInventoryType() {
     return EPalPlayerInventoryType::Common;
+}
+
+TMap<FName, APalWeaponBase*> UPalLoadoutSelectorComponent::GetPalSphereActorMap() {
+    return TMap<FName, APalWeaponBase*>();
 }
 
 void UPalLoadoutSelectorComponent::GetNowEquipedBallItemID(FName& OutBallItemID) const {
@@ -98,14 +113,4 @@ void UPalLoadoutSelectorComponent::GetLifetimeReplicatedProps(TArray<FLifetimePr
     DOREPLIFETIME(UPalLoadoutSelectorComponent, replicatedCurrentItemSlotIndex);
 }
 
-UPalLoadoutSelectorComponent::UPalLoadoutSelectorComponent() {
-    this->DummyBallWeaponClass = NULL;
-    this->primaryTargetInventoryType = EPalPlayerInventoryType::None;
-    this->currentItemSlotIndex = 0;
-    this->ThrowOtomoPalWeapon = NULL;
-    this->spawnedWeaponsArray.AddDefaulted(4);
-    this->DummyBall = NULL;
-    this->replicatedPrimaryTargetInventoryType = EPalPlayerInventoryType::None;
-    this->replicatedCurrentItemSlotIndex = 0;
-}
 

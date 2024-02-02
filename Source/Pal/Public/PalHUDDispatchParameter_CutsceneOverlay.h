@@ -13,5 +13,6 @@ public:
     UPalCutsceneComponent* CutsceneComponent;
     
     UPalHUDDispatchParameter_CutsceneOverlay();
+
 };
 

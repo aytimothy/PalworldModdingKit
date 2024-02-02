@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalDataTableRowName_ItemData.h"
 #include "PalMapObjectBreedFarmParameterComponent.generated.h"
 
@@ -20,6 +20,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FPalDataTableRowName_ItemData> TargetItemIds;
     
-    UPalMapObjectBreedFarmParameterComponent();
+    UPalMapObjectBreedFarmParameterComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

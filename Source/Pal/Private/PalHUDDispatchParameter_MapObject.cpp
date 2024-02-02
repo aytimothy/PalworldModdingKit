@@ -4,3 +4,4 @@ UPalHUDDispatchParameter_MapObject::UPalHUDDispatchParameter_MapObject() {
     this->MapObjectConcreteModel = NULL;
 }
 
+

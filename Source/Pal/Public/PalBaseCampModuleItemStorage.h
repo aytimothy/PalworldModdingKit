@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalBaseCampFunctionModuleBase.h"
 #include "PalBaseCampItemContainerInfo.h"
 #include "PalBaseCampItemExistsInfo.h"
@@ -30,8 +30,9 @@ private:
     
 public:
     UPalBaseCampModuleItemStorage();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateItemContainer(UPalMapObjectItemContainerModule* ItemContainerModule);

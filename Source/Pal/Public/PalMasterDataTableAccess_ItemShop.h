@@ -8,5 +8,6 @@ class UPalMasterDataTableAccess_ItemShop : public UPalMasterDataTableAccessBase 
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_ItemShop();
+
 };
 

@@ -5,3 +5,4 @@ UPalBuildProgressWorldHUDParameter::UPalBuildProgressWorldHUDParameter() {
     this->BuildObject = NULL;
 }
 
+

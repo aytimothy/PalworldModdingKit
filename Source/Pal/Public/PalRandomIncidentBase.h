@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalRandomIncidentSpawnerAreaType.h"
 #include "PalIncidentBase.h"
 #include "PalRandomIncidentSpawnMonsterData.h"
@@ -31,6 +31,7 @@ private:
     
 public:
     UPalRandomIncidentBase();
+
     UFUNCTION(BlueprintCallable)
     void SetDisableFlagForNPCSpawner(const FVector& Center, float Radius, const FName& Name, bool isDisable);
     

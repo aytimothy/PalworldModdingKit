@@ -12,6 +12,7 @@ class UPalHUDDispatchParameter_CharacterStatusOperator : public UPalHUDDispatchP
     GENERATED_BODY()
 public:
     UPalHUDDispatchParameter_CharacterStatusOperator();
+
     UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContextObject"))
     static void GetCharacterStatusOperationResultText(const UObject* WorldContextObject, const EPalCharacterStatusOperationResult Type, FText& OutText);
     

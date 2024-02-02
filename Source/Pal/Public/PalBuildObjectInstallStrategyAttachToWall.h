@@ -8,5 +8,6 @@ class PAL_API UPalBuildObjectInstallStrategyAttachToWall : public UPalBuildObjec
     GENERATED_BODY()
 public:
     UPalBuildObjectInstallStrategyAttachToWall();
+
 };
 

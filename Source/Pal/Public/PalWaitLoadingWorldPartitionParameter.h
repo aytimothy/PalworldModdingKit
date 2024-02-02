@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "WorldPartition/WorldPartitionRuntimeCell.h"
-#include "WorldPartition/WorldPartitionStreamingSource.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EWorldPartitionRuntimeCellState -FallbackName=EWorldPartitionRuntimeCellState
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=WorldPartitionStreamingQuerySource -FallbackName=WorldPartitionStreamingQuerySource
 #include "PalWaitLoadingWorldPartitionParameter.generated.h"
 
 USTRUCT(BlueprintType)

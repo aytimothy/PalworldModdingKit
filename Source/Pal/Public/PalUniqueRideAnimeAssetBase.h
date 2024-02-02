@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "WeaponNotifyAnimationInfo.h"
 #include "PalUniqueRideAnimeAssetBase.generated.h"
 
@@ -46,6 +46,7 @@ private:
     
 public:
     UPalUniqueRideAnimeAssetBase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UAnimSequence* GetRideAnimSequence();
     

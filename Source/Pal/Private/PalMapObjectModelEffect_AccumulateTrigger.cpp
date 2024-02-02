@@ -4,3 +4,4 @@ UPalMapObjectModelEffect_AccumulateTrigger::UPalMapObjectModelEffect_AccumulateT
     this->AccumulateValue = 0.00f;
 }
 
+

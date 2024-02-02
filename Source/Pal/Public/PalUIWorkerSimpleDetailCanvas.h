@@ -14,6 +14,7 @@ class PAL_API UPalUIWorkerSimpleDetailCanvas : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUIWorkerSimpleDetailCanvas();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void UnbindWorkerEvent(UPalIndividualCharacterHandle* workerHandle);

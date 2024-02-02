@@ -8,5 +8,6 @@ class UPalBuildObjectInstallStrategyNormal : public UPalBuildObjectInstallStrate
     GENERATED_BODY()
 public:
     UPalBuildObjectInstallStrategyNormal();
+
 };
 

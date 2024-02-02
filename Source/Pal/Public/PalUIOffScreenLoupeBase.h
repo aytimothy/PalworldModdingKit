@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/SlateWrapperTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
 #include "PalUserWidget.h"
 #include "PalUIOffScreenLoupeBase.generated.h"
 
@@ -41,6 +41,7 @@ private:
     
 public:
     UPalUIOffScreenLoupeBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void SetOverrideVisibility(ESlateVisibility NewVisibility);

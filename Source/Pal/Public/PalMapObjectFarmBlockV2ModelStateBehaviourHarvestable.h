@@ -14,6 +14,7 @@ public:
     DECLARE_DYNAMIC_DELEGATE_OneParam(FUpdateHarvestProgressRateDelegate, float, ProgressRate);
     
     UPalMapObjectFarmBlockV2ModelStateBehaviourHarvestable();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnWorkStarted(UPalWorkBase* Work, const FPalInstanceID& IndividualId);

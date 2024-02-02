@@ -10,6 +10,7 @@ class PAL_API UPalMapObjectLampModel : public UPalMapObjectConcreteModelBase {
     GENERATED_BODY()
 public:
     UPalMapObjectLampModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateEnergyModuleState(UPalMapObjectEnergyModule* EnergyModule);

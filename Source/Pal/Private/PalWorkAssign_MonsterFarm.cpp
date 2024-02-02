@@ -5,3 +5,4 @@ UPalWorkAssign_MonsterFarm::UPalWorkAssign_MonsterFarm() {
     this->SpawnActionCurrentCount = -1;
 }
 
+

@@ -10,6 +10,7 @@ class UPalUIMapObjectStatusIndicatorParameterBase : public UPalHUDDispatchParame
     GENERATED_BODY()
 public:
     UPalUIMapObjectStatusIndicatorParameterBase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalMapObjectConcreteModelBase* GetConcreteModel() const;
     

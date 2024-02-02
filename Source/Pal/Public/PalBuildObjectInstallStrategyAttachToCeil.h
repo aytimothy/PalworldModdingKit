@@ -8,5 +8,6 @@ class PAL_API UPalBuildObjectInstallStrategyAttachToCeil : public UPalBuildObjec
     GENERATED_BODY()
 public:
     UPalBuildObjectInstallStrategyAttachToCeil();
+
 };
 

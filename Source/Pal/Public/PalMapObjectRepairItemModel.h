@@ -25,6 +25,7 @@ private:
     
 public:
     UPalMapObjectRepairItemModel();
+
     UFUNCTION(BlueprintCallable)
     void RequestRepairItem(const TArray<FPalItemSlotId>& TargetItemSlotIdArray);
     

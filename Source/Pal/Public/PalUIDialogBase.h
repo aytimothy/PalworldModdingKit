@@ -8,5 +8,6 @@ class UPalUIDialogBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIDialogBase();
+
 };
 

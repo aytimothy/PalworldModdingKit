@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalLevelObjectInterface.h"
 #include "PalMapObject.h"
 #include "PalMapLevelObject.generated.h"
@@ -14,11 +14,12 @@ private:
     FGuid LevelObjectInstanceId;
     
 public:
-    APalMapLevelObject();
+    APalMapLevelObject(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FGuid GetLevelObjectInstanceId() const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

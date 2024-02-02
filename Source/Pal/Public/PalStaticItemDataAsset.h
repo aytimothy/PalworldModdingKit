@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DataAsset.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "PalStaticItemDataAsset.generated.h"
 
 class AActor;
@@ -17,5 +17,6 @@ public:
     TSoftClassPtr<AActor> UndefinedVisualBlueprintClassSoft;
     
     UPalStaticItemDataAsset();
+
 };
 

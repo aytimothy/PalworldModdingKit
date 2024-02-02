@@ -20,7 +20,8 @@ protected:
     int32 DefaultVoiceID;
     
 public:
-    APalNPC();
+    APalNPC(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnCompletedInitParam(APalCharacter* InCharacter);

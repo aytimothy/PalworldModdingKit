@@ -8,6 +8,7 @@ class PAL_API UPalUIGameOver : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIGameOver();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsExistRespawnLocation();

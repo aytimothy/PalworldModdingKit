@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "PalInteractiveObjectIndicatorInterface.h"
 #include "PalCharacterLiftupObjectComponent.generated.h"
 
@@ -23,9 +23,10 @@ private:
     bool bEnableLiftup;
     
 public:
-    UPalCharacterLiftupObjectComponent();
+    UPalCharacterLiftupObjectComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void SetEnable(const bool bInEnable);
     
@@ -47,7 +48,7 @@ private:
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void BroadcastSetBeingThrown(const bool bInBeingThrown);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

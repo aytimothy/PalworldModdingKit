@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalInstanceID.h"
 #include "PalIndividualCharacterHandle.generated.h"
 
@@ -23,6 +23,7 @@ protected:
     
 public:
     UPalIndividualCharacterHandle();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     APalCharacter* TryGetPhantomActor(int32 PhantomId) const;
     

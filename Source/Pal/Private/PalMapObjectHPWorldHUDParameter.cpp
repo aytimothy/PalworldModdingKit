@@ -4,3 +4,4 @@ UPalMapObjectHPWorldHUDParameter::UPalMapObjectHPWorldHUDParameter() {
     this->MapObject = NULL;
 }
 
+

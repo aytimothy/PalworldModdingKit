@@ -13,5 +13,6 @@ public:
     UPalMapObjectConcreteModelBase* MapObjectConcreteModel;
     
     UPalHUDDispatchParameter_MapObject();
+
 };
 

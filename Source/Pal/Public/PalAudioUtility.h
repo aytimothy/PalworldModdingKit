@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalAudioUtility.generated.h"
 
 class APalAmbientSoundAreaBase;
@@ -14,6 +14,7 @@ class PAL_API UPalAudioUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalAudioUtility();
+
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void OnPlayerExitSpot(UObject* WorldContextObject, APalPlayerCharacter* Player, APalSpotAreaBase* SpotArea);
     

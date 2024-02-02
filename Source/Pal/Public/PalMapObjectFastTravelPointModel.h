@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalMapObjectConcreteModelBase.h"
 #include "PalMapObjectFastTravelPointModel.generated.h"
 
@@ -14,7 +14,8 @@ protected:
     
 public:
     UPalMapObjectFastTravelPointModel();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 };
 

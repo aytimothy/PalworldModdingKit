@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BranchingPointNotifyPayload -FallbackName=BranchingPointNotifyPayload
 #include "PalTreasureBoxVisualBase.generated.h"
 
 class UPalSkeletalMeshComponent;
@@ -15,7 +15,8 @@ protected:
     UPalSkeletalMeshComponent* SkeletalMeshComponent;
     
 public:
-    APalTreasureBoxVisualBase();
+    APalTreasureBoxVisualBase(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetTickEnabled(bool bEnabled);
     
@@ -23,7 +24,7 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnPlayMontageNotifyBegin_BP(FName NotifyName);
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnPlayMontageNotifyBegin(FName NotifyName, const FBranchingPointNotifyPayload& BranchingPointPayload);
     
 };

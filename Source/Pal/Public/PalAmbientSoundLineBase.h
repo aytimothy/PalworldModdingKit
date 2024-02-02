@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalAmbientSoundLineBase.generated.h"
 
 class UAkComponent;
@@ -22,6 +22,7 @@ protected:
     UPalAmbientSoundLineObject* AmbinetSoundLineObject;
     
 public:
-    APalAmbientSoundLineBase();
+    APalAmbientSoundLineBase(const FObjectInitializer& ObjectInitializer);
+
 };
 

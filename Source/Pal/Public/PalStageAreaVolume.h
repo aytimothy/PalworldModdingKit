@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalStageAreaVolume.generated.h"
 
 class UDataLayerAsset;
@@ -15,7 +15,8 @@ protected:
     UDataLayerAsset* RelatedDataLayerAsset;
     
 public:
-    APalStageAreaVolume();
+    APalStageAreaVolume(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetRelatedDataLayerAsset(UDataLayerAsset* DataLayerAsset);
     

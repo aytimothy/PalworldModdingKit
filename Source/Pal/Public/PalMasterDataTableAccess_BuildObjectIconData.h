@@ -10,6 +10,7 @@ class UPalMasterDataTableAccess_BuildObjectIconData : public UPalMasterDataTable
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_BuildObjectIconData();
+
 private:
     UFUNCTION(BlueprintCallable)
     void BPExec_FindRow(FName RowName, EPalMasterDataExecPinType& ExecType, FPalBuildObjectIconData& OutData);

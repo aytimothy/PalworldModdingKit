@@ -3,3 +3,4 @@
 UPalBaseCampPassiveEffect_WorkSuitability::UPalBaseCampPassiveEffect_WorkSuitability() {
 }
 
+

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalWeaponBase.h"
 #include "Templates/SubclassOf.h"
 #include "PalUniqueRideWeaponBase.generated.h"
@@ -18,7 +18,8 @@ UCLASS(Blueprintable)
 class PAL_API APalUniqueRideWeaponBase : public APalWeaponBase {
     GENERATED_BODY()
 public:
-    APalUniqueRideWeaponBase();
+    APalUniqueRideWeaponBase(const FObjectInitializer& ObjectInitializer);
+
 protected:
     UFUNCTION(BlueprintCallable)
     void ShootOneBulletByDefault();

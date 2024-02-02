@@ -3,3 +3,4 @@
 UPalMapObjectRespawnPointModel::UPalMapObjectRespawnPointModel() {
 }
 
+

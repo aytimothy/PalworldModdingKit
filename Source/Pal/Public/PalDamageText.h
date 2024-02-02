@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 #include "PalUserWidget.h"
 #include "PalDamageText.generated.h"
 
@@ -15,5 +15,6 @@ public:
     FVector2D RandomPositionMax;
     
     UPalDamageText();
+
 };
 

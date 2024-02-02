@@ -10,6 +10,7 @@ class UPalMasterDataTableAccess_MapObjectMasterData : public UPalMasterDataTable
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_MapObjectMasterData();
+
 private:
     UFUNCTION(BlueprintCallable)
     void BPExec_FindRow(FName RowName, EPalMasterDataExecPinType& ExecType, FPalMapObjectMasterData& OutData);

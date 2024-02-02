@@ -8,5 +8,6 @@ class PAL_API UPalUISelectNumWidgetBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUISelectNumWidgetBase();
+
 };
 

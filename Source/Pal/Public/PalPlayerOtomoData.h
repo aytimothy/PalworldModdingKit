@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalOtomoPalOrderType.h"
 #include "PalContainerId.h"
 #include "PalPlayerOtomoData.generated.h"
@@ -18,5 +18,6 @@ private:
     
 public:
     UPalPlayerOtomoData();
+
 };
 

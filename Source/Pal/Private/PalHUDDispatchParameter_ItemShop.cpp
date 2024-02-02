@@ -4,3 +4,4 @@ UPalHUDDispatchParameter_ItemShop::UPalHUDDispatchParameter_ItemShop() {
     this->Shop = NULL;
 }
 
+

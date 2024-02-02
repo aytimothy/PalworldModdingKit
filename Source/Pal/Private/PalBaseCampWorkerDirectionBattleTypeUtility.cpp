@@ -3,3 +3,4 @@
 UPalBaseCampWorkerDirectionBattleTypeUtility::UPalBaseCampWorkerDirectionBattleTypeUtility() {
 }
 
+

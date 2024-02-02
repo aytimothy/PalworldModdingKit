@@ -16,6 +16,7 @@ public:
     FPalEventNotifyItemMoveDelegate OnNotifyEventMoveInServer;
     
     UPalEventNotify_ItemContainer();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnItemOperationMove_ServerInternal(const TArray<FPalItemOperationInfo_Move>& OperationInfoSet);

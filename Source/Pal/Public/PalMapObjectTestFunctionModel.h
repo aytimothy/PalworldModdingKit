@@ -8,6 +8,7 @@ class UPalMapObjectTestFunctionModel : public UPalMapObjectConcreteModelBase {
     GENERATED_BODY()
 public:
     UPalMapObjectTestFunctionModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestCountUpSIngle_ServerInternal(const int32 RequestPlayerId);

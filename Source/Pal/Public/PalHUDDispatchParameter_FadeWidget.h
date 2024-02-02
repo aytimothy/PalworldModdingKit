@@ -1,12 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "EPalFadeWidgetType.h"
 #include "PalHUDDispatchParameterBase.h"
 #include "PalHUDDispatchParameter_FadeWidget.generated.h"
-
-// todo: this probably has params
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FFadeWidgetDelegate);
 
 UCLASS(Blueprintable)
 class UPalHUDDispatchParameter_FadeWidget : public UPalHUDDispatchParameterBase {
@@ -37,5 +34,6 @@ public:
     FFadeWidgetDelegate OnEndFadeOut;
     
     UPalHUDDispatchParameter_FadeWidget();
+
 };
 

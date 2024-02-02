@@ -5,3 +5,4 @@ UPalWorkTransportItemInBaseCamp::UPalWorkTransportItemInBaseCamp() {
     this->ApproachFailedTimeout = -1.00f;
 }
 
+

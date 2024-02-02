@@ -11,6 +11,7 @@ class PAL_API UPalUIPlayerEquipment : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIPlayerEquipment();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void SwapItemSlot(UPalItemSlot* SlotA, UPalItemSlot* SlotB);

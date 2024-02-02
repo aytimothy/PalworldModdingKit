@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalWorldSecurityUtility.generated.h"
 
 class APalCharacter;
@@ -10,6 +10,7 @@ class UPalWorldSecurityUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalWorldSecurityUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool IsWantedCharacter(APalCharacter* Target);
     

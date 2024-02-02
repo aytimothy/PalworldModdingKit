@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalFoliageInstanceRepInfoArray.h"
 #include "PalFoliageModelChunk.generated.h"
 
@@ -19,9 +19,10 @@ private:
     int32 InstanceNum;
     
 public:
-    APalFoliageModelChunk();
+    APalFoliageModelChunk(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnRep_ChunkGridSize();

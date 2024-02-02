@@ -5,3 +5,4 @@ UPalMapObjectFoliage::UPalMapObjectFoliage() {
     this->GridSize = 25600;
 }
 
+

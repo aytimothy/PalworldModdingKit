@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/BoxComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
 #include "PalLimitVolumeInterface.h"
 #include "PalLimitVolumeBoxComponent.generated.h"
 
@@ -13,8 +13,9 @@ private:
     int32 LimitFlags;
     
 public:
-    UPalLimitVolumeBoxComponent();
-    
+    UPalLimitVolumeBoxComponent(const FObjectInitializer& ObjectInitializer);
+
+
     // Fix for true pure virtual functions not being implemented
 };
 

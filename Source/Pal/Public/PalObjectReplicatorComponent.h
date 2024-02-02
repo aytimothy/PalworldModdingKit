@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalObjectReplicatorComponent.generated.h"
 
 class UObject;
@@ -14,6 +14,7 @@ private:
     TArray<UObject*> ReplicateObject;
     
 public:
-    UPalObjectReplicatorComponent();
+    UPalObjectReplicatorComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

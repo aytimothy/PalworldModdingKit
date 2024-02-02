@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LevelSequenceActor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=LevelSequence -ObjectName=LevelSequenceActor -FallbackName=LevelSequenceActor
 #include "PalCutsceneActor.generated.h"
 
 UCLASS(Blueprintable)
@@ -13,7 +13,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float OpeningFadeOutTime;
     
-    APalCutsceneActor();
+    APalCutsceneActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnPrePlayCutscene();
     

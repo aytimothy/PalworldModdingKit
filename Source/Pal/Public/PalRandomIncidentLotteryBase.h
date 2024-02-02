@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalRandomIncidentSpawnIncidentParameter.h"
 #include "PalRandomIncidentLotteryBase.generated.h"
 
@@ -17,6 +17,7 @@ private:
     
 public:
     UPalRandomIncidentLotteryBase();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool LotteryIncident(FPalRandomIncidentSpawnIncidentParameter& OutResult);
     

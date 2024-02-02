@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDeathPenaltyList.h"
 #include "PalDeathPenaltyManager.generated.h"
 
@@ -29,6 +29,7 @@ private:
     
 public:
     UPalDeathPenaltyManager();
+
     UFUNCTION(BlueprintCallable)
     void DropDeathPenaltyChest(APalPlayerCharacter* Player);
     

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EWeaponAnimationType.h"
 #include "WeaponAnimationInfo.h"
 #include "PalShooterAnimeAssetBase.generated.h"
@@ -17,6 +17,7 @@ protected:
     
 public:
     UPalShooterAnimeAssetBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void ChangeRideMontage(UAnimMontage* NextAnim, EWeaponAnimationType AnimType);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalStageInstanceId.h"
 #include "PalStagePlayerInfo.h"
 #include "PalStageModelBase.generated.h"
@@ -20,8 +20,9 @@ protected:
     
 public:
     UPalStageModelBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnCompleteLoadStage_ServerInternal(UPalStageModelBase* TargetStageModel);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalWorkAssign.h"
 #include "PalWorkAssign_OnlyJoinAndWalkAround.generated.h"
 
@@ -14,5 +14,6 @@ private:
     
 public:
     UPalWorkAssign_OnlyJoinAndWalkAround();
+
 };
 

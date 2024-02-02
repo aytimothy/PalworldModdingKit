@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "EPalWorkSuitability.h"
 #include "PalIndividualCharacterParameterUtility.generated.h"
 
@@ -11,6 +11,7 @@ class UPalIndividualCharacterParameterUtility : public UBlueprintFunctionLibrary
     GENERATED_BODY()
 public:
     UPalIndividualCharacterParameterUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static int32 CraftSpeedWorkSuitability(const EPalWorkSuitability WorkSuitability, UPalIndividualCharacterParameter* Parameter);
     

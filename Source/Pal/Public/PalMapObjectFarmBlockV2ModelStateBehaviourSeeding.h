@@ -13,6 +13,7 @@ public:
     DECLARE_DYNAMIC_DELEGATE_OneParam(FUpdateProgressRateDelegate, float, ProgressRate);
     
     UPalMapObjectFarmBlockV2ModelStateBehaviourSeeding();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnProgressWork(UPalWorkProgress* WorkProgress);

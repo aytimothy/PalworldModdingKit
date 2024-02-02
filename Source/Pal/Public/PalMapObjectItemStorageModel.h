@@ -15,6 +15,7 @@ private:
     
 public:
     UPalMapObjectItemStorageModel();
+
     UFUNCTION(BlueprintCallable)
     void RequestSortContainer();
     

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/SphereComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
 #include "PalHeatSourceSphereComponent.generated.h"
 
 class UPalHeatSourceModule;
@@ -18,7 +18,8 @@ private:
     UPalHeatSourceModule* HeatSourceModule;
     
 public:
-    UPalHeatSourceSphereComponent();
+    UPalHeatSourceSphereComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetActiveHeatSource(bool NextIsActive);
     

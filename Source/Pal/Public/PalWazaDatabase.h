@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalAdditionalEffectType.h"
 #include "EPalStatusID.h"
 #include "EPalWazaID.h"
@@ -28,6 +28,7 @@ protected:
     
 public:
     UPalWazaDatabase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsExistMasterrableWaza_BetweenLevel(FName CharacterID, int32 StartLevel, int32 EndLevel);
     

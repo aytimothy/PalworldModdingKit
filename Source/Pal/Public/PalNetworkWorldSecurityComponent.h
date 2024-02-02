@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalNetworkWorldSecurityComponent.generated.h"
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPalNetworkWorldSecurityComponent : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalNetworkWorldSecurityComponent();
+    UPalNetworkWorldSecurityComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

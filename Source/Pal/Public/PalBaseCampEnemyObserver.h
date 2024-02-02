@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EEndPlayReason -FallbackName=EEndPlayReason
 #include "PalDeadInfo.h"
 #include "PalBaseCampEnemyObserver.generated.h"
 
@@ -40,6 +40,7 @@ private:
     
 public:
     UPalBaseCampEnemyObserver();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnEndPlayEnemy(AActor* Actor, TEnumAsByte<EEndPlayReason::Type> EndPlayReason);

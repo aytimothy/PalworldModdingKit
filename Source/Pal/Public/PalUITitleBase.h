@@ -8,5 +8,6 @@ class PAL_API UPalUITitleBase : public UPalUserWidgetStackableUI {
     GENERATED_BODY()
 public:
     UPalUITitleBase();
+
 };
 

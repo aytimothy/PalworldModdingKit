@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalEnemySpawnActorType.h"
 #include "EPalEnemySpawnDefaultAction.h"
 #include "PalEnemySpawner.generated.h"
@@ -15,6 +15,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EPalEnemySpawnDefaultAction DefaultAction;
     
-    APalEnemySpawner();
+    APalEnemySpawner(const FObjectInitializer& ObjectInitializer);
+
 };
 

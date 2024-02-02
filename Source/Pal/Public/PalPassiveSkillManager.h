@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalPassiveSkillEffectType.h"
 #include "PalItemCreateParameter.h"
 #include "PalPassiveSkillDatabaseRow.h"
@@ -38,6 +38,7 @@ private:
     
 public:
     UPalPassiveSkillManager();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnCreatedDynamicItemDataInServer(UPalDynamicItemDataBase* CreatedItemData, const FPalItemCreateParameter& CreateParameter);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalStatusID.h"
 #include "StatusDynamicParameter.h"
 #include "Templates/SubclassOf.h"
@@ -33,9 +33,10 @@ private:
     TArray<UPalStatusBase*> ExecutionStatusListCache;
     
 public:
-    UPalStatusComponent();
+    UPalStatusComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void SomeStatus_ToAll(EPalStatusID StatusId, FStatusDynamicParameter Param);

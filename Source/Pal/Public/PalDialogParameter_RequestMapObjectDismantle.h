@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalDialogParameterDialog.h"
 #include "PalDialogParameter_RequestMapObjectDismantle.generated.h"
 
@@ -12,5 +12,6 @@ public:
     FGuid MapObjectInstanceId;
     
     UPalDialogParameter_RequestMapObjectDismantle();
+
 };
 

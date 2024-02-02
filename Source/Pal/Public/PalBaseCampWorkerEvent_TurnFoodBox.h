@@ -8,5 +8,6 @@ class UPalBaseCampWorkerEvent_TurnFoodBox : public UPalBaseCampWorkerEventBase {
     GENERATED_BODY()
 public:
     UPalBaseCampWorkerEvent_TurnFoodBox();
+
 };
 

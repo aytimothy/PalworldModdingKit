@@ -8,5 +8,6 @@ class UPalUserWidgetHierarchical : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUserWidgetHierarchical();
+
 };
 

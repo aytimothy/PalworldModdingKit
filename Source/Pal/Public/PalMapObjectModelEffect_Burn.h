@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalMapObjectModelEffect_AccumulateTrigger.h"
 #include "PalMapObjectModelEffect_Burn.generated.h"
 
@@ -24,8 +24,9 @@ private:
     
 public:
     UPalMapObjectModelEffect_Burn();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnRep_Burning(bool bLastValue);

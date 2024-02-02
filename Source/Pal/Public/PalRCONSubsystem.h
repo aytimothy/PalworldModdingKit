@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Subsystems/GameInstanceSubsystem.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=GameInstanceSubsystem -FallbackName=GameInstanceSubsystem
 #include "PalRCONSubsystem.generated.h"
 
 UCLASS(Blueprintable)
@@ -8,5 +8,6 @@ class PAL_API UPalRCONSubsystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
 public:
     UPalRCONSubsystem();
+
 };
 

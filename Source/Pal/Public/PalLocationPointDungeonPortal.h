@@ -8,5 +8,6 @@ class UPalLocationPointDungeonPortal : public UPalLocationPointStatic {
     GENERATED_BODY()
 public:
     UPalLocationPointDungeonPortal();
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalAIResponseType.h"
 #include "PalAIResponsePreset.generated.h"
 
@@ -33,5 +33,6 @@ public:
     EPalAIResponseType Damaged_Smaller;
     
     UPalAIResponsePreset();
+
 };
 

@@ -8,5 +8,6 @@ class PAL_API UPalLogWidget : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalLogWidget();
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalInteractiveObjectActionType.h"
 #include "FlagContainer.h"
 #include "PalInteractComponent.generated.h"
@@ -40,7 +40,8 @@ private:
     FFlagContainer InteractDisableFlags;
     
 public:
-    UPalInteractComponent();
+    UPalInteractComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void TerminateInteract();
     

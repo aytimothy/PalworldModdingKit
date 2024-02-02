@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalReplaceSetting.generated.h"
 
-UCLASS(Blueprintable, Config=Engine, DefaultConfig, Config=Game)
+UCLASS(Blueprintable, DefaultConfig, Config=Game)
 class UPalReplaceSetting : public UObject {
     GENERATED_BODY()
 public:
@@ -11,5 +11,6 @@ public:
     TMap<FName, FName> CharacterIDReplacer;
     
     UPalReplaceSetting();
+
 };
 

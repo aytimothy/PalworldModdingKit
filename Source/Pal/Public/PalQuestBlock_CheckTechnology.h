@@ -14,6 +14,7 @@ protected:
     
 public:
     UPalQuestBlock_CheckTechnology();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnUnlockedAnyTechnology();

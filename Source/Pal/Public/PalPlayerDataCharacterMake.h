@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalPlayerDataCharacterMakeInfo.h"
 #include "PalPlayerDataCharacterMake.generated.h"
 
@@ -9,6 +9,7 @@ class UPalPlayerDataCharacterMake : public UObject {
     GENERATED_BODY()
 public:
     UPalPlayerDataCharacterMake();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, BlueprintPure)
     FName GetRandomHeadMeshName() const;

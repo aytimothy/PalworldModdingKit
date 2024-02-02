@@ -10,6 +10,7 @@ class UPalMasterDataTableAccess_FarmCropData : public UPalMasterDataTableAccessB
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_FarmCropData();
+
 private:
     UFUNCTION(BlueprintCallable)
     void BPExec_FindRowByCropItemId(FName CropItemId, EPalMasterDataExecPinType& ExecType, FPalMapObjectFarmCropData& OutData);

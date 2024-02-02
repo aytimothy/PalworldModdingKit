@@ -3,3 +3,4 @@
 UPalBaseCampWorkerEvent_FightWithFriend::UPalBaseCampWorkerEvent_FightWithFriend() {
 }
 
+

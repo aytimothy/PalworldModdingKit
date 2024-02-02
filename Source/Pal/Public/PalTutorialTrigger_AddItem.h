@@ -18,5 +18,6 @@ public:
     FName BuildObjectId;
     
     UPalTutorialTrigger_AddItem();
+
 };
 

@@ -8,5 +8,6 @@ class UPalAIActionCompositeWorkerModuleNormal : public UPalAIActionCompositeWork
     GENERATED_BODY()
 public:
     UPalAIActionCompositeWorkerModuleNormal();
+
 };
 

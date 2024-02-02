@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectCharacterStatusOperatorModel : public UPalMapObjectCo
     GENERATED_BODY()
 public:
     UPalMapObjectCharacterStatusOperatorModel();
+
 };
 

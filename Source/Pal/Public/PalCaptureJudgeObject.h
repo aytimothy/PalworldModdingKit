@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "CaptureResult.h"
 #include "PalCaptureJudgeObject.generated.h"
 
@@ -10,7 +10,8 @@ UCLASS(Blueprintable)
 class APalCaptureJudgeObject : public AActor {
     GENERATED_BODY()
 public:
-    APalCaptureJudgeObject();
+    APalCaptureJudgeObject(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnSuccessFinish();
     

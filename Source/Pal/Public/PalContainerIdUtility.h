@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalContainerId.h"
 #include "PalContainerIdUtility.generated.h"
 
@@ -9,6 +9,7 @@ class UPalContainerIdUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalContainerIdUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FPalContainerId NoneContainerId();
     

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "GameplayTagContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "PalDefine.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class UPalDefine : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalDefine();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FGameplayTag UILayerTag_Modal();
     

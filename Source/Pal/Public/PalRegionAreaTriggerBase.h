@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalRegionAreaTriggerBase.generated.h"
 
 UCLASS(Blueprintable)
@@ -10,7 +10,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName BindRegionNameMsgID;
     
-    APalRegionAreaTriggerBase();
+    APalRegionAreaTriggerBase(const FObjectInitializer& ObjectInitializer);
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnOverlap(AActor* OtherActor);

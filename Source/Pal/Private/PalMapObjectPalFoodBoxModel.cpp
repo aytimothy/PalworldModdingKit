@@ -3,3 +3,4 @@
 UPalMapObjectPalFoodBoxModel::UPalMapObjectPalFoodBoxModel() {
 }
 
+

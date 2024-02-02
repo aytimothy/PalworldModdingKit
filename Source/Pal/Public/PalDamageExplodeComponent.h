@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalDamageInfo.h"
 #include "PalDamageExplodeComponent.generated.h"
 
@@ -25,7 +25,8 @@ private:
     bool IsExploded;
     
 public:
-    UPalDamageExplodeComponent();
+    UPalDamageExplodeComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SpawnExplosionActor_Delay(AActor* Attacker, float DelayTime);
     

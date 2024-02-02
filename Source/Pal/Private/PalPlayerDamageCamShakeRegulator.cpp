@@ -4,3 +4,4 @@ UPalPlayerDamageCamShakeRegulator::UPalPlayerDamageCamShakeRegulator() {
     this->DamageCameraShakeTable = NULL;
 }
 
+

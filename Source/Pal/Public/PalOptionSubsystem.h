@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/GameUserSettings.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=IntPoint -FallbackName=IntPoint
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EWindowMode -FallbackName=EWindowMode
 #include "EPalOptionGraphicsLevel.h"
 #include "EPalOptionWorldDifficulty.h"
 #include "PalKeyConfigSettings.h"
@@ -102,6 +102,7 @@ private:
     
 public:
     UPalOptionSubsystem();
+
     UFUNCTION(BlueprintCallable)
     void SetPadSettings(const FPalOptionPadSettings& InPadSettings);
     

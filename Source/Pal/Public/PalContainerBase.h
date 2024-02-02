@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalContainerOperationRestrictType.h"
 #include "PalContainerId.h"
 #include "PalContainerBase.generated.h"
@@ -23,8 +23,9 @@ protected:
     
 public:
     UPalContainerBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsEmpty() const;
     

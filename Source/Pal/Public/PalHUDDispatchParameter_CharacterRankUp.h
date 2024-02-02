@@ -13,5 +13,6 @@ public:
     UPalMapObjectRankUpCharacterModel* ConcreteModel;
     
     UPalHUDDispatchParameter_CharacterRankUp();
+
 };
 

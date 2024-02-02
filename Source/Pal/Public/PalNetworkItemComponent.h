@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalItemOperationResult.h"
 #include "PalContainerId.h"
 #include "PalItemAndSlot.h"
@@ -36,7 +36,8 @@ private:
     TMap<FGuid, FPalNetworkParameter> OperationParamMap;
     
 public:
-    UPalNetworkItemComponent();
+    UPalNetworkItemComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestSwap_ToServer(const FGuid& RequestID, const FPalItemAndSlot& SlotA, const FPalItemPermission& APermission, const FPalItemAndSlot& SlotB, const FPalItemPermission& BPermission);

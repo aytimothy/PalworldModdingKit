@@ -20,6 +20,7 @@ protected:
     
 public:
     UPalMapObjectRecoverOtomoModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void StoreAllOtomo_ServerInternal(const int32 RequestPlayerId);

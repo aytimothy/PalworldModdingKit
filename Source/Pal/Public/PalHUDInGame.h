@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/HUD.h"
-#include "GameplayTagContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HUD -FallbackName=HUD
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "EPalHUDWidgetPriority.h"
 #include "EPalWidgetBlueprintType.h"
 #include "EPalWorldHUDWidgetBlueprintType.h"
@@ -82,7 +82,8 @@ private:
     TMap<FGameplayTag, FFlagContainer> LayerHideFlagMap;
     
 public:
-    APalHUDInGame();
+    APalHUDInGame(const FObjectInitializer& ObjectInitializer);
+
 protected:
     UFUNCTION(BlueprintCallable)
     void TickWorldHUDs();
@@ -145,7 +146,7 @@ public:
     UFUNCTION(BlueprintCallable)
     FGuid AddHUD(TSubclassOf<UPalUserWidget> WidgetClass, const EPalHUDWidgetPriority Priority, UPalHUDDispatchParameterBase* Parameter);
     
-    
+
     // Fix for true pure virtual functions not being implemented
     UFUNCTION(BlueprintCallable)
     void PlayAkSound(UAkAudioEvent* AkEvent) override PURE_VIRTUAL(PlayAkSound,);

@@ -1,8 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "EPalBaseCampWorkerEventType.h"
 #include "PalBaseCampSignificanceInfo.h"
 #include "PalBuildObjectSpawnValidationCheckInterface.h"
@@ -65,11 +66,15 @@ private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float UpdateIntervalSquaredDistanceFromPlayer;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    FTransform SpawnPointInBaseCampPointSubLocalTransform;
+    
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 BaseCampTickInvokeMaxNumInOneTick;
     
 public:
     UPalBaseCampManager();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetModel(const FGuid& BaseCampId, UPalBaseCampModel*& OutModel) const;
     
@@ -99,7 +104,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     void GetBaseCampIds(TArray<FGuid>& OutIds) const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

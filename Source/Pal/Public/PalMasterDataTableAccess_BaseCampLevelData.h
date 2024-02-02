@@ -9,6 +9,7 @@ class UPalMasterDataTableAccess_BaseCampLevelData : public UPalMasterDataTableAc
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_BaseCampLevelData();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetMaxLevel();
     

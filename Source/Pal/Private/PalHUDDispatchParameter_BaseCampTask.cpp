@@ -3,3 +3,4 @@
 UPalHUDDispatchParameter_BaseCampTask::UPalHUDDispatchParameter_BaseCampTask() {
 }
 
+

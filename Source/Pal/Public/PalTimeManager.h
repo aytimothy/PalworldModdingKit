@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "EPalOneDayTimeType.h"
 #include "PalGameWorldDataSaveInterface.h"
 #include "PalTimerHandle.h"
@@ -48,6 +48,7 @@ private:
     
 public:
     UPalTimeManager();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Tick_BP(float DeltaTime);
@@ -98,7 +99,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void AddSleepPlayer(APalPlayerCharacter* Player);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

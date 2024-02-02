@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AITypes.h"
-#include "Navigation/PathFollowingComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIRequestID -FallbackName=AIRequestID
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EPathFollowingResult -FallbackName=EPathFollowingResult
 #include "PalAIActionWorkerChildBase.h"
 #include "PalAIActionWorkerApproachToWorkArea.generated.h"
 
@@ -10,6 +10,7 @@ class UPalAIActionWorkerApproachToWorkArea : public UPalAIActionWorkerChildBase 
     GENERATED_BODY()
 public:
     UPalAIActionWorkerApproachToWorkArea();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnReceiveMoveCompleted(FAIRequestID AIRequestID, TEnumAsByte<EPathFollowingResult::Type> Result);

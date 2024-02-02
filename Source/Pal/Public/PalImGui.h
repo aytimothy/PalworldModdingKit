@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalImGui.generated.h"
 
 class APalCharacter;
@@ -10,10 +10,11 @@ class PAL_API APalImGui : public AActor {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<APalCharacter> WeakCharacterForParameterDisplay;
     
 public:
-    APalImGui();
+    APalImGui(const FObjectInitializer& ObjectInitializer);
+
 };
 

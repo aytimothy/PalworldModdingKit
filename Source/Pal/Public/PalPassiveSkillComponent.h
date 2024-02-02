@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalPassiveSkillEffectType.h"
 #include "EPalStatusID.h"
 #include "PalDamageInfo.h"
@@ -38,9 +38,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<EPalPassiveSkillEffectType, EPalStatusID> SkillStatusMap;
     
-    UPalPassiveSkillComponent();
+    UPalPassiveSkillComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void SetupSkillFromSelf(UObject* OwnerObject, const TArray<FName>& skillList);
     

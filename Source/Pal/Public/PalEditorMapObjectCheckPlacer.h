@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalDataTableRowName_MapObjectData.h"
 #include "PalEditorMapObjectCheckPlacer.generated.h"
 
@@ -28,7 +28,8 @@ protected:
     TArray<FPalDataTableRowName_MapObjectData> IgnoreRowNames;
     
 public:
-    APalEditorMapObjectCheckPlacer();
+    APalEditorMapObjectCheckPlacer(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void PlaceMapObjects();
     

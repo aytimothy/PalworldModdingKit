@@ -8,5 +8,6 @@ class UPalBaseCampWorkerEvent_OverworkDeath : public UPalBaseCampWorkerEventBase
     GENERATED_BODY()
 public:
     UPalBaseCampWorkerEvent_OverworkDeath();
+
 };
 

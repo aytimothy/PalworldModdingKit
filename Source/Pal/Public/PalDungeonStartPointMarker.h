@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalDungeonStartPointMarker.generated.h"
 
 UCLASS(Blueprintable)
 class PAL_API APalDungeonStartPointMarker : public AActor {
     GENERATED_BODY()
 public:
-    APalDungeonStartPointMarker();
+    APalDungeonStartPointMarker(const FObjectInitializer& ObjectInitializer);
+
 };
 

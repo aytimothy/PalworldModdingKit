@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalAIActionBaseCampFighterChildBase.h"
 #include "PalAIActionBaseCampFighterWait.generated.h"
 
@@ -9,6 +9,7 @@ class PAL_API UPalAIActionBaseCampFighterWait : public UPalAIActionBaseCampFight
     GENERATED_BODY()
 public:
     UPalAIActionBaseCampFighterWait();
+
 protected:
     UFUNCTION(BlueprintCallable)
     bool TrySearchEnemy();

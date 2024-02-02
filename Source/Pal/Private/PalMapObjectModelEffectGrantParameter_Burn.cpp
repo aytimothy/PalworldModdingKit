@@ -3,3 +3,4 @@
 UPalMapObjectModelEffectGrantParameter_Burn::UPalMapObjectModelEffectGrantParameter_Burn() {
 }
 
+

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalInstanceID.h"
 #include "PalBlueprintLibrary.generated.h"
 
@@ -9,6 +9,7 @@ class UPalBlueprintLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalBlueprintLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool NotEqual_PalInstanceIDPalInstanceID(FPalInstanceID A, FPalInstanceID B);
     

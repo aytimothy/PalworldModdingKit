@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectPalEggModel : public UPalMapObjectPickupItemOnLevelMo
     GENERATED_BODY()
 public:
     UPalMapObjectPalEggModel();
+
 };
 

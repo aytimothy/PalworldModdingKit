@@ -27,5 +27,6 @@ public:
     bool IsCancel;
     
     UPalTalkWidgetParameter();
+
 };
 

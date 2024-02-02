@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDamageInfo.h"
 #include "PalDamagePopUpManager.generated.h"
 
@@ -16,6 +16,7 @@ public:
     FAddDamagePopupDelegate OnAddDamagePopupDelegate;
     
     UPalDamagePopUpManager();
+
     UFUNCTION(BlueprintCallable)
     void AddDamagePopUp(const FPalDamageInfo& DamageInfo, AActor* Defender);
     

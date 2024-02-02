@@ -12,6 +12,7 @@ public:
     bool bDefaultNegative;
     
     UPalDialogParameterDialog();
+
     UFUNCTION(BlueprintCallable)
     void SetParameters(const FText InMessage, const EPalDialogType InDialogType, const bool bInNegativeDefault);
     

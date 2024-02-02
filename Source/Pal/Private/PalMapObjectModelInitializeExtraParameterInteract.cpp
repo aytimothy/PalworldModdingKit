@@ -4,3 +4,4 @@ UPalMapObjectModelInitializeExtraParameterInteract::UPalMapObjectModelInitialize
     this->RestrictType = EPalMapObjectInteractRestrictType::Anyone;
 }
 
+

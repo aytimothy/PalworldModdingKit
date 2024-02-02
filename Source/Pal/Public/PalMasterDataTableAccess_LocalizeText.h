@@ -8,6 +8,7 @@ class UPalMasterDataTableAccess_LocalizeText : public UPalMasterDataTableAccessB
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_LocalizeText();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FText FindRow(FName RowName) const;
     

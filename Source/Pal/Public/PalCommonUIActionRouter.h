@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Input/CommonUIActionRouterBase.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CommonUI -ObjectName=CommonUIActionRouterBase -FallbackName=CommonUIActionRouterBase
 #include "PalCommonUIActionRouter.generated.h"
 
 UCLASS(Blueprintable)
@@ -8,5 +8,6 @@ class PAL_API UPalCommonUIActionRouter : public UCommonUIActionRouterBase {
     GENERATED_BODY()
 public:
     UPalCommonUIActionRouter();
+
 };
 

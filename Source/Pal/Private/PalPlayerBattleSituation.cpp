@@ -5,3 +5,4 @@ UPalPlayerBattleSituation::UPalPlayerBattleSituation() {
     this->NearDistanceSqr = -1.00f;
 }
 
+

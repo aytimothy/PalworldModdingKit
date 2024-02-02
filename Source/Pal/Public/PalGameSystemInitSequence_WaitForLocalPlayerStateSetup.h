@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_WaitForLocalPlayerStateSetup : public UPalGameS
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_WaitForLocalPlayerStateSetup();
+
 };
 

@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Styling/SlateTypes.h"
-#include "Types/SlateEnums.h"
-#include "Layout/Margin.h"
-#include "Styling/SlateTypes.h"
-#include "Styling/SlateTypes.h"
-#include "Components/SlateWrapperTypes.h"
-#include "Components/PanelWidget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EConsumeMouseWheel -FallbackName=EConsumeMouseWheel
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EOrientation -FallbackName=EOrientation
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=ScrollBarStyle -FallbackName=ScrollBarStyle
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=ScrollBoxStyle -FallbackName=ScrollBoxStyle
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=PanelWidget -FallbackName=PanelWidget
 #include "EPalDescendantScrollDestination.h"
 #include "EPalScrollWhenFocusChanges.h"
 #include "OnUserScrolledEventDelegate2.h"
@@ -78,6 +78,7 @@ public:
     FOnUserScrolledEvent OnUserScrolled;
     
     UPalScrollBox();
+
     UFUNCTION(BlueprintCallable)
     void SetWheelScrollMultiplier(float NewWheelScrollMultiplier);
     

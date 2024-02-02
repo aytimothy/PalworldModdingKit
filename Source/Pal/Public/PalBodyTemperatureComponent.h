@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "EPalBodyTemperatureState.h"
 #include "EPalPassiveSkillEffectType.h"
 #include "EPalPlayerEquipItemSlotType.h"
@@ -51,7 +51,8 @@ private:
     EPalBodyTemperatureState CurrentBodyState;
     
 public:
-    UPalBodyTemperatureComponent();
+    UPalBodyTemperatureComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestReSend_ToServer();

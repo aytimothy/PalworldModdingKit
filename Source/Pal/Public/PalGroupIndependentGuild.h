@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalGroupGuildBase.h"
 #include "PalGuildPlayerInfo.h"
 #include "PalGroupIndependentGuild.generated.h"
@@ -18,7 +18,8 @@ protected:
     
 public:
     UPalGroupIndependentGuild();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 };
 

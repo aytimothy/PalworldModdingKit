@@ -46,3 +46,4 @@ UPalMasterDataTables::UPalMasterDataTables() {
     this->Access_PalShopDataTable = NULL;
 }
 
+

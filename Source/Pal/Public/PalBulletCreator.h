@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ESpawnActorCollisionHandlingMethod -FallbackName=ESpawnActorCollisionHandlingMethod
 #include "Templates/SubclassOf.h"
 #include "PalBulletCreator.generated.h"
 
@@ -16,6 +16,7 @@ class PAL_API UPalBulletCreator : public UObject {
     GENERATED_BODY()
 public:
     UPalBulletCreator();
+
 private:
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     APalBullet* SpawnBullet(const UObject* WorldContextObject, TSubclassOf<APalBullet> bulletClass, const FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod collisionHandlingOverride, AActor* Owner, APawn* instigato);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalItemSlotPressType.h"
 #include "EPalItemTypeA.h"
 #include "EPalItemTypeB.h"
@@ -44,6 +44,7 @@ protected:
     
 public:
     UPalUIInventoryModel();
+
     UFUNCTION(BlueprintCallable)
     void TryMoveSlotToInventory(UPalItemSlot* fromSlot, bool tryAutoEquip);
     

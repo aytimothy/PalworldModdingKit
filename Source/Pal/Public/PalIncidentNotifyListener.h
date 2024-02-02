@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalIncidentState.h"
 #include "PalIncidentNotifyParameter.h"
 #include "PalIncidentNotifyListener.generated.h"
@@ -29,6 +29,7 @@ public:
     TArray<FName> FilterIncidentTypes;
     
     UPalIncidentNotifyListener();
+
     UFUNCTION(BlueprintCallable)
     void UnregisterFromIncidentSystem();
     

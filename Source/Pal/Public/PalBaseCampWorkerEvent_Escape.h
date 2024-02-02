@@ -8,5 +8,6 @@ class UPalBaseCampWorkerEvent_Escape : public UPalBaseCampWorkerEventBase {
     GENERATED_BODY()
 public:
     UPalBaseCampWorkerEvent_Escape();
+
 };
 

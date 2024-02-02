@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalLevelObjectInterface.h"
 #include "PalLevelObjectActor.generated.h"
 
@@ -14,11 +14,12 @@ private:
     FGuid LevelObjectInstanceId;
     
 public:
-    APalLevelObjectActor();
+    APalLevelObjectActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FGuid GetLevelObjectInstanceId() const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

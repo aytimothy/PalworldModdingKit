@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/PlayerInput.h"
-#include "GameFramework/PlayerInput.h"
-#include "GameFramework/PlayerInput.h"
-#include "InputCoreTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=InputActionKeyMapping -FallbackName=InputActionKeyMapping
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=InputAxisKeyMapping -FallbackName=InputAxisKeyMapping
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PlayerInput -FallbackName=PlayerInput
+//CROSS-MODULE INCLUDE V2: -ModuleName=InputCore -ObjectName=Key -FallbackName=Key
 #include "EPalKeyConfigAxisFilterType.h"
 #include "EPalKeyConfigCategory.h"
 #include "PalKeyConfigKeys.h"
@@ -28,6 +28,7 @@ private:
     
 public:
     UPalPlayerInput();
+
     UFUNCTION(BlueprintCallable)
     bool UpdateActionMapping(const FName InActionName, const FPalKeyConfigKeys& NewKey, EPalKeyConfigCategory Category);
     

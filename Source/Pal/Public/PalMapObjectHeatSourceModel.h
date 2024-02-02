@@ -11,6 +11,7 @@ class PAL_API UPalMapObjectHeatSourceModel : public UPalMapObjectConcreteModelBa
     GENERATED_BODY()
 public:
     UPalMapObjectHeatSourceModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateEnergyModuleState_ServerInternal(UPalMapObjectEnergyModule* EnergyModule);

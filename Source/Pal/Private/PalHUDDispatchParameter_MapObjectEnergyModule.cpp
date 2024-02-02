@@ -4,3 +4,4 @@ UPalHUDDispatchParameter_MapObjectEnergyModule::UPalHUDDispatchParameter_MapObje
     this->EnergyModule = NULL;
 }
 
+

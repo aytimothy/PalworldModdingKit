@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalCharacterStoredParameterId.h"
 #include "PalIndividualCharacterSaveParameter.h"
 #include "PalMapObjectConcreteModelBase.h"
@@ -22,8 +22,9 @@ private:
     
 public:
     UPalMapObjectPickableCharacterModelBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestPickup_ServerInternal(const int32 RequestPlayerId);

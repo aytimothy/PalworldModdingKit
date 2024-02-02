@@ -9,6 +9,7 @@ class UPalAction_BeLiftup : public UPalActionBase {
     GENERATED_BODY()
 public:
     UPalAction_BeLiftup();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnStartLifting();

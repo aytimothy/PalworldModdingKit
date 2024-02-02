@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "NavigationInvokerComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=IntPoint -FallbackName=IntPoint
+//CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=NavigationInvokerComponent -FallbackName=NavigationInvokerComponent
 #include "FlagContainer.h"
 #include "PalNavigationInvokerComponent.generated.h"
 
@@ -23,7 +23,8 @@ protected:
     FFlagContainer IsDisableInvorkerFlag;
     
 public:
-    UPalNavigationInvokerComponent();
+    UPalNavigationInvokerComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetDisableInvorkerFlag(FName flagName, bool isDisable);
     

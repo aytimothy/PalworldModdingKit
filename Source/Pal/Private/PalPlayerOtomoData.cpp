@@ -4,3 +4,4 @@ UPalPlayerOtomoData::UPalPlayerOtomoData() {
     this->OtomoOrder = EPalOtomoPalOrderType::Default;
 }
 
+

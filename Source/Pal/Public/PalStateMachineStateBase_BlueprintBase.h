@@ -8,6 +8,7 @@ class PAL_API UPalStateMachineStateBase_BlueprintBase : public UPalStateMachineS
     GENERATED_BODY()
 public:
     UPalStateMachineStateBase_BlueprintBase();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void StateTick(float DeltaTime);
     

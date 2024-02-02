@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/CapsuleComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CapsuleComponent -FallbackName=CapsuleComponent
 #include "EPalBodyPartsType.h"
 #include "PalBodyPartsCapsuleComponent.generated.h"
 
@@ -19,9 +19,10 @@ private:
     FName BroadcastCollisionProfileName;
     
 public:
-    UPalBodyPartsCapsuleComponent();
+    UPalBodyPartsCapsuleComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnRep_BroadcastCollisionProfileName();

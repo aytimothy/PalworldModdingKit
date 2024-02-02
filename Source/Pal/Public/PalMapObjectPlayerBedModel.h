@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalInteractiveObjectIndicatorType.h"
 #include "PalDamageResult.h"
 #include "PalMapObjectConcreteModelBase.h"
@@ -34,8 +34,9 @@ private:
     
 public:
     UPalMapObjectPlayerBedModel();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestTriggerSleepPlayerBed_ToServer(const int32 RequestPlayerId);

@@ -4,3 +4,4 @@ UPalHUDDispatchParameter_HatchingEgg::UPalHUDDispatchParameter_HatchingEgg() {
     this->HatchingEggModel = NULL;
 }
 
+

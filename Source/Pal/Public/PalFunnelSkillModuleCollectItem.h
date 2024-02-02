@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalFunnelSkillModule.h"
 #include "PalFunnelSkillModuleCollectItemSearchInfo.h"
 #include "PalFunnelSkillModuleCollectItem.generated.h"
@@ -27,6 +27,7 @@ protected:
     
 public:
     UPalFunnelSkillModuleCollectItem();
+
     UFUNCTION(BlueprintCallable)
     void SearchCollectableItem(float DeltaTime);
     

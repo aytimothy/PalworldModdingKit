@@ -17,5 +17,6 @@ public:
     bool IsInitSelect;
     
     UPalHUDDispatchParameter_WorldMap();
+
 };
 

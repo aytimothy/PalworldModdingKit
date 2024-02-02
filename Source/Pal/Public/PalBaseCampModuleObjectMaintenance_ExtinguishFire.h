@@ -11,6 +11,7 @@ class PAL_API UPalBaseCampModuleObjectMaintenance_ExtinguishFire : public UPalBa
     GENERATED_BODY()
 public:
     UPalBaseCampModuleObjectMaintenance_ExtinguishFire();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnTriggerByReachAccumulateTriggerValue(UPalMapObjectModelEffect_AccumulateTrigger* Effect_AccumulateTrigger, UPalMapObjectModel* OwnerModel);

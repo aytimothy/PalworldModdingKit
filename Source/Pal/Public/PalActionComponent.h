@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EEndPlayReason -FallbackName=EEndPlayReason
 #include "ActionDynamicParameter.h"
 #include "EPalActionType.h"
 #include "Templates/SubclassOf.h"
@@ -45,7 +45,8 @@ private:
     TArray<UPalActionBase*> TerminateWaitActionList;
     
 public:
-    UPalActionComponent();
+    UPalActionComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     UPalActionBase* PlayActionParameter(FActionDynamicParameter Param, TSubclassOf<UPalActionBase> actionClass);
     

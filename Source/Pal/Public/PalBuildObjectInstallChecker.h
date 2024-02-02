@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalBuildObjectInstallChecker.generated.h"
 
 class APalBuildObject;
@@ -26,6 +26,7 @@ private:
     UPalBuildObjectInstallStrategyBase* InstallStrategy;
     
 public:
-    APalBuildObjectInstallChecker();
+    APalBuildObjectInstallChecker(const FObjectInitializer& ObjectInitializer);
+
 };
 

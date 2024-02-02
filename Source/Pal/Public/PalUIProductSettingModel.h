@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalItemRecipe.h"
 #include "PalStaticItemIdAndNum.h"
 #include "PalUIProductSettingModel.generated.h"
@@ -37,11 +37,12 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     int32 ProductNum;
     
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPalMapObjectEnergyModule> WeakEnergyModule;
     
 public:
     UPalUIProductSettingModel();
+
     UFUNCTION(BlueprintCallable)
     bool TryGetEnergyModule(UPalMapObjectEnergyModule*& Module);
     

@@ -19,6 +19,7 @@ protected:
     
 public:
     UPalEventNotifySystem();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalEventNotifyBase* GetEventNotify(TSubclassOf<UPalEventNotifyBase> Class) const;
     

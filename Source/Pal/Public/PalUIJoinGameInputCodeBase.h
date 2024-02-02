@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FindSessionsCallbackProxy.h"
-#include "JoinSessionResultType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=OnlineSubsystemUtils -ObjectName=BlueprintSessionResult -FallbackName=BlueprintSessionResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=PocketpairUser -ObjectName=JoinSessionResultType -FallbackName=JoinSessionResultType
 #include "PalUserWidgetOverlayUI.h"
 #include "PalUIJoinGameInputCodeBase.generated.h"
 
@@ -15,6 +15,7 @@ private:
     
 public:
     UPalUIJoinGameInputCodeBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void VerifyPassword(const FString& InputPassword);

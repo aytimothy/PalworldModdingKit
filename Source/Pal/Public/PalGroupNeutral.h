@@ -8,5 +8,6 @@ class UPalGroupNeutral : public UPalGroupBase {
     GENERATED_BODY()
 public:
     UPalGroupNeutral();
+
 };
 

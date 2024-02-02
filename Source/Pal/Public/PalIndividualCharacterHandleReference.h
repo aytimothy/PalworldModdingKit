@@ -8,5 +8,6 @@ class UPalIndividualCharacterHandleReference : public UPalIndividualCharacterHan
     GENERATED_BODY()
 public:
     UPalIndividualCharacterHandleReference();
+
 };
 

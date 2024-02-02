@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalWorldMapCapture.generated.h"
 
 class USceneCaptureComponent2D;
@@ -25,7 +25,8 @@ protected:
     UTexture2D* worldMapHeightTexture;
     
 public:
-    APalWorldMapCapture();
+    APalWorldMapCapture(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UTexture2D* GetWorldMapHeightMap();
     

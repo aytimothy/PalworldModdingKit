@@ -19,6 +19,7 @@ private:
     
 public:
     UPalCoopSkillModuleAssignPassiveSkill();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RemovePassiveSkills();

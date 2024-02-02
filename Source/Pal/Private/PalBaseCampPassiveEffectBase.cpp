@@ -3,3 +3,4 @@
 UPalBaseCampPassiveEffectBase::UPalBaseCampPassiveEffectBase() {
 }
 
+

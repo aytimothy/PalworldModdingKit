@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Chaos/ChaosEngineInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=PhysicsCore -ObjectName=EPhysicalSurface -FallbackName=EPhysicalSurface
 #include "FootStepEffectInfo.generated.h"
 
 class UNiagaraSystem;

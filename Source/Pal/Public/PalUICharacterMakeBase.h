@@ -9,6 +9,7 @@ class PAL_API UPalUICharacterMakeBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUICharacterMakeBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void RequestChangePlayerName(const FString& NewPlayerName);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "EPalLogType.h"
 #include "EPalWorkType.h"
 #include "PalItemId.h"
@@ -18,6 +18,7 @@ class PAL_API UPalLogUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalLogUtility();
+
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void SetTextureToAdditionalDataFromStaticItemIDs(const UObject* WorldContextObject, UPARAM(Ref) FPalLogAdditionalData& targetData, const TArray<FName>& StaticItemIds);
     

@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalEnemyVirtualCommander.generated.h"
 
 UCLASS(Abstract, Blueprintable)
 class PAL_API APalEnemyVirtualCommander : public AActor {
     GENERATED_BODY()
 public:
-    APalEnemyVirtualCommander();
+    APalEnemyVirtualCommander(const FObjectInitializer& ObjectInitializer);
+
 };
 

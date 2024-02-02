@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_WaitForWorldSystemInit : public UPalGameSystemI
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_WaitForWorldSystemInit();
+
 };
 

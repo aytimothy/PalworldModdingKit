@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalBaseCampFunctionModuleBase.h"
 #include "PalBaseCampModuleTransportItemStatus.h"
 #include "PalBaseCampModuleTransportItemTarget.h"
@@ -24,6 +24,7 @@ protected:
     
 public:
     UPalBaseCampModuleTransportItemDirector();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateMapObjectContainer(UPalMapObjectItemContainerModule* ContainerModule);

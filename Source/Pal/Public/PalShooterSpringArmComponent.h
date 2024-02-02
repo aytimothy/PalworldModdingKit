@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "EPalWeaponType.h"
 #include "FixedPoint64.h"
 #include "FloatContainer.h"
@@ -162,7 +162,8 @@ private:
     FFloatContainer ArmLengthScaleContainer;
     
 public:
-    UPalShooterSpringArmComponent();
+    UPalShooterSpringArmComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void UpdateCameraInterp(float DeltaTime);

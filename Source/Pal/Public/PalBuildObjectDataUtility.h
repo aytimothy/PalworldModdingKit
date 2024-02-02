@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "EPalBuildObjectTypeA.h"
 #include "EPalBuildObjectTypeB.h"
 #include "PalBuildObjectData.h"
@@ -12,6 +12,7 @@ class UPalBuildObjectDataUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalBuildObjectDataUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static int32 ToSortPriorityTypeB(const EPalBuildObjectTypeB TypeB);
     

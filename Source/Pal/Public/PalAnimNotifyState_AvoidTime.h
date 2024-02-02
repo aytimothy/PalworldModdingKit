@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotifyState.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyState -FallbackName=AnimNotifyState
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionResponse -FallbackName=ECollisionResponse
 #include "PalAnimNotifyState_AvoidTime.generated.h"
 
 class UPrimitiveComponent;
@@ -19,5 +19,6 @@ private:
     
 public:
     UPalAnimNotifyState_AvoidTime();
+
 };
 

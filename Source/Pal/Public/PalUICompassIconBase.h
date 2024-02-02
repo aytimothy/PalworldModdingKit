@@ -8,5 +8,6 @@ class UPalUICompassIconBase : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUICompassIconBase();
+
 };
 

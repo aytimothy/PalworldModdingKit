@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalContainerId.h"
 #include "PalGameWorldDataSaveInterface.h"
 #include "PalItemContainerBelongInfo.h"
@@ -31,6 +31,7 @@ private:
     
 public:
     UPalItemContainerManager();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetSlot(const FPalItemSlotId& SlotID, UPalItemSlot*& Slot) const;
     
@@ -46,7 +47,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalItemContainer* GetContainer(const FPalContainerId& ContainerId) const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

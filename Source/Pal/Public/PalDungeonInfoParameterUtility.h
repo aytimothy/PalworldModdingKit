@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDungeonInfoParameter.h"
 #include "PalDungeonInfoParameterUtility.generated.h"
 
@@ -9,6 +9,7 @@ class UPalDungeonInfoParameterUtility : public UObject {
     GENERATED_BODY()
 public:
     UPalDungeonInfoParameterUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContextObject"))
     static float CalcDisappearRemainSeconds(const UObject* WorldContextObject, const FPalDungeonInfoParameter& InParameter);
     

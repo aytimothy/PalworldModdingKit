@@ -10,6 +10,7 @@ class PAL_API UPalUICharacterHPGaugeBase : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUICharacterHPGaugeBase();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void UpdateVisibility();
     

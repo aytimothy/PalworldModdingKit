@@ -8,5 +8,6 @@ class UPalBuildObjectInstallStrategySinkableNormal : public UPalBuildObjectInsta
     GENERATED_BODY()
 public:
     UPalBuildObjectInstallStrategySinkableNormal();
+
 };
 

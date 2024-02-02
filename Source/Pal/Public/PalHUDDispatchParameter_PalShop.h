@@ -13,5 +13,6 @@ public:
     UPalShopBase* Shop;
     
     UPalHUDDispatchParameter_PalShop();
+
 };
 

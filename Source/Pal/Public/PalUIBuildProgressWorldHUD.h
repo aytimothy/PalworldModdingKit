@@ -17,6 +17,7 @@ protected:
     
 public:
     UPalUIBuildProgressWorldHUD();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SetProgress(UPalWorkProgress* Work);

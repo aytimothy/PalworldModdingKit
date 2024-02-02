@@ -8,5 +8,6 @@ class UPalMasterDataTableAccess_FieldLotteryNameData : public UPalMasterDataTabl
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_FieldLotteryNameData();
+
 };
 

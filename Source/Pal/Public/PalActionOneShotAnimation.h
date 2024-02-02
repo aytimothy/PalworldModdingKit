@@ -10,6 +10,7 @@ class UPalActionOneShotAnimation : public UPalActionBase {
     GENERATED_BODY()
 public:
     UPalActionOneShotAnimation();
+
     UFUNCTION(BlueprintCallable)
     void OnEndMontage(UAnimMontage* Montage, bool bInterrupted);
     

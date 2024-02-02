@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/RichTextBlockImageDecorator.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=RichTextBlockImageDecorator -FallbackName=RichTextBlockImageDecorator
 #include "PalRichTextIconDecorator.generated.h"
 
 class UDataTable;
@@ -13,5 +13,6 @@ public:
     UDataTable* ControlKeyIconData;
     
     UPalRichTextIconDecorator();
+
 };
 

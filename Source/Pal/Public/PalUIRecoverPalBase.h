@@ -11,6 +11,7 @@ class PAL_API UPalUIRecoverPalBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIRecoverPalBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void SelectCharacterSlot(UPalIndividualCharacterSlot* targetSlot, const EPalItemSlotPressType PressType);

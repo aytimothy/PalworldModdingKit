@@ -1,6 +1,15 @@
 #include "PalFlyMeshHeightCtrlComponent.h"
 #include "Net/UnrealNetwork.h"
 
+UPalFlyMeshHeightCtrlComponent::UPalFlyMeshHeightCtrlComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->FlingAdditionalHeight = 0.00f;
+    this->HighFlingAddtionalHeight = 0.00f;
+    this->State = EPalFlyHeightType::Stop;
+    this->bIsHighFling = false;
+    this->bIsHighFlingCache = false;
+    this->SK = NULL;
+}
+
 void UPalFlyMeshHeightCtrlComponent::ToLand(float Duration) {
 }
 
@@ -29,6 +38,9 @@ void UPalFlyMeshHeightCtrlComponent::HighFlingEnd_Server() {
 void UPalFlyMeshHeightCtrlComponent::HighFlingEnd_Implementation() {
 }
 
+void UPalFlyMeshHeightCtrlComponent::HighFlingEnd_Implementation() {
+}
+
 float UPalFlyMeshHeightCtrlComponent::GetDefaultMeshLocationZ() {
     return 0.0f;
 }
@@ -42,12 +54,4 @@ void UPalFlyMeshHeightCtrlComponent::GetLifetimeReplicatedProps(TArray<FLifetime
     DOREPLIFETIME(UPalFlyMeshHeightCtrlComponent, bIsHighFling);
 }
 
-UPalFlyMeshHeightCtrlComponent::UPalFlyMeshHeightCtrlComponent() {
-    this->FlingAdditionalHeight = 0.00f;
-    this->HighFlingAddtionalHeight = 0.00f;
-    this->State = EPalFlyHeightType::Stop;
-    this->bIsHighFling = false;
-    this->bIsHighFlingCache = false;
-    this->SK = NULL;
-}
 

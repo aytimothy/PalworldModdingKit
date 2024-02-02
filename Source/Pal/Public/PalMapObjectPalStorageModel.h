@@ -26,6 +26,7 @@ protected:
     
 public:
     UPalMapObjectPalStorageModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateGuildPalStorage_ServerInternal(UPalBaseCampModel* BaseCampModel, UPalGuildPalStorage* GuildPalStorage);

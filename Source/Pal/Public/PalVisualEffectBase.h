@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalVisualEffectID.h"
 #include "PalVisualEffectDynamicParameter.h"
 #include "PalVisualEffectBase.generated.h"
@@ -39,6 +39,7 @@ public:
     FPalVisualEffectDynamicParameter DynamicParameter;
     
     UPalVisualEffectBase();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void TickVisualEffect(float DeltaTime);
     

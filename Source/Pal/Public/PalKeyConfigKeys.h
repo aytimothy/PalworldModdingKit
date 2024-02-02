@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "InputCoreTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=InputCore -ObjectName=Key -FallbackName=Key
 #include "PalKeyConfigKeys.generated.h"
 
 USTRUCT(BlueprintType)

@@ -10,6 +10,7 @@ class PAL_API UPalMapObjectSwitchOnInWorking : public UPalMapObjectConcreteModel
     GENERATED_BODY()
 public:
     UPalMapObjectSwitchOnInWorking();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdateAssignedCharacter_ServerInternal(UPalWorkBase* Work);

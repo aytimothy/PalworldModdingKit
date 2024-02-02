@@ -12,5 +12,6 @@ public:
     EPalMapObjectTreasureGradeType GradeType;
     
     UPalMapObjectModelInitializeExtraParameterTreasureBox();
+
 };
 

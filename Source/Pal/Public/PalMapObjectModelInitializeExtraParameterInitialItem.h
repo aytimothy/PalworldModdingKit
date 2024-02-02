@@ -12,5 +12,6 @@ public:
     TArray<FPalItemAndNum> ItemInfos;
     
     UPalMapObjectModelInitializeExtraParameterInitialItem();
+
 };
 

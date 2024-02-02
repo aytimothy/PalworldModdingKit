@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReplicationGraph.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=ReplicationGraph -ObjectName=ReplicationGraph -FallbackName=ReplicationGraph
 #include "PalReplicationGraph.generated.h"
 
 class UReplicationGraphNode_ActorList;
@@ -26,5 +26,6 @@ public:
     UReplicationGraphNode_ActorList* AlwaysRelevantNode;
     
     UPalReplicationGraph();
+
 };
 

@@ -8,6 +8,7 @@ class PAL_API UPalStatusLifeSteal : public UPalStatusBase {
     GENERATED_BODY()
 public:
     UPalStatusLifeSteal();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnLifeSteal(int32 Damage);
     

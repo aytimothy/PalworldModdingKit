@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PrimaryGameLayout.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CommonGame -ObjectName=PrimaryGameLayout -FallbackName=PrimaryGameLayout
 #include "EPalFadeWidgetLayerType.h"
 #include "PalUICommonItemInfoDisplayData.h"
 #include "PalUICommonRewardDisplayData.h"
@@ -14,6 +14,7 @@ class PAL_API UPalPrimaryGameLayoutBase : public UPrimaryGameLayout {
     GENERATED_BODY()
 public:
     UPalPrimaryGameLayoutBase();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ShowLiftIcon();
     

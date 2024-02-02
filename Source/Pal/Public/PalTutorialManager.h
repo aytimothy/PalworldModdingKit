@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "EPalTutorialTriggerConditionType.h"
 #include "PalGameWorldDataSaveInterface.h"
 #include "PalUIPalCaptureInfo.h"
@@ -31,13 +31,14 @@ protected:
     
 public:
     UPalTutorialManager();
+
     UFUNCTION(BlueprintCallable)
     void TutorialTrigger_Common(EPalTutorialTriggerConditionType TriggerType);
     
     UFUNCTION(BlueprintCallable)
     void TutorialTrigger_Capture(FPalUIPalCaptureInfo CaptureInfo, bool CaptureSuccess);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

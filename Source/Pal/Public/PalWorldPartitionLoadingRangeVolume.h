@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalWorldPartitionLoadingRangeVolume.generated.h"
 
 UCLASS(Blueprintable)
@@ -10,7 +10,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<int32, float> LoadingRangeMap;
     
-    APalWorldPartitionLoadingRangeVolume();
+    APalWorldPartitionLoadingRangeVolume(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetOverrideLoadingRange(bool Enable);
     

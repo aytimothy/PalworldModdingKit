@@ -9,6 +9,7 @@ class PAL_API UPalWorldSecurityLawTrigger_ItemMove : public UPalWorldSecurityLaw
     GENERATED_BODY()
 public:
     UPalWorldSecurityLawTrigger_ItemMove();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnNotifiedEvent(const FPalItemOperationInfo_Move& EventInfo);

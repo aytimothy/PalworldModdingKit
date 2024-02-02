@@ -9,6 +9,7 @@ class UPalUIMapObjectStatusIndicatorBase : public UPalUserWidgetWorldHUD {
     GENERATED_BODY()
 public:
     UPalUIMapObjectStatusIndicatorBase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     EPalWorkSuitability GetWorkSuitability() const;
     

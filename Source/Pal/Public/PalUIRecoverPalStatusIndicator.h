@@ -8,5 +8,6 @@ class UPalUIRecoverPalStatusIndicator : public UPalUIMapObjectStatusIndicatorBas
     GENERATED_BODY()
 public:
     UPalUIRecoverPalStatusIndicator();
+
 };
 

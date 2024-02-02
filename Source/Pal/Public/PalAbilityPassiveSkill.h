@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDataTableRowName_PassiveSkillData.h"
 #include "PalPassiveAbilitySkillStatus.h"
 #include "PalPassiveAbilitySkills.h"
@@ -46,6 +46,7 @@ private:
     
 public:
     UPalAbilityPassiveSkill();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnWorkerAssignChanged(UPalCharacterParameterComponent* Parameter);

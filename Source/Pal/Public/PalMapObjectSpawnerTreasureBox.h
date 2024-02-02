@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalMapObjectOperationResult.h"
 #include "PalDataTableRowName_FieldLotteryNameData.h"
 #include "PalDataTableRowName_MapObjectData.h"
@@ -25,7 +25,8 @@ protected:
     bool bRespawnableMulti;
     
 public:
-    APalMapObjectSpawnerTreasureBox();
+    APalMapObjectSpawnerTreasureBox(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnFinishedSpawningMapObjectModel(FGuid InstanceId, const EPalMapObjectOperationResult Result);

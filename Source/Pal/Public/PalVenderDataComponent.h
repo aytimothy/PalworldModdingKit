@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalShopLotteryBiomeType.h"
 #include "EPalShopLotteryType.h"
 #include "PalDataTableRowName_ItemShopLotteryData.h"
@@ -58,9 +58,10 @@ private:
     UPalShopBase* MyPalShop;
     
 public:
-    UPalVenderDataComponent();
+    UPalVenderDataComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetPalShop(UPalShopBase*& OutShop) const;
     

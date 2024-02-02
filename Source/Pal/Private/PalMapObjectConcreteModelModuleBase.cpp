@@ -4,3 +4,4 @@ UPalMapObjectConcreteModelModuleBase::UPalMapObjectConcreteModelModuleBase() {
     this->bTriggeredOnSpawnedReady = false;
 }
 
+

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalFacialEyeType.h"
 #include "EPalFacialMouthType.h"
 #include "PalFacialComponent.generated.h"
@@ -21,7 +21,8 @@ private:
     UPalFacial_MainModule* MainModule;
     
 public:
-    UPalFacialComponent();
+    UPalFacialComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetUpTestMesh(USkeletalMeshComponent* SkeletalMeshComponent);
     

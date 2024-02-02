@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "InteractDelegateDelegate.h"
 #include "InteractSelfDelegateDelegate.h"
 #include "InteractTriggerDelegateDelegate.h"
@@ -37,5 +37,6 @@ public:
     FInteractTriggeringDelegate OnTriggeringInteract;
     
     UPalInteractDelegates();
+
 };
 

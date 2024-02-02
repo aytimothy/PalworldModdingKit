@@ -3,3 +3,4 @@
 UPalBaseCampWorkerEvent_DodgeWork_Short::UPalBaseCampWorkerEvent_DodgeWork_Short() {
 }
 
+

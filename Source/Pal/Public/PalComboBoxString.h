@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Styling/SlateTypes.h"
-#include "Types/SlateEnums.h"
-#include "Layout/Margin.h"
-#include "Styling/SlateColor.h"
-#include "Fonts/SlateFontInfo.h"
-#include "Styling/SlateTypes.h"
-#include "Components/Widget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=ComboBoxStyle -FallbackName=ComboBoxStyle
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=ESelectInfo -FallbackName=ESelectInfo
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateFontInfo -FallbackName=SlateFontInfo
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=TableRowStyle -FallbackName=TableRowStyle
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
 #include "PalComboBoxString.generated.h"
 
 UCLASS(Blueprintable)
@@ -64,6 +64,7 @@ public:
     FOnOpeningEvent OnOpening;
     
     UPalComboBoxString();
+
     UFUNCTION(BlueprintCallable)
     void SetSelectedOption(const FString& Option);
     

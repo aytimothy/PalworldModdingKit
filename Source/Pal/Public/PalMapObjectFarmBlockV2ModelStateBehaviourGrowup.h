@@ -8,5 +8,6 @@ class UPalMapObjectFarmBlockV2ModelStateBehaviourGrowup : public UPalMapObjectFa
     GENERATED_BODY()
 public:
     UPalMapObjectFarmBlockV2ModelStateBehaviourGrowup();
+
 };
 

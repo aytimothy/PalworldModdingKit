@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalPlayerDataInventoryInfo.h"
 #include "PalPlayerDataStorage.generated.h"
 
@@ -12,6 +12,7 @@ class UPalPlayerDataStorage : public UObject {
     GENERATED_BODY()
 public:
     UPalPlayerDataStorage();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UPalPlayerDataPalStorage* GetPalStorage() const;
     

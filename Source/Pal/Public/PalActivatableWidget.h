@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CommonActivatableWidget.h"
-#include "Engine/EngineBaseTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CommonUI -ObjectName=CommonActivatableWidget -FallbackName=CommonActivatableWidget
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EMouseCaptureMode -FallbackName=EMouseCaptureMode
 #include "EPalWidgetInputMode.h"
 #include "PalActivatableWidget.generated.h"
 
@@ -18,5 +18,6 @@ protected:
     
 public:
     UPalActivatableWidget();
+
 };
 

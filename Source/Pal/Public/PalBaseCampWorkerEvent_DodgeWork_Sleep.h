@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatInterval -FallbackName=FloatInterval
 #include "PalBaseCampWorkerEvent_DodgeWork.h"
 #include "PalBaseCampWorkerEvent_DodgeWork_Sleep.generated.h"
 
@@ -15,10 +15,11 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 SanityValueStillSleeping;
     
-    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFloatInterval WalkTime_BeforeSleep;
     
 public:
     UPalBaseCampWorkerEvent_DodgeWork_Sleep();
+
 };
 

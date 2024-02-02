@@ -130,6 +130,7 @@ UPalDebugSetting::UPalDebugSetting() {
     this->BaseCampWorkerEatTime = 0.00f;
     this->bBaseCampShowCannotTransportTarget = false;
     this->bBaseCampMoveModeTeleportForce = false;
+    this->bVisibleSpawnPointFromPalBox = false;
     this->fallBackDefense = 0;
     this->bDebugLogWorldSecurity = false;
     this->bDebugLogEnableCriminal = false;
@@ -249,4 +250,5 @@ UPalDebugSetting::UPalDebugSetting() {
     this->bForceLocationTeleport = false;
     this->bShowInvaderDeubgLog = false;
 }
+
 

@@ -14,6 +14,7 @@ protected:
     
 public:
     UPalUIWorldSettingBase();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnCompletedSaveSetting(bool IsSuccess);

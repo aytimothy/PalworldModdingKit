@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDeadBodyManager.generated.h"
 
 class UPalIndividualCharacterHandle;
@@ -15,6 +15,7 @@ private:
     
 public:
     UPalDeadBodyManager();
+
     UFUNCTION(BlueprintCallable)
     void GetDeadPalList(TArray<UPalIndividualCharacterHandle*>& OutArray);
     

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
-#include "Components/SlateWrapperTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
 #include "PalUserWidgetWorldHUD.h"
 #include "PalUserWidgetTimerGaugeBase.generated.h"
 
@@ -18,6 +18,7 @@ private:
     
 public:
     UPalUserWidgetTimerGaugeBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void VisibilityForceHidden(ESlateVisibility changedVisibility);

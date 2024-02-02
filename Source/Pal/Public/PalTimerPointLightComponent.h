@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/PointLightComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PointLightComponent -FallbackName=PointLightComponent
 #include "FlagContainer.h"
 #include "PalTimerPointLightComponent.generated.h"
 
@@ -28,7 +28,8 @@ private:
     FFlagContainer EnableWhenDayTimeFlag;
     
 public:
-    UPalTimerPointLightComponent();
+    UPalTimerPointLightComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetEnableWhenDayTime(FName Key, bool Enable);
     

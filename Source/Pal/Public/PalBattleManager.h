@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ActorArray.h"
 #include "EPalPlayerBattleFinishType.h"
 #include "PalWorldSubsystem.h"
@@ -41,6 +41,7 @@ public:
     FEmitSoundOnlyPalmiDelegate OnFEmitSoundOnlyPalmiDelegate;
     
     UPalBattleManager();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TargetIsPlayerOrPlayersOtomoPal(AActor* TargetCharacter);
     

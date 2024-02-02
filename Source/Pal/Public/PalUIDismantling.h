@@ -8,6 +8,7 @@ class UPalUIDismantling : public UPalUserWidgetStackableUI {
     GENERATED_BODY()
 public:
     UPalUIDismantling();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void DismantleObjectSuccessed();
     

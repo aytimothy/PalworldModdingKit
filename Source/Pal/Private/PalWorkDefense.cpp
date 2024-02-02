@@ -6,3 +6,4 @@ UPalWorkDefense::UPalWorkDefense() {
     this->DefenseCombatType = EPalWorkDefenseCombatType::None;
 }
 
+

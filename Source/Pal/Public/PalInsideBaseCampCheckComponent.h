@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalInsideBaseCampCheckComponent.generated.h"
 
 class UPalBaseCampModel;
@@ -24,7 +24,8 @@ private:
     FGuid NowInsideBaseCampID;
     
 public:
-    UPalInsideBaseCampCheckComponent();
+    UPalInsideBaseCampCheckComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsInsideBaseCamp();
     

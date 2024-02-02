@@ -4,3 +4,4 @@ UPalHUDDispatchParameter_CutsceneOverlay::UPalHUDDispatchParameter_CutsceneOverl
     this->CutsceneComponent = NULL;
 }
 
+

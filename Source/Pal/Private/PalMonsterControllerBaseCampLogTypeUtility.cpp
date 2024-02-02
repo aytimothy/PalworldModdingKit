@@ -3,3 +3,4 @@
 UPalMonsterControllerBaseCampLogTypeUtility::UPalMonsterControllerBaseCampLogTypeUtility() {
 }
 
+

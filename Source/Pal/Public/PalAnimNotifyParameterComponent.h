@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalAnimNotifyParameterComponent.generated.h"
 
 class UPalAnimNotifyDynamicParameterBase;
@@ -14,6 +14,7 @@ private:
     TMap<FString, UPalAnimNotifyDynamicParameterBase*> DynamicParameterMap;
     
 public:
-    UPalAnimNotifyParameterComponent();
+    UPalAnimNotifyParameterComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

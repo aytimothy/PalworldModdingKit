@@ -10,6 +10,7 @@ class UPalUIWorldHUDWidgetCanvas : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUIWorldHUDWidgetCanvas();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void RemoveWidget(UPalUserWidgetWorldHUD* Widget);
     

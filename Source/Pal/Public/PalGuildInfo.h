@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Info.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Info -FallbackName=Info
 #include "PalGuildInfo.generated.h"
 
 class UPalGroupGuildBase;
@@ -18,9 +18,10 @@ protected:
     UPalGroupGuildBase* Guild;
     
 public:
-    APalGuildInfo();
+    APalGuildInfo(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnRep_Guild(const UPalGroupGuildBase* OldValue);

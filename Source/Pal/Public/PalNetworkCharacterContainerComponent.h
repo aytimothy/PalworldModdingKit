@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalCharacterContainerOperationResult.h"
 #include "EPalCharacterContainerSortType.h"
 #include "PalCharacterSlotId.h"
@@ -19,7 +19,8 @@ private:
     TMap<FGuid, FPalNetworkCharacterContainerParameter> ContainerParamMap;
     
 public:
-    UPalNetworkCharacterContainerComponent();
+    UPalNetworkCharacterContainerComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestUnlockSlot_ToServer(const FGuid& RequestID, const FPalCharacterSlotId& SlotID);

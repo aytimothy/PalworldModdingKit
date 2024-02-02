@@ -3,3 +3,4 @@
 UPalLocationPointCreateParameter_Character::UPalLocationPointCreateParameter_Character() {
 }
 
+

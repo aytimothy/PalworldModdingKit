@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Animation/AnimInstance.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimInstance -FallbackName=AnimInstance
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BranchingPointNotifyPayload -FallbackName=BranchingPointNotifyPayload
 #include "FlagContainer.h"
 #include "FloatContainer.h"
 #include "GeneralAnimationParameter.h"
@@ -59,6 +59,7 @@ private:
     
 public:
     UPalAnimInstance();
+
     UFUNCTION(BlueprintCallable)
     void SetUpperOverrideDisableFlag(FName flagName, bool isDisable);
     
@@ -66,10 +67,10 @@ public:
     void SetAdditiveAnimationRate(FName flagName, float Rate);
     
 private:
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnNotifyEndReceived(FName NotifyName, const FBranchingPointNotifyPayload& BranchingPointNotifyPayload);
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnNotifyBeginReceived(FName NotifyName, const FBranchingPointNotifyPayload& BranchingPointNotifyPayload);
     
     UFUNCTION(BlueprintCallable)

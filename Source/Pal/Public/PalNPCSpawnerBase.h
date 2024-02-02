@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalCheckSpawnResultType.h"
 #include "EPalSpawnRadiusType.h"
 #include "EPalSpwnerImportanceType.h"
@@ -80,7 +80,8 @@ private:
     EPalSpwnerImportanceType ImportanceType;
     
 public:
-    APalNPCSpawnerBase();
+    APalNPCSpawnerBase(const FObjectInitializer& ObjectInitializer);
+
 protected:
     UFUNCTION(BlueprintCallable)
     void Tick_Spawning(float DeltaTime);

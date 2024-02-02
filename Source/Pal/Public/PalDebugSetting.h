@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalAudioBus.h"
 #include "EPalBiomeType.h"
 #include "EPalLanguageType.h"
@@ -20,8 +20,6 @@
 #include "PalDebugSetting.generated.h"
 
 class APalSoundDebugModel;
-
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnLoadingScreenVisibilityChangedDelegate);
 
 UCLASS(Blueprintable, Config=Game)
 class UPalDebugSetting : public UObject {
@@ -438,6 +436,9 @@ public:
     bool bBaseCampMoveModeTeleportForce;
     
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool bVisibleSpawnPointFromPalBox;
+    
+    UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 fallBackDefense;
     
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -825,5 +826,6 @@ public:
     bool bShowInvaderDeubgLog;
     
     UPalDebugSetting();
+
 };
 

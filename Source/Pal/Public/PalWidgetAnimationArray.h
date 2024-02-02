@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalWidgetAnimationArray.generated.h"
 
 class UUserWidget;
@@ -22,6 +22,7 @@ private:
     
 public:
     UPalWidgetAnimationArray();
+
     UFUNCTION(BlueprintCallable)
     void StopAnimation(const FName& animationName);
     

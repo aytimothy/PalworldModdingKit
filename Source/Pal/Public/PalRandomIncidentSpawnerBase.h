@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalRandomIncidentSpawnerAreaType.h"
 #include "EPalRandomIncidentSpawnerStatus.h"
 #include "PalRandomIncidentWalkPathReferenceData.h"
@@ -50,7 +50,8 @@ private:
     UPalRandomIncidentLotteryBase* Lottery;
     
 public:
-    APalRandomIncidentSpawnerBase();
+    APalRandomIncidentSpawnerBase(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void UpdateStatusWaitPlayerOutside(float DeltaTime);

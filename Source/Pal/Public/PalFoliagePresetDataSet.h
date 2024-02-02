@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/DataAsset.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "EPalFoliagePresetType.h"
 #include "PalFoliagePresetData.h"
 #include "PalFoliagePresetDataSet.generated.h"
@@ -13,5 +13,6 @@ public:
     TMap<EPalFoliagePresetType, FPalFoliagePresetData> Presets;
     
     UPalFoliagePresetDataSet();
+
 };
 

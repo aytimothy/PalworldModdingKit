@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalFoliagePresetType.h"
 #include "PalCellCoord.h"
 #include "PalFoliageInstanceId.h"
@@ -47,6 +47,7 @@ private:
     
 public:
     UPalMapObjectFoliageModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RespawnInstance(UPalFoliageInstance* Instance);

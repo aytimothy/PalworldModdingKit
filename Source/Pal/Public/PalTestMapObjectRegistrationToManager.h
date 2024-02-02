@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalTestMapObjectRegistrationToManager.generated.h"
 
 UCLASS(Blueprintable)
@@ -12,7 +12,8 @@ protected:
     bool bReadyVirtualBaseCamp;
     
 public:
-    APalTestMapObjectRegistrationToManager();
+    APalTestMapObjectRegistrationToManager(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void ForceBuildComplete();
     

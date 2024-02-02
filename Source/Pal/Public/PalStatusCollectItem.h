@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalStaticItemIdAndNum.h"
 #include "PalStatusBase.h"
 #include "PalStatusCollectItem.generated.h"
@@ -17,6 +17,7 @@ private:
     
 public:
     UPalStatusCollectItem();
+
     UFUNCTION(BlueprintCallable)
     void TickStatus_Implementation(float DeltaTime);
     

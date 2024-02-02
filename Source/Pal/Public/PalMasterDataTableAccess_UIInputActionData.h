@@ -8,5 +8,6 @@ class UPalMasterDataTableAccess_UIInputActionData : public UPalMasterDataTableAc
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_UIInputActionData();
+
 };
 

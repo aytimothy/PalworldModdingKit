@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CommonRichTextBlock.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CommonUI -ObjectName=CommonRichTextBlock -FallbackName=CommonRichTextBlock
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "PalRichTextBlockBase.generated.h"
 
 UCLASS(Blueprintable)
@@ -24,6 +24,7 @@ public:
     int32 MaxWidth;
     
     UPalRichTextBlockBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void SetText_GDKInternal(bool IsSuccess, const FString& OutString);

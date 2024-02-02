@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AkGameplayStatics.h"
-#include "UObject/Object.h"
-#include "Chaos/ChaosEngineInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=EAkCallbackType -FallbackName=EAkCallbackType
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=PhysicsCore -ObjectName=EPhysicalSurface -FallbackName=EPhysicalSurface
 #include "PalDataTableRowName_SoundID.h"
 #include "PalSoundOptions.h"
 #include "PalSoundSlot.generated.h"
@@ -27,6 +27,7 @@ private:
     
 public:
     UPalSoundSlot();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void Terminate();
     

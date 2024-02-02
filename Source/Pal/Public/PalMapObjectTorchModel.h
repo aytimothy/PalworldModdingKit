@@ -19,6 +19,7 @@ private:
     
 public:
     UPalMapObjectTorchModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestTriggerIgnition_ToServer(const int32 RequestPlayerId);

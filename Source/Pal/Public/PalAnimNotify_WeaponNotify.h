@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotify -FallbackName=AnimNotify
 #include "EWeaponNotifyType.h"
 #include "PalAnimNotify_WeaponNotify.generated.h"
 
@@ -12,5 +12,6 @@ public:
     EWeaponNotifyType WeaponNotifyType;
     
     UPalAnimNotify_WeaponNotify();
+
 };
 

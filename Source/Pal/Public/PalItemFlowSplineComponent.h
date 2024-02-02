@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/SplineComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SplineComponent -FallbackName=SplineComponent
 #include "FloatCounter.h"
 #include "PalItemFlowInSplineInfo.h"
 #include "Templates/SubclassOf.h"
@@ -29,7 +29,8 @@ private:
     TArray<FPalItemFlowInSplineInfo> FlowingItemInfos;
     
 public:
-    UPalItemFlowSplineComponent();
+    UPalItemFlowSplineComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void UpdateTargetItem(const FName InStaticItemId);
     

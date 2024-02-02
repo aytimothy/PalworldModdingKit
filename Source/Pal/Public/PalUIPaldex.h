@@ -17,6 +17,7 @@ protected:
     
 public:
     UPalUIPaldex();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void CreateDisplayInfo();

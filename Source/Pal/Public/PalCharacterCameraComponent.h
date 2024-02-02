@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Camera/CameraComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraComponent -FallbackName=CameraComponent
 #include "EPalWeaponType.h"
 #include "PalCameraDOFSetting.h"
 #include "PalCharacterCameraComponent.generated.h"
@@ -111,7 +111,8 @@ private:
     UMaterialInstanceDynamic* DynamicAimBlurMaterialDynamic;
     
 public:
-    UPalCharacterCameraComponent();
+    UPalCharacterCameraComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnStartAim();

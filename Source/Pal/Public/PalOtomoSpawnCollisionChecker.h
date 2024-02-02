@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "PalOtomoSpawnCollisionChecker.generated.h"
 
 class AActor;
@@ -14,6 +14,7 @@ class PAL_API UPalOtomoSpawnCollisionChecker : public UObject {
     GENERATED_BODY()
 public:
     UPalOtomoSpawnCollisionChecker();
+
     UFUNCTION(BlueprintCallable)
     FTransform GetTransform_WhenSpawnPalNearTrainer(AActor* Trainer);
     

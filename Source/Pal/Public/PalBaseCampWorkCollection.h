@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalBaseCampWorkCollectionStashInfo.h"
 #include "PalInstanceID.h"
 #include "PalWorkAssignRequirementParameter.h"
@@ -31,6 +31,7 @@ private:
     
 public:
     UPalBaseCampWorkCollection();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUnassignWork_ServerInternal(UPalWorkBase* Work, const FPalInstanceID& IndividualId);

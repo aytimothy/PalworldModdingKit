@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalLocationPoint.h"
 #include "PalMapObjectDisposeOptions.h"
 #include "PalLocationPoint_MapObject.generated.h"
@@ -21,8 +21,9 @@ private:
     
 public:
     UPalLocationPoint_MapObject();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnDisposeTarget(UPalMapObjectModel* Model, const FPalMapObjectDisposeOptions& Options);

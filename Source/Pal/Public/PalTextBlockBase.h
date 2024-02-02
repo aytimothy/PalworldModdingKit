@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CommonTextBlock.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CommonUI -ObjectName=CommonTextBlock -FallbackName=CommonTextBlock
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "PalTextBlockBase.generated.h"
 
 UCLASS(Blueprintable)
@@ -21,6 +21,7 @@ public:
     int32 MaxWidth;
     
     UPalTextBlockBase();
+
     UFUNCTION(BlueprintCallable)
     void UpdateRowName(const FName RowName);
     

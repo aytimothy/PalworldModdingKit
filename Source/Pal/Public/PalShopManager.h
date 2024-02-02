@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalDroppedPalProductDataForShop.h"
 #include "PalGameWorldDataSaveInterface.h"
 #include "PalWorldSubsystem.h"
@@ -8,10 +8,6 @@
 
 class UPalShopBase;
 class UPalShopProduct_LostPal;
-
-// todo: these probably have params
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FRecievedBuyResultDelegate);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FReceivedDroppedPalDataDelegate);
 
 UCLASS(Blueprintable)
 class PAL_API UPalShopManager : public UPalWorldSubsystem, public IPalGameWorldDataSaveInterface {
@@ -38,7 +34,8 @@ private:
     
 public:
     UPalShopManager();
-    
+
+
     // Fix for true pure virtual functions not being implemented
 };
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Animation/AnimNotifies/AnimNotifyState.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyState -FallbackName=AnimNotifyState
 #include "PalAnimNotifyState_AttackCollision.generated.h"
 
 class AActor;
@@ -32,6 +32,7 @@ public:
     TArray<UShapeComponent*> ShapeComponents;
     
     UPalAnimNotifyState_AttackCollision();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnHit(UPrimitiveComponent* MyHitComponent, AActor* HitActor, UPrimitiveComponent* HitComponent, const TArray<int32>& FoliageIndex, FVector HitLocation, int32 HitCount) const;

@@ -3,3 +3,4 @@
 UPalLocationPointCreateParameter_BaseCamp::UPalLocationPointCreateParameter_BaseCamp() {
 }
 
+

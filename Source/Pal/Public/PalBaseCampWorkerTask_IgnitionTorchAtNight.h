@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalBaseCampWorkerTaskBase.h"
 #include "PalBaseCampWorkerTask_IgnitionTorchAtNight.generated.h"
 
@@ -16,6 +16,7 @@ private:
     
 public:
     UPalBaseCampWorkerTask_IgnitionTorchAtNight();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnNotAvailableMapObjectInServer(UPalMapObjectConcreteModelBase* ConcreteModel);

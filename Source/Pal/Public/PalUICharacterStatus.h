@@ -11,6 +11,7 @@ class PAL_API UPalUICharacterStatus : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUICharacterStatus();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void RemoveActiveSkill(UPalIndividualCharacterHandle* targetHandle, EPalWazaID targetWazaID);

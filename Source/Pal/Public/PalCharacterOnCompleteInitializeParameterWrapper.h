@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalCharacter.h"
 #include "PalCharacterOnCompleteInitializeParameterWrapper.generated.h"
 
@@ -14,6 +14,7 @@ public:
     APalCharacter::FOnCompleteInitializeParameter OnCompleteInitializeParameterDelegate;
     
     UPalCharacterOnCompleteInitializeParameterWrapper();
+
     UFUNCTION(BlueprintCallable)
     void Broadcast(APalCharacter* Character) const;
     

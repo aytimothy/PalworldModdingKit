@@ -11,6 +11,7 @@ class PAL_API UPalMapObjectBaseCampPassiveWorkHardModel : public UPalMapObjectBa
     GENERATED_BODY()
 public:
     UPalMapObjectBaseCampPassiveWorkHardModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestUpdateWorkHardType_ServerInternal(const int32 RequestPlayerId, const int32 TypeInt);

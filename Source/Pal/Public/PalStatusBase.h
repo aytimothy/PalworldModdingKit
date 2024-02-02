@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalStatusID.h"
 #include "StatusDynamicParameter.h"
 #include "PalStatusBase.generated.h"
@@ -29,8 +29,9 @@ protected:
     
 public:
     UPalStatusBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void TickStatus(float DeltaTime);
     

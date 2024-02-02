@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "LevelInstance/LevelInstanceActor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=LevelInstance -FallbackName=LevelInstance
 #include "EPalBossType.h"
 #include "PalBossBattleLevelInstance.generated.h"
 
@@ -21,7 +21,8 @@ protected:
     bool bIsLoaded;
     
 public:
-    APalBossBattleLevelInstance();
+    APalBossBattleLevelInstance(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SpawnBossSpawner(EPalBossType BossType, int32 JoinPlayerNum);
     

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalAdditionalEffectType.h"
 #include "EPalDamageAnimationReactionType.h"
 #include "EPalPassiveSkillEffectType.h"
@@ -192,7 +192,8 @@ private:
     int32 LoadoutSelectorIndex;
     
 public:
-    APalWeaponBase();
+    APalWeaponBase(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void UnbindGetWeaponDamageDelegate();
     
@@ -400,7 +401,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     float CalcAccuracy();
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

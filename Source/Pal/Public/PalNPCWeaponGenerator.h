@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalWeaponType.h"
 #include "PalContainerId.h"
 #include "PalNPCWeaponGenerator.generated.h"
@@ -27,6 +27,7 @@ private:
     
 public:
     UPalNPCWeaponGenerator();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnSpawnEvent(APalWeaponBase* WeaponActor);

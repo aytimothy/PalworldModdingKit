@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalDamageInfo.h"
 #include "PalFoliageISMComponent.h"
 #include "PalFoliageISMComponentBase.generated.h"
@@ -17,7 +17,8 @@ private:
     TMap<FVector, int32> InstanceIndexMapByLocation;
     
 public:
-    UPalFoliageISMComponentBase();
+    UPalFoliageISMComponentBase(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void SpawnInstance(UPalFoliageInstance* Instance);

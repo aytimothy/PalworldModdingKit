@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Net/Serialization/FastArraySerializer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=NetCore -ObjectName=FastArraySerializerItem -FallbackName=FastArraySerializerItem
 #include "PalWorkAssignRepInfo.generated.h"
 
 class UPalWorkAssign;

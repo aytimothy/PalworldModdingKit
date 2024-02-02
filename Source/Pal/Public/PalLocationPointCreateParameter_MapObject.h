@@ -8,5 +8,6 @@ class UPalLocationPointCreateParameter_MapObject : public UPalLocationCreatePara
     GENERATED_BODY()
 public:
     UPalLocationPointCreateParameter_MapObject();
+
 };
 

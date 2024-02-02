@@ -4,6 +4,24 @@
 #include "PalCutsceneComponent.h"
 #include "PalNetworkMulticastGateComponent.h"
 
+APalPlayerController::APalPlayerController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->bAutoManageActiveCameraTarget = false;
+    this->ClickEventKeys.AddDefaulted(1);
+    this->bAdmin = false;
+    this->AIActionComponent = CreateDefaultSubobject<UPalAIActionComponent>(TEXT("ActionsComp"));
+    this->MulticastGateComponent = CreateDefaultSubobject<UPalNetworkMulticastGateComponent>(TEXT("NetworkMulticastGateComponent"));
+    this->CutsceneComponent = CreateDefaultSubobject<UPalCutsceneComponent>(TEXT("PalCutsceneComponent"));
+    this->Transmitter = NULL;
+    this->WeaponPaletteLongPressTime = 1.00f;
+    this->PawnChangeCameraInterpChangeTime = 0.10f;
+    this->isOpenConstructionMenu = false;
+    this->RecoilCurve = NULL;
+    this->DamageCameraShake = NULL;
+    this->DamageCamShakeRegulatorClass = NULL;
+    this->DamageCamShakeRegulator = NULL;
+    this->AutoAimTarget = NULL;
+}
+
 bool APalPlayerController::TrySwitchOtomo() {
     return false;
 }
@@ -133,6 +151,9 @@ void APalPlayerController::OnChangePadOption(const FPalOptionPadSettings& PrevSe
 void APalPlayerController::OnChangeKeyboardOption(const FPalOptionKeyboardSettings& PrevSettings, const FPalOptionKeyboardSettings& NewSettings) {
 }
 
+
+void APalPlayerController::NotifyLiftupCampPal_ToClient_Implementation(APalCharacter* TargetCharacter) {
+}
 
 void APalPlayerController::JumpCancelPalThrow(UPalCharacterMovementComponent* MovementComponent) {
 }
@@ -311,19 +332,4 @@ void APalPlayerController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>&
     DOREPLIFETIME(APalPlayerController, Transmitter);
 }
 
-APalPlayerController::APalPlayerController() {
-    this->bAdmin = false;
-    this->AIActionComponent = CreateDefaultSubobject<UPalAIActionComponent>(TEXT("ActionsComp"));
-    this->MulticastGateComponent = CreateDefaultSubobject<UPalNetworkMulticastGateComponent>(TEXT("NetworkMulticastGateComponent"));
-    this->CutsceneComponent = CreateDefaultSubobject<UPalCutsceneComponent>(TEXT("PalCutsceneComponent"));
-    this->Transmitter = NULL;
-    this->WeaponPaletteLongPressTime = 1.00f;
-    this->PawnChangeCameraInterpChangeTime = 0.10f;
-    this->isOpenConstructionMenu = false;
-    this->RecoilCurve = NULL;
-    this->DamageCameraShake = NULL;
-    this->DamageCamShakeRegulatorClass = NULL;
-    this->DamageCamShakeRegulator = NULL;
-    this->AutoAimTarget = NULL;
-}
 

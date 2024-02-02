@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalMapObjectOperationResult.h"
 #include "PalBuildObjectData.h"
 #include "PalBuildRequestDebugParameter.h"
@@ -50,7 +50,8 @@ private:
     APalDismantleObjectChecker* DismantleChecker;
     
 public:
-    UPalBuilderComponent();
+    UPalBuilderComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestBuild_ToServer(const FName BuildObjectId, const FVector& Location, const FQuat& Rotation, const TArray<FPalNetArchive>& ExtraParameterArchives, FPalBuildRequestDebugParameter DebugParameter);
@@ -80,6 +81,9 @@ private:
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     EPalMapObjectOperationResult IsEnableBuild() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    void GetSelectedBuildObjectId(FName& OutSelectedBuildObjectId) const;
     
 public:
     UFUNCTION(BlueprintCallable, BlueprintPure)

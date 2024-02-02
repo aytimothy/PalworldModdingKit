@@ -6,3 +6,4 @@ UPalHUDDispatchParameter_WorldMap::UPalHUDDispatchParameter_WorldMap() {
     this->IsInitSelect = false;
 }
 
+

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Types/SlateEnums.h"
-#include "Types/SlateEnums.h"
-#include "Layout/Margin.h"
-#include "Components/PanelSlot.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EHorizontalAlignment -FallbackName=EHorizontalAlignment
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EVerticalAlignment -FallbackName=EVerticalAlignment
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=PanelSlot -FallbackName=PanelSlot
 #include "PalScrollBoxSlot.generated.h"
 
 UCLASS(Blueprintable)
@@ -20,6 +20,7 @@ public:
     TEnumAsByte<EVerticalAlignment> VerticalAlignment;
     
     UPalScrollBoxSlot();
+
     UFUNCTION(BlueprintCallable)
     void SetVerticalAlignment(TEnumAsByte<EVerticalAlignment> InVerticalAlignment);
     

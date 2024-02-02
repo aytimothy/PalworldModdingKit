@@ -8,5 +8,6 @@ class UPalStageRegistrationParameterBossBattle : public UPalStageRegistrationPar
     GENERATED_BODY()
 public:
     UPalStageRegistrationParameterBossBattle();
+
 };
 

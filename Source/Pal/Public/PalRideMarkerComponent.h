@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/SceneComponent.h"
-#include "Components/StaticMeshComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ERelativeTransformSpace -FallbackName=ERelativeTransformSpace
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StaticMeshComponent -FallbackName=StaticMeshComponent
 #include "EPalRidePositionType.h"
 #include "PalDataTableRowName_PalMonsterData.h"
 #include "Templates/SubclassOf.h"
@@ -48,7 +48,7 @@ public:
     FChangeRiding OnChangeRiding;
     
 private:
-    UPROPERTY(EditAnywhere, Export, Replicated, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Replicated, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPalRiderComponent> Rider;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
@@ -58,9 +58,10 @@ private:
     APalUniqueRideWeaponBase* WeaponActor;
     
 public:
-    UPalRideMarkerComponent();
+    UPalRideMarkerComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void SyncActiveSkill(UPalIndividualCharacterParameter* IndividualParameter);

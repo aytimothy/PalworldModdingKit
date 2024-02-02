@@ -12,5 +12,6 @@ public:
     EPalTutorialTriggerConditionType TriggerType;
     
     UPalTutorialTrigger_Individual();
+
 };
 

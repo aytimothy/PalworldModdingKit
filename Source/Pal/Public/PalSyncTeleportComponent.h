@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalSyncTeleportRequestParameter.h"
 #include "PalSyncTeleportComponent.generated.h"
 
@@ -30,7 +30,8 @@ private:
     UPalHUDDispatchParameter_FadeWidget* FadeParameter;
     
 public:
-    UPalSyncTeleportComponent();
+    UPalSyncTeleportComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void SyncTeleport_ToClient(const FPalSyncTeleportRequestParameter& Parameter);

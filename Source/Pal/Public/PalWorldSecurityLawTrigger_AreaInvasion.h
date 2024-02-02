@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalWorldSecurityLawTrigger.h"
 #include "PalWorldSecurityLawTrigger_AreaInvasion.generated.h"
 
@@ -12,6 +12,7 @@ class PAL_API UPalWorldSecurityLawTrigger_AreaInvasion : public UPalWorldSecurit
     GENERATED_BODY()
 public:
     UPalWorldSecurityLawTrigger_AreaInvasion();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnNotifiedEventEnd(AActor* InvasionActor, const FGuid& AreaInstanceId);

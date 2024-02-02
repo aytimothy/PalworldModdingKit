@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatInterval -FallbackName=FloatInterval
 #include "PalWorkBase.h"
 #include "PalWorkMonsterFarm.generated.h"
 
@@ -9,10 +9,11 @@ class PAL_API UPalWorkMonsterFarm : public UPalWorkBase {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FFloatInterval ActionIntervalSeconds;
     
 public:
     UPalWorkMonsterFarm();
+
 };
 

@@ -4,3 +4,4 @@ UPalIncidentDynamicParameter::UPalIncidentDynamicParameter() {
     this->Other = NULL;
 }
 
+

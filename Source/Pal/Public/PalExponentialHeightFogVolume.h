@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalExponentialHeightFogVolume.generated.h"
 
 class UExponentialHeightFogComponent;
@@ -26,9 +26,10 @@ private:
     bool bDisableEnabledFlag;
     
 public:
-    APalExponentialHeightFogVolume();
+    APalExponentialHeightFogVolume(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void OnRep_bEnabled();
     

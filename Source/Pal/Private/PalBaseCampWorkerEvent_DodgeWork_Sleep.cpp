@@ -5,3 +5,4 @@ UPalBaseCampWorkerEvent_DodgeWork_Sleep::UPalBaseCampWorkerEvent_DodgeWork_Sleep
     this->SanityValueStillSleeping = 0;
 }
 
+

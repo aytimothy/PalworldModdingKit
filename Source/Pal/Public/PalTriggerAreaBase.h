@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalEventNotifyTriggerHitDelegateDelegate.h"
 #include "PalTriggerAreaBase.generated.h"
 
@@ -20,7 +20,8 @@ private:
     FGuid InstanceId;
     
 public:
-    APalTriggerAreaBase();
+    APalTriggerAreaBase(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FGuid GetInstanceId();
     

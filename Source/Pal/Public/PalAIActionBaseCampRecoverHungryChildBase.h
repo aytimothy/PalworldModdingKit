@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalAIActionBaseCampChildBase.h"
 #include "PalAIActionWorkerInterruptInterface.h"
 #include "PalMonsterControllerBaseCampHungryParameter.h"
@@ -14,6 +14,7 @@ class PAL_API UPalAIActionBaseCampRecoverHungryChildBase : public UPalAIActionBa
     GENERATED_BODY()
 public:
     UPalAIActionBaseCampRecoverHungryChildBase();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetTargetMapObjectConcreteModel(UPalMapObjectConcreteModelBase*& OutTargetModel);
@@ -38,7 +39,7 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     void GetHungryParameter(FPalMonsterControllerBaseCampHungryParameter& HungeryParameter);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

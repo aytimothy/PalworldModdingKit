@@ -25,6 +25,7 @@ private:
     
 public:
     UPalActionWazaBase();
+
     UFUNCTION(BlueprintCallable)
     void StopAkSound();
     

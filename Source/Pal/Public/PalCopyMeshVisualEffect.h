@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalCopyMeshVisualEffect.generated.h"
 
 class UCapsuleComponent;
@@ -20,7 +20,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPalPoseableMeshComponent* PoseableSkeletalMeshComponent;
     
-    APalCopyMeshVisualEffect();
+    APalCopyMeshVisualEffect(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void Setup(USkeletalMeshComponent* MeshComponent);
     

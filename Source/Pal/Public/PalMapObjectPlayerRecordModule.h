@@ -25,6 +25,7 @@ private:
     
 public:
     UPalMapObjectPlayerRecordModule();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnUpdatePlayerRecordIntVal(const FName Key, const int32 Value);

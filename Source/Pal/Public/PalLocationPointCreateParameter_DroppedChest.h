@@ -8,5 +8,6 @@ class UPalLocationPointCreateParameter_DroppedChest : public UPalLocationPointSt
     GENERATED_BODY()
 public:
     UPalLocationPointCreateParameter_DroppedChest();
+
 };
 

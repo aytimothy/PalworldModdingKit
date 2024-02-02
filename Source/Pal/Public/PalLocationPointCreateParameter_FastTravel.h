@@ -8,5 +8,6 @@ class UPalLocationPointCreateParameter_FastTravel : public UPalLocationPointStat
     GENERATED_BODY()
 public:
     UPalLocationPointCreateParameter_FastTravel();
+
 };
 

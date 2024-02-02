@@ -8,5 +8,6 @@ class PAL_API UPalLoadingScreenWidgetBase : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalLoadingScreenWidgetBase();
+
 };
 

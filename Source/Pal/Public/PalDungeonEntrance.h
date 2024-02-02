@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalInteractiveObjectIndicatorType.h"
 #include "PalInteractiveObjectIndicatorInterface.h"
 #include "PalStageInstanceId.h"
@@ -20,9 +20,10 @@ private:
     UPalStageModelDungeon* StageModel;
     
 public:
-    APalDungeonEntrance();
+    APalDungeonEntrance(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetDungeonInstanceModel(UPalDungeonInstanceModel*& OutModel) const;
     
@@ -50,7 +51,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     FTransform GetDeadItemDropPoint() const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

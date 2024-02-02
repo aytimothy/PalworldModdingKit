@@ -18,6 +18,7 @@ private:
     
 public:
     UPalStatus_StaminaControl();
+
 private:
     UFUNCTION(BlueprintCallable)
     void DecreaseStepStamina();

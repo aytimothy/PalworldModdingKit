@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectModelConnectorAttach : public UPalMapObjectModelConne
     GENERATED_BODY()
 public:
     UPalMapObjectModelConnectorAttach();
+
 };
 

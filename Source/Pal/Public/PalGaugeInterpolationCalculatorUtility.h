@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "PalGaugeInterpolationCalculator.h"
 #include "PalGaugeInterpolationCalculatorUtility.generated.h"
 
@@ -11,6 +11,7 @@ class UPalGaugeInterpolationCalculatorUtility : public UBlueprintFunctionLibrary
     GENERATED_BODY()
 public:
     UPalGaugeInterpolationCalculatorUtility();
+
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void TickGaugeInterpolation(const UObject* WorldContextObject, UPARAM(Ref) FPalGaugeInterpolationCalculator& Target, const float DeltaTime);
     

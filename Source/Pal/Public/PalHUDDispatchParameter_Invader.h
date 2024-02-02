@@ -13,5 +13,6 @@ public:
     TSoftObjectPtr<APalCharacter> ParentCharacter;
     
     UPalHUDDispatchParameter_Invader();
+
 };
 

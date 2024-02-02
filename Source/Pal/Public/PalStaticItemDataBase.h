@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalDropItemType.h"
 #include "EPalItemTypeA.h"
 #include "EPalItemTypeB.h"
@@ -85,6 +85,7 @@ protected:
     
 public:
     UPalStaticItemDataBase();
+
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     bool UseItem(UPalDynamicItemDataBase* DynamicItemData, const UObject* WorldContextObject);
     

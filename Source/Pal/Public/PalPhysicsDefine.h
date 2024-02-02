@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalPhysicsDefine.generated.h"
 
 UCLASS(Blueprintable)
@@ -8,5 +8,6 @@ class UPalPhysicsDefine : public UObject {
     GENERATED_BODY()
 public:
     UPalPhysicsDefine();
+
 };
 

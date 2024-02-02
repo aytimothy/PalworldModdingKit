@@ -6,3 +6,4 @@ UPalBaseCampWorkerEvent_DodgeWork::UPalBaseCampWorkerEvent_DodgeWork() {
     this->TerminateSanityValueOver = 100.00f;
 }
 
+

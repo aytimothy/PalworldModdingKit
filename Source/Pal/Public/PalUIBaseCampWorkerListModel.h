@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalItemSlotPressType.h"
 #include "PalUIBaseCampWorkerListModel.generated.h"
 
@@ -26,6 +26,7 @@ protected:
     
 public:
     UPalUIBaseCampWorkerListModel();
+
     UFUNCTION(BlueprintCallable)
     void SelectHandleSlot(const int32 DisplayIndex, const EPalItemSlotPressType PressType);
     

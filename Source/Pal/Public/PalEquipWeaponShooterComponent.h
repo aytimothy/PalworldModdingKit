@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalMonsterEquipWeaponSocketType.h"
 #include "PalEquipWeaponInfo.h"
 #include "Templates/SubclassOf.h"
@@ -17,7 +17,8 @@ private:
     TMap<EPalMonsterEquipWeaponSocketType, FPalEquipWeaponInfo> SpawnedWeaponInfoMap;
     
 public:
-    UPalEquipWeaponShooterComponent();
+    UPalEquipWeaponShooterComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetWeapon_ForDebug_DirectBP(EPalMonsterEquipWeaponSocketType SocketType, TSubclassOf<APalMonsterEquipWeaponBase> WeaponActorClass);
     

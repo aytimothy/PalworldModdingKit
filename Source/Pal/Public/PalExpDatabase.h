@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalDeadInfo.h"
 #include "PalExpDatabase.generated.h"
 
@@ -23,6 +23,7 @@ protected:
     
 public:
     UPalExpDatabase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetTotalExp(int32 Level, bool IsPlayer);
     

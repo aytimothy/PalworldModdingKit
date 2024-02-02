@@ -1,13 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FoliageType_InstancedStaticMesh.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Foliage -ObjectName=FoliageType_InstancedStaticMesh -FallbackName=FoliageType_InstancedStaticMesh
 #include "EPalFoliagePresetType.h"
 #include "PalFoliageType_InstancedStaticMesh.generated.h"
 
-// todo: this class should not be accessed directly, or stored in a struct without indirection
-// todo: fix will come after engine edits
 UCLASS(Blueprintable, EditInlineNew)
-class PAL_API UPalFoliageType_InstancedStaticMesh : public UObject /* : public UFoliageType_InstancedStaticMesh  */ {
+class PAL_API UPalFoliageType_InstancedStaticMesh : public UFoliageType_InstancedStaticMesh {
     GENERATED_BODY()
 public:
 protected:
@@ -16,5 +14,6 @@ protected:
     
 public:
     UPalFoliageType_InstancedStaticMesh();
+
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PalDismantleObjectChecker.generated.h"
 
 class APalBuildObject;
@@ -14,7 +14,8 @@ private:
     APalBuildObject* TargetBuildObject;
     
 public:
-    APalDismantleObjectChecker();
+    APalDismantleObjectChecker(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     APalBuildObject* GetTargetObject();
     

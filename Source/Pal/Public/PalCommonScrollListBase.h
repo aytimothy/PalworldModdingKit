@@ -11,6 +11,7 @@ class PAL_API UPalCommonScrollListBase : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalCommonScrollListBase();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void MoveItem(const int32 Num, UPalItemSlot* MoveItemSlot, const FPalContainerId& TargetContainerId);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "PalInstanceID.h"
 #include "PalWorkProgressTransformBase.h"
 #include "PalWorkProgressTransformCharacter.generated.h"
@@ -18,7 +18,8 @@ protected:
     
 public:
     UPalWorkProgressTransformCharacter();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 };
 

@@ -8,5 +8,6 @@ class UPalMapObjectFarmBlockV2ModelStateBehaviourBase : public UPalStateMachineS
     GENERATED_BODY()
 public:
     UPalMapObjectFarmBlockV2ModelStateBehaviourBase();
+
 };
 

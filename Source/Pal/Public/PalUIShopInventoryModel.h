@@ -8,5 +8,6 @@ class PAL_API UPalUIShopInventoryModel : public UPalUIInventoryModel {
     GENERATED_BODY()
 public:
     UPalUIShopInventoryModel();
+
 };
 

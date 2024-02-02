@@ -16,6 +16,7 @@ protected:
     
 public:
     UPalMapObjectTestItemDestroyedDropModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnDestroy_ServerInternal(UPalMapObjectModel* Model);

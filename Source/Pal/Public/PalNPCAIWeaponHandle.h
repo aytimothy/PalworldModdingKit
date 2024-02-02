@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalWeaponType.h"
 #include "PalNPCWeaponCombatInfo.h"
 #include "Templates/SubclassOf.h"
@@ -30,6 +30,7 @@ private:
     
 public:
     UPalNPCAIWeaponHandle();
+
     UFUNCTION(BlueprintCallable)
     void UnequipWeapon();
     

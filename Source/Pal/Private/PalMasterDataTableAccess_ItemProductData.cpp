@@ -3,3 +3,4 @@
 UPalMasterDataTableAccess_ItemProductData::UPalMasterDataTableAccess_ItemProductData() {
 }
 
+

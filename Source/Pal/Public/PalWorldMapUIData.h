@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalWorldMapUIDataTableRow.h"
 #include "PalWorldMapUIData.generated.h"
 
@@ -38,6 +38,7 @@ private:
     
 public:
     UPalWorldMapUIData();
+
     UFUNCTION(BlueprintCallable)
     bool UnlockMap(const FName& regionId, const int32 PlayerId);
     

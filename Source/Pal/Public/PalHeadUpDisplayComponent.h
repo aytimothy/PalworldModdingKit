@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalHeadUpDisplayComponent.generated.h"
 
 class APalCharacter;
@@ -16,7 +16,8 @@ protected:
     float HeadUpOffset;
     
 public:
-    UPalHeadUpDisplayComponent();
+    UPalHeadUpDisplayComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void UpdateInvaderHUD();

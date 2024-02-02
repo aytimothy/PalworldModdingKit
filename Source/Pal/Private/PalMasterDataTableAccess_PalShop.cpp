@@ -3,3 +3,4 @@
 UPalMasterDataTableAccess_PalShop::UPalMasterDataTableAccess_PalShop() {
 }
 
+

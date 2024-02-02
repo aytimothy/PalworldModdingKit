@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "PalQuestBlock.h"
 #include "PalQuestBlock_CountWorker.generated.h"
 
@@ -21,6 +21,7 @@ private:
     
 public:
     UPalQuestBlock_CountWorker();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnTimer_CheckBaseCampWorker();

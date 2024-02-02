@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalAudioBus.h"
 #include "EPalAudioFadeType.h"
 #include "FloatContainer.h"
@@ -20,6 +20,7 @@ protected:
     
 public:
     UPalAudioSettingSystem();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Tick_BP(float DeltaTime);
     

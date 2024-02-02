@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalMapObjectOperationResult.h"
 #include "PalDataTableRowName_MapObjectData.h"
 #include "PalMapObjectSpawnerSingleBase.h"
@@ -15,7 +15,8 @@ protected:
     FPalDataTableRowName_MapObjectData MapObjectId;
     
 public:
-    APalMapObjectSpawnerSimple();
+    APalMapObjectSpawnerSimple(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnFinishedSpawningMapObjectModel(FGuid InstanceId, const EPalMapObjectOperationResult Result);

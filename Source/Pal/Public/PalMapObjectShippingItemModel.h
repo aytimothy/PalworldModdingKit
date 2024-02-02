@@ -13,6 +13,7 @@ private:
     
 public:
     UPalMapObjectShippingItemModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnChangeTimeHoursInServer();

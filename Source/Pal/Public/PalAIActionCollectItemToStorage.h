@@ -8,5 +8,6 @@ class PAL_API UPalAIActionCollectItemToStorage : public UPalAIActionBase {
     GENERATED_BODY()
 public:
     UPalAIActionCollectItemToStorage();
+
 };
 

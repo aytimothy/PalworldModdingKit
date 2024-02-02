@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/EngineTypes.h"
-#include "Engine/HitResult.h"
-#include "Components/SphereComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ComponentReference -FallbackName=ComponentReference
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
 #include "EPalInteractiveObjectIndicatorType.h"
 #include "PalInteractiveObjectActionBy.h"
 #include "PalInteractiveObjectActionInfoSet.h"
@@ -51,7 +51,8 @@ private:
     FOnCreateInteractDelegatesMultiCast OnCreateInteractDelegatesDelegate;
     
 public:
-    UPalInteractiveObjectSphereComponent();
+    UPalInteractiveObjectSphereComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetIndicatorInterface(TScriptInterface<IPalInteractiveObjectIndicatorInterface> InIndicatorInterface);
     
@@ -77,7 +78,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void CallOrRegisterOnCreateInteractDelegates(UPalInteractiveObjectSphereComponent::FOnCreateInteractsDelegates Delegate);
     
-    
+
     // Fix for true pure virtual functions not being implemented
     UFUNCTION(BlueprintCallable)
     UObject* Self() const override PURE_VIRTUAL(Self, return NULL;);

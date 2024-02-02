@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "PalDataTableRowName_PalMonsterData.h"
 #include "PalQuestBlock.h"
 #include "PalQuestBlock_CheckPalCaptureNum.generated.h"
@@ -25,6 +25,7 @@ private:
     
 public:
     UPalQuestBlock_CheckPalCaptureNum();
+
 private:
     UFUNCTION(BlueprintCallable)
     void CheckCount();

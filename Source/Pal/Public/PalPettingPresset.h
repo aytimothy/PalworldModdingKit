@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalPettingParameter.h"
 #include "PalPettingPresset.generated.h"
 
@@ -23,6 +23,7 @@ public:
     FPalPettingParameter LargePreset;
     
     UPalPettingPresset();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     float GetDistance(AActor* Pal);
     

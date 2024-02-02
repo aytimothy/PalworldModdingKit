@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FindSessionsCallbackProxy.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=OnlineSubsystemUtils -ObjectName=BlueprintSessionResult -FallbackName=BlueprintSessionResult
 #include "EPalUIServerListFilterType.h"
 #include "PalUIServerDataCollectInfo.h"
 #include "PalUIServerDisplayData.h"
@@ -23,6 +23,7 @@ private:
     
 public:
     UPalUIJoinGameBase();
+
     UFUNCTION(BlueprintCallable)
     void RequestOfficialServerIPRange();
     

@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CommonPlayerController.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CommonGame -ObjectName=CommonPlayerController -FallbackName=CommonPlayerController
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "DelegateTickFunction.h"
 #include "EPalLiftupRequestResult.h"
 #include "EPalLogPriority.h"
@@ -91,6 +91,9 @@ public:
     FOnInteractDelegate OnInteractDelegate;
     
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FOnInteractDelegate OnInteract2Delegate;
+    
+    UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnPressedJumpDelegate OnPressedJumpDelegate;
     
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -164,9 +167,10 @@ private:
     FRotator CacheActorRotator;
     
 public:
-    APalPlayerController();
+    APalPlayerController(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     bool TrySwitchOtomo();
@@ -362,6 +366,9 @@ protected:
     void OnChangeInstructions();
     
 private:
+    UFUNCTION(BlueprintCallable, Client, Reliable)
+    void NotifyLiftupCampPal_ToClient(APalCharacter* TargetCharacter);
+    
     UFUNCTION(BlueprintCallable)
     void JumpCancelPalThrow(UPalCharacterMovementComponent* MovementComponent);
     

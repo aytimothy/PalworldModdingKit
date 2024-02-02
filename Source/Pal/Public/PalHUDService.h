@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
-#include "GameplayTagContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "EPalFadeWidgetLayerType.h"
 #include "EPalHUDWidgetPriority.h"
 #include "EPalWidgetBlueprintType.h"
@@ -55,6 +55,7 @@ private:
     
 public:
     UPalHUDService();
+
     UFUNCTION(BlueprintCallable)
     void StartFadeOut(EPalFadeWidgetLayerType LayerType);
     

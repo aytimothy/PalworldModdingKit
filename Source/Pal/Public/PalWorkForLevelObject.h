@@ -8,5 +8,6 @@ class PAL_API UPalWorkForLevelObject : public UPalWorkBase {
     GENERATED_BODY()
 public:
     UPalWorkForLevelObject();
+
 };
 

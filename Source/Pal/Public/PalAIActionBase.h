@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AITypes.h"
-#include "AITypes.h"
-#include "Actions/PawnAction_BlueprintBase.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EAIRequestPriority -FallbackName=EAIRequestPriority
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EPawnActionResult -FallbackName=EPawnActionResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=PawnAction_BlueprintBase -FallbackName=PawnAction_BlueprintBase
 #include "EPalAIActionCategory.h"
 #include "EPalMovementSpeedType.h"
 #include "PalAIActionDynamicParameter.h"
@@ -53,6 +53,7 @@ public:
     FOnActionDelegate OnFinishActionDelegate;
     
     UPalAIActionBase();
+
     UFUNCTION(BlueprintCallable)
     void SetWalkSpeed_ForAIAction(EPalMovementSpeedType MoveSpeedType);
     
@@ -63,7 +64,7 @@ public:
     bool PushChildAction(UPawnAction* action);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void OnChildActionFinished(UPawnAction* action, EPawnActionResult::Type WithResult);
+    void OnChildActionFinished(UPawnAction* action, TEnumAsByte<EPawnActionResult::Type> WithResult);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsPaused() const;
@@ -75,7 +76,7 @@ public:
     FString GetSimpleName() const;
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
-    EAIRequestPriority::Type GetRequestPriority() const;
+    TEnumAsByte<EAIRequestPriority::Type> GetRequestPriority() const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     APalAIController* GetPalAIController() const;

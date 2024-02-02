@@ -4,3 +4,4 @@ UPalHUDDispatchParameter_CharacterMake::UPalHUDDispatchParameter_CharacterMake()
     this->bIsNewGame = false;
 }
 
+

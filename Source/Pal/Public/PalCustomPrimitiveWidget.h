@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=PaintContext -FallbackName=PaintContext
 #include "PalUMGCustomVertexData.h"
 #include "PalUserWidget.h"
 #include "PalCustomPrimitiveWidget.generated.h"
@@ -23,6 +23,7 @@ protected:
     
 public:
     UPalCustomPrimitiveWidget();
+
     UFUNCTION(BlueprintCallable)
     void UpdateVertexData(int32 Index, const FPalUMGCustomVertexData& inVertexData);
     

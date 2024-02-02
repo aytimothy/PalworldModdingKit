@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/GameStateBase.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=GameStateBase -FallbackName=GameStateBase
 #include "PalGameState.generated.h"
 
 UCLASS(Blueprintable, MinimalAPI)
 class APalGameState : public AGameStateBase {
     GENERATED_BODY()
 public:
-    APalGameState();
+    APalGameState(const FObjectInitializer& ObjectInitializer);
+
 };
 

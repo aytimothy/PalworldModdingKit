@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalItemSlotId.h"
 #include "PalTechnologyDataSet.h"
 #include "PalTechnologyDataTableRowBase.h"
@@ -59,8 +59,9 @@ private:
     
 public:
     UPalTechnologyData();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void RequestUnlockRecipeTechnology(const FName& UnlockTechnologyName);
     

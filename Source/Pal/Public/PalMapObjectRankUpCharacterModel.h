@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalMapObjectConcreteModelBase.h"
 #include "PalMapObjectRankUpCharacterResultDelegateDelegate.h"
 #include "PalNetArchive.h"
@@ -25,6 +25,7 @@ protected:
     
 public:
     UPalMapObjectRankUpCharacterModel();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RequestRankup_ServerInternal(const int32 RequestPlayerId, const FPalNetArchive& Archive);

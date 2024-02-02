@@ -3,3 +3,4 @@
 UPalMapObjectBaseCampPassiveEffectModel::UPalMapObjectBaseCampPassiveEffectModel() {
 }
 
+

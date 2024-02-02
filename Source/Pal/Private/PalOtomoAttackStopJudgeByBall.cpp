@@ -4,3 +4,4 @@ UPalOtomoAttackStopJudgeByBall::UPalOtomoAttackStopJudgeByBall() {
     this->IsProhibitAttack = false;
 }
 
+

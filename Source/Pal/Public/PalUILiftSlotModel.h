@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalItemSlotPressType.h"
 #include "PalCharacterSlotId.h"
 #include "PalItemAndNum.h"
@@ -49,6 +49,7 @@ protected:
     
 public:
     UPalUILiftSlotModel();
+
     UFUNCTION(BlueprintCallable)
     void SelectItemSlot(const FPalItemSlotId SlotID, const EPalItemSlotPressType Type);
     

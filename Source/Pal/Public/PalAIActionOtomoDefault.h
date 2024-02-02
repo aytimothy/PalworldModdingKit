@@ -10,6 +10,7 @@ class UPalAIActionOtomoDefault : public UPalAIActionCompositeBase {
     GENERATED_BODY()
 public:
     UPalAIActionOtomoDefault();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     bool ShouldSetCombatAction() const;

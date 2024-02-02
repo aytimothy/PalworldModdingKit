@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalIncidentBroadcastParameter.h"
 #include "PalNetworkInvaderComponent.generated.h"
 
@@ -8,7 +8,8 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class PAL_API UPalNetworkInvaderComponent : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalNetworkInvaderComponent();
+    UPalNetworkInvaderComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void OnInvaderStart(const FPalIncidentBroadcastParameter& Parameter);
     

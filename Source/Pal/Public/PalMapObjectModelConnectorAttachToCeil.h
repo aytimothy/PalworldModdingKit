@@ -8,5 +8,6 @@ class PAL_API UPalMapObjectModelConnectorAttachToCeil : public UPalMapObjectMode
     GENERATED_BODY()
 public:
     UPalMapObjectModelConnectorAttachToCeil();
+
 };
 

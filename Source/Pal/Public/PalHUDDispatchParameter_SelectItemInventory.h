@@ -31,6 +31,7 @@ public:
     FPalSelectedItemPlayerInventoryDelegate Callback;
     
     UPalHUDDispatchParameter_SelectItemInventory();
+
     UFUNCTION(BlueprintCallable)
     void InvokeCallback(const FPalItemSlotId& itemSlotId, const int32 itemNum);
     

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CommonInputBaseTypes.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "Engine/DataTable.h"
-#include "InputCoreTypes.h"
-#include "Styling/SlateBrush.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CommonInput -ObjectName=ECommonInputType -FallbackName=ECommonInputType
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
+//CROSS-MODULE INCLUDE V2: -ModuleName=InputCore -ObjectName=Key -FallbackName=Key
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateBrush -FallbackName=SlateBrush
 #include "EPalBaseCampWorkerEventType.h"
 #include "EPalBaseCampWorkerSickType.h"
 #include "EPalBuildObjectTypeA.h"
@@ -35,6 +35,7 @@ class PAL_API UPalUIUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalUIUtility();
+
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void SetVisibilityHUD(const UObject* WorldContextObject, bool IsVisible);
     

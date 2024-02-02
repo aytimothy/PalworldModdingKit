@@ -8,5 +8,6 @@ class UPalAIControllerWorkerModuleNormal : public UPalAIControllerWorkerModule {
     GENERATED_BODY()
 public:
     UPalAIControllerWorkerModuleNormal();
+
 };
 

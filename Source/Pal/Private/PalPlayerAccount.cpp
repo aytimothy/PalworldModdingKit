@@ -12,3 +12,4 @@ UPalPlayerAccount::UPalPlayerAccount() {
     this->bIsSelectedInitMapPoint = false;
 }
 
+

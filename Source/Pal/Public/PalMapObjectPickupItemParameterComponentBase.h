@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PalMapObjectPickupItemParameterComponentBase.generated.h"
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPalMapObjectPickupItemParameterComponentBase : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalMapObjectPickupItemParameterComponentBase();
+    UPalMapObjectPickupItemParameterComponentBase(const FObjectInitializer& ObjectInitializer);
+
 };
 

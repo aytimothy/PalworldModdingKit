@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalBossType.h"
 #include "EPalPlayerInventoryType.h"
 #include "EPalStageRequestResult.h"
@@ -19,7 +19,8 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPalNetworkPlayerComponent : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalNetworkPlayerComponent();
+    UPalNetworkPlayerComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void ShowBossDefeatRewardUI_ToClient(int32 TechPoint, bool AfterTeleport, int32 DelayTime);
     

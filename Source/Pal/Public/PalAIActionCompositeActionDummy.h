@@ -11,6 +11,7 @@ class UPalAIActionCompositeActionDummy : public UPalAIActionCompositeBase {
     GENERATED_BODY()
 public:
     UPalAIActionCompositeActionDummy();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnResumeAction(UPalAIActionBase* action);

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalBaseCampWorkerEventType.h"
 #include "EPalBaseCampWorkerSickType.h"
 #include "EPalCharacterNaturalUpdateType.h"
@@ -194,8 +194,9 @@ public:
     FString Debug_CurrentAIActionName;
     
     UPalIndividualCharacterParameter();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void UseItemInSlot(const FPalItemSlotIdAndNum SlotIdAndNum);
     
@@ -276,6 +277,9 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsHPFullRecovered();
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    bool IsDead() const;
     
 private:
     UFUNCTION(BlueprintCallable, BlueprintPure)

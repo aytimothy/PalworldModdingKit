@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalCharacterContainerSortType.h"
 #include "EPalItemSlotPressType.h"
 #include "PalUserWidgetOverlayUI.h"
@@ -14,6 +14,7 @@ class PAL_API UPalUIPalBoxBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUIPalBoxBase();
+
     UFUNCTION(BlueprintCallable)
     void TryMoveToOtomo(UPalIndividualCharacterSlot* MoveSlot);
     

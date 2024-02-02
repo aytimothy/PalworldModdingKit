@@ -13,5 +13,6 @@ public:
     UPalMapObjectConvertItemModel* ConvertItemModel;
     
     UPalHUDDispatchParameter_ConvertItem();
+
 };
 

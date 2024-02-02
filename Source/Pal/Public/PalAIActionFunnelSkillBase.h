@@ -15,6 +15,7 @@ protected:
     
 public:
     UPalAIActionFunnelSkillBase();
+
     UFUNCTION(BlueprintCallable)
     void SetModule(UPalFunnelSkillModule* InModule);
     

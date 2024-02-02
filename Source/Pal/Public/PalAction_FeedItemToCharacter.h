@@ -21,6 +21,7 @@ private:
     
 public:
     UPalAction_FeedItemToCharacter();
+
 private:
     UFUNCTION(BlueprintCallable)
     void TimeoutStartTargetCharacterApproachAction();

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "CharacterListForImportanceManager.h"
 #include "EPalCharacterImportanceType.h"
 #include "PalCharacterImportanceManager.generated.h"
@@ -28,6 +28,7 @@ private:
     
 public:
     UPalCharacterImportanceManager();
+
     UFUNCTION(BlueprintCallable)
     void GetImportantNPC(TArray<APalCharacter*>& OutArray);
     

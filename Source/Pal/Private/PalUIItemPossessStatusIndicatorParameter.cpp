@@ -4,3 +4,4 @@ UPalUIItemPossessStatusIndicatorParameter::UPalUIItemPossessStatusIndicatorParam
     this->TargetCharacter = NULL;
 }
 
+

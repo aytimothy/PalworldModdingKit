@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
 #include "EPalMapObjectDamagableType.h"
 #include "PalBoundsTransform.h"
 #include "Templates/SubclassOf.h"

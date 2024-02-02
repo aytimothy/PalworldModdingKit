@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalHUDDisplayType.h"
 #include "EPalMapObjectChangeMeshFXType.h"
 #include "EPalMapObjectDamagableType.h"
@@ -128,9 +128,10 @@ private:
     bool bShouldPlayDestroyFX;
     
 public:
-    APalMapObject();
+    APalMapObject(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void TryGetConcreteModel(EPalMapObjectGetModelOutPinType& OutputPin, UPalMapObjectConcreteModelBase*& ConcreteModel);
     
@@ -182,7 +183,7 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void BP_OnSetConcreteModel(UPalMapObjectConcreteModelBase* ConcreteModel);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

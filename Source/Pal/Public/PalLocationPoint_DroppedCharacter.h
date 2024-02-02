@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalLocationPointStatic.h"
 #include "PalLocationPoint_DroppedCharacter.generated.h"
 
@@ -19,8 +19,9 @@ protected:
     
 public:
     UPalLocationPoint_DroppedCharacter();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FGuid GetOwnerPlayerUId() const;
     

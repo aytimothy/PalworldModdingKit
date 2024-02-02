@@ -11,5 +11,6 @@ public:
     bool bIsNewGame;
     
     UPalHUDDispatchParameter_CharacterMake();
+
 };
 

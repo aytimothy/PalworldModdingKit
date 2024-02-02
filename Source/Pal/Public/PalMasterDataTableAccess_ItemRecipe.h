@@ -10,6 +10,7 @@ class UPalMasterDataTableAccess_ItemRecipe : public UPalMasterDataTableAccessBas
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_ItemRecipe();
+
 private:
     UFUNCTION(BlueprintCallable)
     void BPExec_FindRow(FName RowName, EPalMasterDataExecPinType& ExecType, FPalItemRecipe& OutData);

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalAIActionCompositeBase.h"
 #include "Templates/SubclassOf.h"
 #include "PalAIActionCompositeWorker.generated.h"
@@ -35,6 +35,7 @@ protected:
     
 public:
     UPalAIActionCompositeWorker();
+
     UFUNCTION(BlueprintCallable)
     void UnregisterFixAssignWork();
     

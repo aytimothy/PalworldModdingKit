@@ -16,6 +16,7 @@ protected:
     
 public:
     UPalQuestBlock_DetectMeal();
+
 protected:
     UFUNCTION(BlueprintCallable)
     void OnTriedMeal();

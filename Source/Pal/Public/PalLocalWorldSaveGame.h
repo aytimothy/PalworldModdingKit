@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/SaveGame.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SaveGame -FallbackName=SaveGame
 #include "PalLocalSaveData.h"
 #include "PalLocalWorldSaveGame.generated.h"
 
@@ -15,5 +15,6 @@ public:
     FPalLocalSaveData SaveData;
     
     UPalLocalWorldSaveGame();
+
 };
 

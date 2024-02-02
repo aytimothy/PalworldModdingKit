@@ -19,6 +19,7 @@ protected:
     
 public:
     UPalAction_BeThrown();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void PlayThrownMontage();

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "Templates/SubclassOf.h"
 #include "PalMapObjectAmusementParameterComponent.generated.h"
 
@@ -16,6 +16,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UPalAIActionBase> AIActionClass;
     
-    UPalMapObjectAmusementParameterComponent();
+    UPalMapObjectAmusementParameterComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

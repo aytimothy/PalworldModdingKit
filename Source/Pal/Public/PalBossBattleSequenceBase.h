@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalBossBattleSequenceType.h"
 #include "PalBossBattleStaticInfo.h"
 #include "PalBossBattleSequenceBase.generated.h"
@@ -27,6 +27,7 @@ protected:
     
 public:
     UPalBossBattleSequenceBase();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void TickSequence(float DeltaTime);
     

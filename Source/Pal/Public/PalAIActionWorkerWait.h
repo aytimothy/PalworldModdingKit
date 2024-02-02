@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Navigation/PathFollowingComponent.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EPathFollowingRequestResult -FallbackName=EPathFollowingRequestResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalAIActionWorkerChildBase.h"
 #include "PalAIActionWorkerWait.generated.h"
 
@@ -10,6 +10,7 @@ class UPalAIActionWorkerWait : public UPalAIActionWorkerChildBase {
     GENERATED_BODY()
 public:
     UPalAIActionWorkerWait();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReturnToDefaultPosition();

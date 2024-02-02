@@ -8,5 +8,6 @@ class UPalBaseCampWorkerEvent_DodgeWork_Short : public UPalBaseCampWorkerEvent_D
     GENERATED_BODY()
 public:
     UPalBaseCampWorkerEvent_DodgeWork_Short();
+
 };
 

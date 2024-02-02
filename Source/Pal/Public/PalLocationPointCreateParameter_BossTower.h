@@ -8,5 +8,6 @@ class UPalLocationPointCreateParameter_BossTower : public UPalLocationPointStati
     GENERATED_BODY()
 public:
     UPalLocationPointCreateParameter_BossTower();
+
 };
 

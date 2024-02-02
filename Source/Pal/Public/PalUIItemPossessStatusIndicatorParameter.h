@@ -13,5 +13,6 @@ public:
     UPalIndividualCharacterHandle* TargetCharacter;
     
     UPalUIItemPossessStatusIndicatorParameter();
+
 };
 

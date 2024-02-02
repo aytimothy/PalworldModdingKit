@@ -11,6 +11,7 @@ class PAL_API UPalUIInventoryEquipment : public UPalUserWidget {
     GENERATED_BODY()
 public:
     UPalUIInventoryEquipment();
+
 private:
     UFUNCTION(BlueprintCallable)
     void SwapItemSlot(UPalItemSlot* SlotA, UPalItemSlot* SlotB);

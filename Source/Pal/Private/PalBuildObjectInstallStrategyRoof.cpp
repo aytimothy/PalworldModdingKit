@@ -5,3 +5,4 @@ UPalBuildObjectInstallStrategyRoof::UPalBuildObjectInstallStrategyRoof() {
     this->HitBuildObjectCache = NULL;
 }
 
+

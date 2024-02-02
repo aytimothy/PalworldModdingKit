@@ -8,5 +8,6 @@ class UPalLocationPointCreateParameter_CustomMarker : public UPalLocationPointSt
     GENERATED_BODY()
 public:
     UPalLocationPointCreateParameter_CustomMarker();
+
 };
 

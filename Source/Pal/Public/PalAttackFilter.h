@@ -1,14 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EPalBlowVelocityOwner.h"
 #include "EPalWazaID.h"
 #include "PalHitFilter.h"
 #include "PalAttackFilter.generated.h"
 
 class AActor;
-
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnAttackDelegate);
 
 UCLASS(Blueprintable, EditInlineNew)
 class UPalAttackFilter : public UPalHitFilter {
@@ -35,5 +33,6 @@ private:
     
 public:
     UPalAttackFilter();
+
 };
 

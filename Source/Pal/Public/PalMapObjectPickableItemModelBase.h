@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Engine/EngineTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TimerHandle -FallbackName=TimerHandle
 #include "PalItemAndNum.h"
 #include "PalMapObjectConcreteModelBase.h"
 #include "PalMapObjectPickableItemModelBase.generated.h"
@@ -19,8 +19,9 @@ private:
     
 public:
     UPalMapObjectPickableItemModelBase();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void RequestPickup_ServerInternal(const int32 RequestPlayerId);

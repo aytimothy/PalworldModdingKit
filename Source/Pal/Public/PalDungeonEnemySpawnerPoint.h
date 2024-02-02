@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalDungeonEnemySpawnerRankType.h"
 #include "PalDungeonEnemySpawnerPoint.generated.h"
 
@@ -18,7 +18,8 @@ protected:
     EPalDungeonEnemySpawnerRankType RankType;
     
 public:
-    APalDungeonEnemySpawnerPoint();
+    APalDungeonEnemySpawnerPoint(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnEnterCharacterToGroup(UPalIndividualCharacterHandle* IndividualHandle);

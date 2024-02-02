@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalInteractiveObjectIndicatorType.h"
 #include "PalNPCTalkComponent.generated.h"
 
@@ -25,7 +25,8 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FTalkEndDelegate OnTalkEndDelegate;
     
-    UPalNPCTalkComponent();
+    UPalNPCTalkComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void TriggerStartTalk(AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
     

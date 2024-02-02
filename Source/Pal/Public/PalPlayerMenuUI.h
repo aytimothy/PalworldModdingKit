@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=UserWidget -FallbackName=UserWidget
 #include "PalItemSlotId.h"
 #include "Templates/SubclassOf.h"
 #include "PalPlayerMenuUI.generated.h"
@@ -20,6 +20,7 @@ protected:
     
 public:
     UPalPlayerMenuUI();
+
     UFUNCTION(BlueprintCallable)
     void SetSelectedItemSlot(FPalItemSlotId SelectSlot);
     

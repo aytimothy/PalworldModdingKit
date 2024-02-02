@@ -8,5 +8,6 @@ class UPalMasterDataTableAccess_DungeonEnemySpawnerData : public UPalMasterDataT
     GENERATED_BODY()
 public:
     UPalMasterDataTableAccess_DungeonEnemySpawnerData();
+
 };
 

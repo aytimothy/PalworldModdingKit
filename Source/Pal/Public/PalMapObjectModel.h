@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "EPalInteractiveObjectIndicatorType.h"
 #include "EPalMapObjectDamagableType.h"
 #include "EPalMapObjectInteractRestrictType.h"
@@ -145,8 +145,9 @@ private:
     
 public:
     UPalMapObjectModel();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable)
     void RequestRepairByPlayer_ToServer_ServerInternal(const FGuid& RequestPlayerUId);
     
@@ -188,7 +189,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FPalMapObjectStatusValue GetHP() const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
     UFUNCTION(BlueprintCallable)
     FGuid GetModelId() const override PURE_VIRTUAL(GetModelId, return FGuid{};);

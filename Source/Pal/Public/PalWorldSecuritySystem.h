@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalCrimeStateInfo.h"
 #include "PalInstanceID.h"
 #include "PalSystemInitializeInterface.h"
@@ -58,6 +58,7 @@ private:
     
 public:
     UPalWorldSecuritySystem();
+
     UFUNCTION(BlueprintCallable)
     void ReportCriminal(UPalIndividualCharacterHandle* CriminalHandle, UPalIndividualCharacterHandle* ReporterHandle);
     
@@ -73,7 +74,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FName GetCrimeIdByCrimeInstanceId(const FGuid& CrimeInstanceId);
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 

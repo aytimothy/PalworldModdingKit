@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "PalContainerId.h"
 #include "PalItemId.h"
 #include "PalItemPermission.h"
@@ -66,8 +66,9 @@ private:
     
 public:
     UPalItemSlot();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool TryGetStaticItemData(UPalStaticItemDataBase*& OutStaticItemData);
     

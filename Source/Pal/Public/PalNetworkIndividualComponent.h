@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=DateTime -FallbackName=DateTime
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "EPalBaseCampWorkerSickType.h"
 #include "EPalWazaID.h"
 #include "NetworkActorSpawnParameters.h"
@@ -20,7 +20,8 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPalNetworkIndividualComponent : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalNetworkIndividualComponent();
+    UPalNetworkIndividualComponent(const FObjectInitializer& ObjectInitializer);
+
 private:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void UpdateCharacterParameter_ToServer(const FPalInstanceID& ID, const FPalNetArchive& parameterArchive, FGuid Guid);

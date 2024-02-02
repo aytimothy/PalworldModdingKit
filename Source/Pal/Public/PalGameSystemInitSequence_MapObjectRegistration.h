@@ -8,5 +8,6 @@ class UPalGameSystemInitSequence_MapObjectRegistration : public UPalGameSystemIn
     GENERATED_BODY()
 public:
     UPalGameSystemInitSequence_MapObjectRegistration();
+
 };
 

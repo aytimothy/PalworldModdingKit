@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "EPalLandingType.h"
 #include "PalLandingTypeUtility.generated.h"
 
@@ -9,6 +9,7 @@ class UPalLandingTypeUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalLandingTypeUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool IsRollStep(EPalLandingType T);
     

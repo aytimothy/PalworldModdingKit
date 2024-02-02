@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "ActionDynamicParameter.h"
 #include "Templates/SubclassOf.h"
 #include "PalNetworkCharacterComponent.generated.h"
@@ -13,7 +13,8 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPalNetworkCharacterComponent : public UActorComponent {
     GENERATED_BODY()
 public:
-    UPalNetworkCharacterComponent();
+    UPalNetworkCharacterComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void RequestReflectAction_ToServer(APalCharacter* Character);
     

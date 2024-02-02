@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "Chaos/ChaosEngineInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=PhysicsCore -ObjectName=EPhysicalSurface -FallbackName=EPhysicalSurface
 #include "PalSoundPlayerInEditorComponent.generated.h"
 
 class UPalSoundSlot;
@@ -18,7 +18,8 @@ private:
     UPalSoundSlot* PalSoundSlotCache;
     
 public:
-    UPalSoundPlayerInEditorComponent();
+    UPalSoundPlayerInEditorComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetPhysicalMaterial(TEnumAsByte<EPhysicalSurface> PhysicalSurface);
     

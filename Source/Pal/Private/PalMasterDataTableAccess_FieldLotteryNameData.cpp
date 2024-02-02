@@ -3,3 +3,4 @@
 UPalMasterDataTableAccess_FieldLotteryNameData::UPalMasterDataTableAccess_FieldLotteryNameData() {
 }
 
+

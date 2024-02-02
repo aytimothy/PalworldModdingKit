@@ -3,3 +3,4 @@
 UPalMasterDataTableAccess_ItemLotteryData::UPalMasterDataTableAccess_ItemLotteryData() {
 }
 
+

@@ -8,5 +8,6 @@ class PAL_API UPalUISelectItemInventoryBase : public UPalUserWidgetOverlayUI {
     GENERATED_BODY()
 public:
     UPalUISelectItemInventoryBase();
+
 };
 

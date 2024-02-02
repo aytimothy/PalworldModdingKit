@@ -16,6 +16,7 @@ protected:
     
 public:
     UPalTalkWindowWidgetBase();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ShowChoice(const TArray<FName>& choiceTextIDList);
     

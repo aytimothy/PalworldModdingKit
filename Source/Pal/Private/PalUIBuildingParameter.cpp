@@ -4,3 +4,4 @@ UPalUIBuildingParameter::UPalUIBuildingParameter() {
     this->BuildObjectId = 0;
 }
 
+

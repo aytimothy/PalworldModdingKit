@@ -13,6 +13,7 @@ public:
     DECLARE_DYNAMIC_DELEGATE_OneParam(FUpdateWaterStackRateDelegate, float, WaterStackRate);
     
     UPalMapObjectFarmBlockV2ModelStateBehaviourWatering();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnProgressWorkInServer(UPalWorkProgress* WorkProgress);

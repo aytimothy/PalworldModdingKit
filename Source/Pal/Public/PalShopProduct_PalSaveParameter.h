@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "PalIndividualCharacterSaveParameter.h"
 #include "PalInstanceID.h"
 #include "PalShopProductBase.h"
@@ -19,8 +19,9 @@ private:
     
 public:
     UPalShopProduct_PalSaveParameter();
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnCreatedBuyPal(FPalInstanceID CreatedPalInstanceID);

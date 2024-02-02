@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "EPalLogPriority.h"
 #include "PalLogAdditionalData.h"
 #include "PalLogDataSet.h"
@@ -52,6 +52,7 @@ public:
     FRemovedVeryImportantLogDelegate OnRemovedVeryImportantLogDelegate;
     
     UPalLogManager();
+
     UFUNCTION(BlueprintCallable)
     bool RemoveVeryImportantLog(const FGuid& targetLogId);
     

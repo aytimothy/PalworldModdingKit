@@ -23,6 +23,7 @@ protected:
     
 public:
     UPalAIAction_LeaveBase();
+
     UFUNCTION(BlueprintCallable)
     void InitializeObject(AActor* CombatTarget, APalCharacter* SelfCharactor);
     

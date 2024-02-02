@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "EPalBossType.h"
 #include "EPalTribeID.h"
 #include "PalPlayerRecordDataRepInfoArray_BoolVal.h"
@@ -14,6 +14,7 @@ class UPalPlayerRecordDataUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalPlayerRecordDataUtility();
+
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void SetRecordData_TribeIdFlag_ForServer(const UObject* WorldContextObject, FPalPlayerRecordDataRepInfoArray_BoolVal& RecordData, const EPalTribeID Key);
     

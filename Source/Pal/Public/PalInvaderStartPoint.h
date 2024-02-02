@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "EPalBiomeType.h"
 #include "PalInvaderStartPoint.generated.h"
 
@@ -13,6 +13,7 @@ private:
     EPalBiomeType BiomeType;
     
 public:
-    APalInvaderStartPoint();
+    APalInvaderStartPoint(const FObjectInitializer& ObjectInitializer);
+
 };
 

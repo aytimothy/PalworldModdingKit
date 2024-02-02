@@ -15,5 +15,6 @@ private:
     
 public:
     UPalMapObjectFarmBlockV2ModelStateBehaviourMachine();
+
 };
 

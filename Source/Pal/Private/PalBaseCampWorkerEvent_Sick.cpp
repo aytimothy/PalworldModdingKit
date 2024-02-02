@@ -3,3 +3,4 @@
 UPalBaseCampWorkerEvent_Sick::UPalBaseCampWorkerEvent_Sick() {
 }
 
+

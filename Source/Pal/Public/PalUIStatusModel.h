@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EPalElementType.h"
 #include "EPalStatusPhysicalHealthType.h"
 #include "FixedPoint64.h"
@@ -23,6 +23,7 @@ protected:
     
 public:
     UPalUIStatusModel();
+
     UFUNCTION(BlueprintCallable)
     void OnClickedPalIcon(int32 Index);
     

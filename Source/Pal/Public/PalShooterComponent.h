@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "Components/ActorComponent.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
-#include "Engine/HitResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=RandomStream -FallbackName=RandomStream
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BranchingPointNotifyPayload -FallbackName=BranchingPointNotifyPayload
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "EPalCharacterImportanceType.h"
 #include "EPalShooterFlagContainerPriority.h"
 #include "EPalWeaponType.h"
@@ -198,9 +198,10 @@ private:
     FRandomStream RandomStream;
     
 public:
-    UPalShooterComponent();
+    UPalShooterComponent(const FObjectInitializer& ObjectInitializer);
+
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-    
+
 private:
     UFUNCTION(BlueprintCallable)
     void StopWeaponChangeAnimation();
@@ -298,10 +299,10 @@ private:
     UFUNCTION(BlueprintCallable)
     void OnWeaponNotify(EWeaponNotifyType Type);
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnWeaponAnimationNotifyEnd(FName NotifyName, const FBranchingPointNotifyPayload& BranchingPointNotifyPayload);
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnWeaponAnimationNotifyBegin(FName NotifyName, const FBranchingPointNotifyPayload& BranchingPointNotifyPayload);
     
     UFUNCTION(BlueprintCallable)

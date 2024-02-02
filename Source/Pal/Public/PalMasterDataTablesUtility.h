@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "EPalLocalizeTextCategory.h"
 #include "PalMasterDataTablesUtility.generated.h"
 
@@ -32,6 +32,7 @@ class UPalMasterDataTablesUtility : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UPalMasterDataTablesUtility();
+
     UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContextObject"))
     static UPalMasterDataTableAccess_WildSpawnerData* GetWildSpawnerDataTableAccess(const UObject* WorldContextObject);
     

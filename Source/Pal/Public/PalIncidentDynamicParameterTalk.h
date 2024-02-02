@@ -24,5 +24,6 @@ public:
     bool IsRequestSucceed;
     
     UPalIncidentDynamicParameterTalk();
+
 };
 

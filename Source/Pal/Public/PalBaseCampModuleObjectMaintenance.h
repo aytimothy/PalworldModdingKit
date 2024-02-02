@@ -18,6 +18,7 @@ protected:
     
 public:
     UPalBaseCampModuleObjectMaintenance();
+
 private:
     UFUNCTION(BlueprintCallable)
     void OnRegisteredMapObject_ServerInternal(UPalMapObjectModel* Model);

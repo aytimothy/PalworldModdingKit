@@ -11,5 +11,6 @@ public:
     FName CharacterID;
     
     UPalMapObjectModelInitializeExtraParameterPalEgg();
+
 };
 

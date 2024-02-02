@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PalAIActionBase.h"
 #include "PalCoopSkillAssaultrifleModeCandidateLocation.h"
 #include "PalAIActionCoopAssaultrifleMode.generated.h"
@@ -39,6 +39,7 @@ private:
     
 public:
     UPalAIActionCoopAssaultrifleMode();
+
     UFUNCTION(BlueprintCallable)
     void Update(float DeltaTime);
     

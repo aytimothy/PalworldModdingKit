@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "PalDungeonEntrance.h"
 #include "PalLevelObjectInterface.h"
 #include "Templates/SubclassOf.h"
@@ -34,7 +34,8 @@ private:
     TSubclassOf<APalNPCSpawnerBase> EnemySpawnerClass;
     
 public:
-    APalDungeonFixedEntrance();
+    APalDungeonFixedEntrance(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FGuid GetLevelObjectInstanceId() const;
     
@@ -47,7 +48,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UDataLayerAsset* GetDataLayerAsset() const;
     
-    
+
     // Fix for true pure virtual functions not being implemented
 };
 
